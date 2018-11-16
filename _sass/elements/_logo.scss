@@ -1,0 +1,17 @@
+a.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  img {
+    margin-right: 1em;
+  }
+
+  .logo-title {
+    color: $navy;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+}

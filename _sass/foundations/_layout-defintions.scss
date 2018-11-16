@@ -1,0 +1,12 @@
+$body-bg:     $near-white;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $body-bg;
+  font-family: $font-family;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
