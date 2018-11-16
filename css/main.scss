@@ -1,13 +1,21 @@
 ---
 ---
+@import "variables";
+
 /* Foundations */
 @import
-        "foundations/layout",
         "foundations/colors",
+        "foundations/layout-defintions",
         "foundations/typography"
 ;
 
 /* Elements */
 @import
-        "elements/avatar"
+        "elements/avatar",
+        "elements/logo"
+;
+
+/* Components */
+@import
+        "components/universal-header"
 ;

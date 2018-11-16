@@ -22,7 +22,11 @@ markdown: kramdown
 plugins:
   - jemoji
 
-# Collection settings
+# Web Fonts
+adobe_id:       bmd3xqv
+fontawesome_id:
+
+# Collection Settings
 collections:
   projects:
     output: true
