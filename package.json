@@ -1,0 +1,22 @@
+{
+  "name": "bryancolosky",
+  "version": "1.0.0",
+  "author": "Bryan Colosky <hello@bryancolosky.com>",
+  "homepage": "http://bryancolosky.com",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "favicons": "latest",
+    "gulp": "latest",
+    "gulp-favicons": "latest"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "My Favicons",
+  "description": "These are my Favicons",
+  "icons": {
+    "60": "/images/favicons/firefox_app_60x60.png",
+    "128": "/images/favicons/firefox_app_128x128.png",
+    "512": "/images/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Bryan Colosky",
+    "url": "http://bryancolosky.com/"
+  }
+}

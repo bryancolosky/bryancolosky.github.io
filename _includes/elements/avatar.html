@@ -1,0 +1,10 @@
+<img class="avatar"
+
+{% if site.gravatar_id != null %}
+src="https://www.gravatar.com/avatar/{{ site.gravatar_id }}?s={{ include.size }}"
+{% endif %}
+
+data-failover="/assets/notfound.jpg"
+height="{{ include.size }}"
+width="{{ include.size }}"
+/>
