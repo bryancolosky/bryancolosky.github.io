@@ -15,7 +15,7 @@ description: >
   Bryan Colosky is a multidisciplinary designer in Brooklyn, New York.
 
 port: 4000
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://bryancolosky.com" # the base hostname & protocol for your site
 
 # Permalink setiings
