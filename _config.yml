@@ -1,17 +1,21 @@
 # Site settings
 title: Bryan Colosky
 email: hello@bryancolosky.com
+first_name: Bryan
+last_name: Colosky
 
 twitter_username:   bryancolosky
 github_username:    bryancolosky
 unsplash_username:  bryancolosky
 gravatar_id:        823811c7dedcd8bf752cfe686563f439
 
+
+
 description: >
   Bryan Colosky is a multidisciplinary designer in Brooklyn, New York.
 
 port: 4000
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://bryancolosky.com" # the base hostname & protocol for your site
 
 # Permalink setiings

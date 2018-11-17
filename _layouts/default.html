@@ -4,11 +4,55 @@
   {% include head.html %}
 
   <body class="{{ page.title | slugify }}">
+    {% include components/header.html %}
 
-    {% include templates/home.html %}
-    <main id="content"></main>
-    {% include footer.html %}
+    {% assign main = page.template %}
+        <main id="content" role="main">
 
+        {% case main %}
+
+        {% when 'home' %}
+        {% include templates/home.html %}
+
+        {% when 'about' %}
+        {% include templates/about.html %}
+
+          {% when 'resume' %}
+          {% include templates/resume.html %}
+
+          {% when 'travel' %}
+          {% include templates/travel.html %}
+
+        {% when 'portfolio' %}
+        {% include templates/portfolio.html %}
+
+          {% when 'projects' %}
+          {% include templates/projects.html %}
+
+            {% when 'project' %}
+            {% include templates/project.html %}
+
+          {% when 'photography' %}
+          {% include templates/photography.html %}
+
+            {% when 'photograph' %}
+            {% include templates/photograph.html %}
+
+        {% when 'contact' %}
+        {% include templates/contact.html %}
+
+        {% else %}
+        {{ content }}
+
+        {% endcase %}
+
+        </main>
+
+
+        {% unless page.template == 'home' %}
+        {% include footer.html %}
+        {% endunless %}
+        <script type="text/javascript" src="{{ "js/app.js" | prepend: site.baseurl }}"></script>
   </body>
 
 </html>
