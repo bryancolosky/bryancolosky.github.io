@@ -1,0 +1,12 @@
+{% assign index = site.pages | sort:'position'  %}
+<ul class="navigation-list">
+  {% for node in index %}
+  {% if node.layout == 'page' %}
+    {% unless node.sitemap.exclude == true %}
+
+    {% include components/navigation-list-item.html %}
+
+    {% endunless %}
+  {% endif %}
+  {% endfor %}
+</ul>

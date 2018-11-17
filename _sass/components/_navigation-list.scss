@@ -1,0 +1,28 @@
+ul.navigation-list,
+.navigation-list {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media #{$breakpoint-not-small} {
+  ul.navigation-list,
+  .navigation-list {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  ul.navigation-list,
+  .navigation-list {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  ul.navigation-list,
+  .navigation-list {
+
+  }
+}

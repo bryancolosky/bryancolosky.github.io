@@ -1,0 +1,35 @@
+button.navigation-toggle,
+.navigation-toggle {
+  font-size: 1em;
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: $transparent;
+
+  &:hover,
+  :focus {
+    border: none;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  button.navigation-toggle,
+  .navigation-toggle {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  button.navigation-toggle,
+  .navigation-toggle {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  button.navigation-toggle,
+  .navigation-toggle {
+    display: none;
+  }
+}

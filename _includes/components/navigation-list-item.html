@@ -1,0 +1,5 @@
+{% capture title %}{{ node.title }}{% endcapture %}
+{% capture url %}{{ node.url }}{% endcapture %}
+<li class="navigation-list-item">
+  {% include elements/link.html href=url target="" text=title %}
+</li>

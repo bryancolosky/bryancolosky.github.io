@@ -1,0 +1,39 @@
+li.navigation-list-item,
+.navigation-list-item {
+  display: block;
+  width: 100%;
+  margin: 2rem 0 0 0;
+
+  > a {
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  li.navigation-list-item,
+  .navigation-list-item {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  li.navigation-list-item,
+  .navigation-list-item {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  li.navigation-list-item,
+  .navigation-list-item {
+    display: inline;
+    margin-left: 1rem;
+
+    > a {
+      font-weight: normal;
+      font-size: 1em;
+    }
+  }
+}
