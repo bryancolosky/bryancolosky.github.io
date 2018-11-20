@@ -1,0 +1,25 @@
+section.panel,
+.panel {
+  padding: 1rem 2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  section.panel,
+  .panel {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  section.panel,
+  .panel {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  section.panel,
+  .panel {
+
+  }
+}

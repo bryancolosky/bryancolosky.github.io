@@ -1,0 +1,10 @@
+<img class="image"
+
+{% if site.gravatar_userimage != null %}
+src="https://www.gravatar.com/userimage/91447980/{{ include.id }}?size={{ include.size }}"
+{% endif %}
+
+data-failover="/assets/notfound.jpg"
+height="auto"
+width="{{ include.size }}"
+/>

@@ -1,0 +1,65 @@
+button.btn,
+.btn {
+  color: $font-color;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 0;
+
+  &:focus,
+  &:active {
+    outline: 1px dotted $font-color;
+  }
+
+  &:hover {
+
+    &:after {
+      height: 1.2em;
+      left: .15em;
+      background-color: lighten($link-color, 5%);
+    }
+
+    svg {
+      transform: translate(.3em, 0);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &:after {
+    height: .3em;
+    width: 100%;
+    position: absolute;
+    left: -.15em;
+    bottom: -.1em;
+    background-color: $link-color;
+    content: " ";
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+  }
+
+  svg {
+    transform: translate(0, 0);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  button.btn,
+  .btn {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  button.btn,
+  .btn {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  button.btn,
+  .btn {
+
+  }
+}

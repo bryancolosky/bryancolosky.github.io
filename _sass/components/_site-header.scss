@@ -1,0 +1,35 @@
+header.site-header,
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  padding: .25rem 2rem;
+  z-index: $z-max;
+  background-color: $near-white;
+}
+
+@media #{$breakpoint-not-small} {
+  header.site-header,
+  .site-header {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  header.site-header,
+  .site-header {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  header.site-header,
+  .site-header {
+
+  }
+}

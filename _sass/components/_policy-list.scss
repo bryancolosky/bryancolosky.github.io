@@ -1,0 +1,32 @@
+ul.list,
+.list {
+  padding: 0;
+  margin: 1rem 0;
+  width: 100%;
+
+  > li {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  ul.list,
+  .list {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  ul.list,
+  .list {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  ul.list,
+  .list {
+
+  }
+}

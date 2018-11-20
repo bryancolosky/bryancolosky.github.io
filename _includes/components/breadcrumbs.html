@@ -1,0 +1,30 @@
+<div class="breadcrumbs">
+  <span><small>Site Index</small></span>
+
+  <ul class="list">
+
+    <li class="">
+      <a class="link" href='{{ site.baseurl }}/'><i class="fal fa-long-arrow-left"></i> Home</a>
+    </li>
+
+    <span>/</span>
+
+    {% assign crumbs = page.url | split: '/' %}
+    {% for crumb in crumbs offset: 1 %}
+    {% if forloop.last %}
+    <li class="">
+      <span class="breadcrumb-item--current">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</span>
+    </li>
+
+    {% else %}
+    <li class="">
+      <a class="link" href="{% assign crumb_limit = forloop.index | plus: 1 %}{{site.baseurl}}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'/index.html' | capitalize }}</a>
+    </li>
+
+    <span>/</span>
+
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+</div>

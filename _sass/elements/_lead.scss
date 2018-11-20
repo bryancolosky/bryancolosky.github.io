@@ -1,0 +1,26 @@
+p.lead,
+.lead {
+  max-width: 30em;
+  font-size: 1.2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  p.lead,
+  .lead {
+    font-size: 1.4rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  p.lead,
+  .lead {
+    font-size: 1.4rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  p.lead,
+  .lead {
+    font-size: 1.6rem;
+  }
+}

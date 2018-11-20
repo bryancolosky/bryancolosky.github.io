@@ -1,0 +1,6 @@
+section, article, figure {
+  &> img,
+  &> img.image {
+    width: 100%;
+  }
+}

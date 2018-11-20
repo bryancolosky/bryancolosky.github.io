@@ -1,0 +1,6 @@
+<figure class="media">
+  {% if site.gravatar_userimage != null %}
+  {% capture src %}{{ site.gravatar_userimage }}{% endcapture %}
+  {% include elements/image.html size="1080" id=src %}
+  {% endif %}
+</figure>

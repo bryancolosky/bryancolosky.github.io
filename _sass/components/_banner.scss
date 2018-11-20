@@ -1,0 +1,29 @@
+section.banner,
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  section.banner,
+  .banner {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  section.banner,
+  .banner {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  section.banner,
+  .banner {
+
+  }
+}
