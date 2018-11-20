@@ -2,11 +2,11 @@ li.navigation-list-item,
 .navigation-list-item {
   display: block;
   width: 100%;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 
   > a {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.7em;
     text-decoration: none;
   }
 }
@@ -15,6 +15,9 @@ li.navigation-list-item,
   li.navigation-list-item,
   .navigation-list-item {
 
+    > a {
+      font-size: 2.2em;
+    }
   }
 }
 
@@ -22,6 +25,9 @@ li.navigation-list-item,
   li.navigation-list-item,
   .navigation-list-item {
 
+    > a {
+      font-size: 2.5em;
+    }
   }
 }
 
@@ -29,7 +35,7 @@ li.navigation-list-item,
   li.navigation-list-item,
   .navigation-list-item {
     display: inline;
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
 
     > a {
       font-weight: normal;

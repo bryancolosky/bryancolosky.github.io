@@ -1,1 +1,7 @@
+{{ content }}
 
+{% capture block %}
+{% include components/article.html %}
+{% endcapture %}
+
+{% include components/content-panel.html template=block %}

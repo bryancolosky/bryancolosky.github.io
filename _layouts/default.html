@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body class="{{ page.title | slugify }}">
-    {% include components/header.html %}
+    {% include components/site-header.html %}
 
     {% assign main = page.template %}
         <main id="content" role="main">
@@ -42,15 +42,15 @@
         {% include templates/contact.html %}
 
         {% else %}
+
         {{ content }}
 
         {% endcase %}
-
         </main>
 
 
         {% unless page.template == 'home' %}
-        {% include footer.html %}
+        {% include components/site-footer.html %}
         {% endunless %}
         <script type="text/javascript" src="{{ site.baseurl }}/js/app.js"></script>
   </body>

@@ -5,7 +5,6 @@ overview: Feel free to chat, or simply get in touch.
 
 layout:   page
 template: contact
-name:     contact
 
 position: 3
 permalink: /contact/

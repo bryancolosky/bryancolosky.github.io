@@ -5,7 +5,6 @@ overview: I’m a multidisciplinary designer.
 
 layout:   default
 template: home
-name:     home
 
 position: 1
 permalink: /

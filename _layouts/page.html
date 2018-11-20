@@ -1,3 +1,8 @@
 ---
 layout: default
 ---
+{% include components/page-header.html %}
+{% unless page.template %}
+{% capture text %}{{ content }}{% endcapture %}
+{% include components/content-panel.html content=text %}
+{% endunless %}

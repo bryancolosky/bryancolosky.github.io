@@ -43,6 +43,30 @@ a.link,
   }
 }
 
+a.link-secondary {
+  &:hover {
+    &:after {
+      background-color: lighten($moon-gray, 5%);
+    }
+  }
+
+  &:after {
+    background-color: $moon-gray;
+  }
+}
+
+a.link-external {
+  &:hover {
+    &:after {
+      background-color: lighten($aqua, 5%);
+    }
+  }
+
+  &:after {
+    background-color: $aqua;
+  }
+}
+
 @media #{$breakpoint-not-small} {
   a.link,
   .link {
