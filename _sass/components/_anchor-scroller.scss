@@ -1,0 +1,28 @@
+div.anchor-scroller,
+.anchor-scroller {
+  margin: 1rem 0;
+}
+
+@media #{$breakpoint-not-small} {
+  div.anchor-scroller,
+  .anchor-scroller {
+    margin: 2rem 0;
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  div.anchor-scroller,
+  .anchor-scroller {
+    margin: 2rem 0;
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  div.anchor-scroller,
+  .anchor-scroller {
+    margin: 3rem 0;
+
+  }
+}
