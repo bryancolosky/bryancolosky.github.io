@@ -64,7 +64,21 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-
+        var header = document.getElementById("site-header");
+        var headroom  = new Headroom(header, {
+          "offset": header.innerHeight,
+          "tolerance": 1,
+          "classes": {
+            "initial": "site-header",
+            "pinned": "site-header--pinned",
+            "unpinned": "site-header--unpinned",
+            "top":"window--scroll-y-0",
+            "notTop":"window--scroll-y-0--false",
+            "bottom":"window--scroll-y-100",
+            "notBottom":"window--scroll-y-100--false"
+          }
+        });
+        headroom.init();
       }
     },
     // Home page

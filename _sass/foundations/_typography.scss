@@ -1,6 +1,14 @@
 $font-color:    $navy;
 $link-color:    $lime;
 
+::-moz-selection { /* Code for Firefox */
+    background: $aqua;
+}
+
+::selection {
+  background: $lime;
+}
+
 html {
   font-size: 14px;
 }
@@ -97,30 +105,39 @@ a {
   }
 }
 
+ol,
 ul {
   line-height: 1.6;
   column-count: 1;
   max-width: 30em;
   margin: 1rem 0;
+  padding: 0 2rem;
 
   > li {
-    margin: 1rem 0;
+    margin: 0;
+
+    > ol, ul {
+      margin: .5rem 0;
+    }
   }
 }
 
 @media #{$breakpoint-not-small} {
+  ol,
   ul {
     margin: 2rem 0;
   }
 }
 
 @media #{$breakpoint-medium} {
+  ol,
   ul {
     margin: 2rem 0;
   }
 }
 
 @media #{$breakpoint-large} {
+  ol,
   ul {
     margin: 3rem 0;
   }
@@ -134,6 +151,7 @@ h5, h5.h5, .h5,
 h6, h6.h6, .h6 {
   line-height: 1;
   margin: 1rem 0;
+  max-width: 16em;
 }
 
 @media #{$breakpoint-not-small} {

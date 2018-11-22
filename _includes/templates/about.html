@@ -5,3 +5,6 @@
 {% endcapture %}
 
 {% include components/content-panel.html template=block %}
+
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include components/content-panel.html content=text %}

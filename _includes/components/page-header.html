@@ -12,5 +12,11 @@
   <p class="lead">
     {{ page.overview }}
   </p>
+  {% if page.anchor %}
+  {% capture url %}{{ page.url }}{% endcapture %}
+  {% capture anchor %}{{ page.anchor }}{% endcapture %}
+  {% include components/anchor-scroller.html href=url target=anchor text="Learn More" icon="long-arrow-right" xl="true" %}
   {% endif %}
+  {% endif %}
+
 </header>

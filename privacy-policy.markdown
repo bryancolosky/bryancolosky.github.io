@@ -42,6 +42,6 @@ I reserve the right to update or change our Privacy Policy at any time and you s
 
 If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided me, or by placing a prominent notice on my website.
 
-Contact Me
+## Contact Me
 
 If you have any questions about this Privacy Policy, please contact me.

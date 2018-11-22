@@ -1,25 +1,29 @@
-section.panel,
-.panel {
-  padding: 1rem 2rem;
+section.content-panel,
+.content-panel {
+  padding: 3rem 2rem;
 }
 
 @media #{$breakpoint-not-small} {
-  section.panel,
-  .panel {
-
+  section.content-panel,
+  .content-panel {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 @media #{$breakpoint-medium} {
-  section.panel,
-  .panel {
+  section.content-panel,
+  .content-panel {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
   }
 }
 
 @media #{$breakpoint-large} {
-  section.panel,
-  .panel {
-
+  section.content-panel,
+  .content-panel {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

@@ -1,1 +1,6 @@
-<a class="link" href="{{ include.href }}">{{ include.text }}</a>
+<a class="link" href="{{ include.href }}">
+  {{ include.text }}
+  {% if include.icon %}
+  &nbsp;<i class="fa fal fa-{{ include.icon }}"></i>
+  {% endif %}
+</a>

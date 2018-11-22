@@ -10,8 +10,35 @@ header.site-header,
   left: 0;
   padding: .25rem 2rem;
   z-index: $z-max;
-  background-color: $near-white;
+  background-color: $transparent;
+
+  &.window--scroll-y-0 {
+    background-color: $transparent;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-0--false {
+    background-color: $near-white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-100 {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-100--false {
+    transition: all 0.2s ease-in-out;
+  }
 }
+
+.site-header--pinned {
+  transform: translate(0,0);
+}
+
+.site-header--unpinned {
+  transform: translate(0,-100%);
+}
+
 
 @media #{$breakpoint-not-small} {
   header.site-header,
