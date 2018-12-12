@@ -1,0 +1,116 @@
+name:         Bryan Colosky
+email:        bryan.colosky@gmail.com
+phone:        (760) 265-1232
+title:        Multidisciplinary Designer
+location:
+  city:         New York
+  countryCode:  US
+  region:       NY
+
+availability: I am occasionally available for project work and contract jobs
+
+education:
+- institution: California Polytechnic State University - San Luis Obispo
+  website: http://www.calpoly.edu/
+  area: Architecture & Environmental Design
+  studyType: Bachelor of Architecture B.Arch
+  startDate: 2007-09-01
+  endDate: 2012-06-15
+
+languages:
+- language: English
+  fluency: Native speaker
+
+work:
+- company: Blue Fountain Media
+  position: Senior Information Architect
+  website: http://bluefountainmedia.com
+  startDate: 2015-11-15
+  endDate: Current
+  summary: Responsible for daily consulting and planning on multiple digital properties. Facilitating collaboration among various teams & clients to ensure projects meet UX & technical expectations. Defining project specifications across multiple phases.
+  highlights: [Sitemaps, Wireframes, UX Design, UI Design, Specification Documentation]
+  published: true
+- company: WEBCBG
+  position: Creative Director
+  website: http://webcbg.com
+  startDate: 2013-09-02
+  endDate: 2015-10-01
+  summary: Responsible for both internal and also external art directions as well as frontend web design & development. Designing & maintaining a common style guide & component library for products. Maintaining project repositories with appropriate READMEs, instructions, & annotations.
+  highlights: [Client-side Development, UI Design, UX Design, Geographical Information Systems, Branding & Identity, Graphic Design]
+  published: true
+- company: Studiocraft
+  position: Multidisciplinary Designer
+  website: http://studiocraft.cc
+  startDate: 2012-01-01
+  endDate: 2014-01-01
+  summary: Original founder. Consultating and implementing a variety of affordable & professional web services for small businesses, start-ups, and artists.
+  highlights: [Consulting & Freelance, Audience Segmentation, User Personas, UX Design, Graphic Design, Branding & Identity]
+- company: Steeno Design Studio
+  position: Project Manager & Draftsman
+  website: http://www.steenodesign.com
+  startDate: 2012-10-01
+  endDate: 2013-05-01
+  summary: Producing construction drawings, detail drawings, site analysis, and renderings for commercial & residential projects. Coordinating & maintaining communication among various city & town municipalities, contractors, & engineers.
+  highlights: [Drafting & Drawing, Structure Analysis & Calculations, Obtaining Construction & Occupancy Permits, Print Design]
+  published: false
+- company: California Polytechnic State University
+  position: Website Designer & Developer
+  website: http://www.calpoly.edu/
+  startDate: 2009-10-01
+  endDate: 2012-05-01
+  summary: Coordinating print & web design between Cal Poly’s Admissions Office & College of Agricultural Business College. Developing HTML & CSS best practices, and Establishing print & web styleguides.
+  highlights: [HTML, CSS, Brochure & Banner Design, Print Design, Office Collateral]
+  published: true
+- company: Edwards Air Force Base
+  position: Engineering Technician
+  website: http://www.edwards.af.mil/
+  startDate: 2008-06-14
+  endDate: 2008-09-01
+  summary: Working with engineers & flight-line personnel to maintain several catalogs of electrical test components via Auto CAD, Excel, & PDF. Drawing & detailing aircraft electrical test components and catalogs.
+  highlights: [Drafting & Drawing, Database Managment, Catalog Taxonomy & Design]
+  published: true
+
+volunteer:
+- organization: Organization
+  position: Volunteer
+  website: http://organization.com/
+  startDate: 2012-01-01
+  endDate: 2013-01-01
+  summary: Description
+  highlights: [Awarded Volunteer of the Month]
+
+awards:
+- title: Award
+  date: 2014-11-01
+  awarder: Company
+  summary: There is no spoon.
+
+publications:
+- name: Publication
+  publisher: Company
+  releaseDate: 2014-10-01
+  website: http://publication.com
+  summary: Description
+
+skills:
+- name: Web Development
+  level: Proficient
+  keywords: [HTML, CSS, Javascript, SASS & Less, PostCSS]
+- name: Frameworks & Libraries
+  level: Proficient
+  keywords: [Bootstrap, Foundation, Jekyll, Node JS, Bower, JQuery, Google Maps API, Leaflet JS, SiteLeaf]
+- name: Revision Control & Build Tools
+  level: Proficient
+  keywords: [Git, Gulp JS, Grunt, Webpack]
+- name: IDEs
+  level: Master
+  keywords: [Atom, Sublime Text, Webstorm]
+- name: Operating Systems & Distros
+  level: Master
+  keywords: [macOS, iOS, Linux, Windows, Android]
+- name: Graphics
+  level: Master
+  keywords: [Illustrator, InDesign, Photoshop, XD, InVision, Axure, Sketch, FormZ, AutoCAD]
+- name: Analog
+  level: Master
+  keywords: [Steel & Wood Fabrication, Architectural Modeling, Hand Drafting, Paint, Print, Film]

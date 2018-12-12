@@ -1,0 +1,65 @@
+table,
+table.table {
+  width: 100%;
+  max-width: 36em;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  background-color: $transparent;
+
+  td,
+  th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid $light-gray;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: .3rem solid $light-gray;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}

@@ -2,11 +2,11 @@ $font-color:    $navy;
 $link-color:    $lime;
 
 ::-moz-selection { /* Code for Firefox */
-    background: $aqua;
+  background: $aqua;
 }
 
 ::selection {
-  background: $lime;
+  background: $aqua;
 }
 
 html {
@@ -40,24 +40,24 @@ p {
   line-height: 1.6;
   column-count: 1;
   max-width: 30em;
-  margin: 1rem 0;
+  margin: 1vh 0;
 }
 
 @media #{$breakpoint-not-small} {
   p {
-    margin: 2rem 0;
+    margin: 2vh 0;
   }
 }
 
 @media #{$breakpoint-medium} {
   p {
-    margin: 2rem 0;
+    margin: 2vh 0;
   }
 }
 
 @media #{$breakpoint-large} {
   p {
-    margin: 3rem 0;
+    margin: 3vh 0;
   }
 }
 
@@ -110,14 +110,14 @@ ul {
   line-height: 1.6;
   column-count: 1;
   max-width: 30em;
-  margin: 1rem 0;
-  padding: 0 2rem;
+  margin: 1vh 0;
+  padding: 0 2vw;
 
   > li {
     margin: 0;
 
     > ol, ul {
-      margin: .5rem 0;
+      margin: .5vh 0;
     }
   }
 }
@@ -125,21 +125,106 @@ ul {
 @media #{$breakpoint-not-small} {
   ol,
   ul {
-    margin: 2rem 0;
+    margin: 2vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
   }
 }
 
 @media #{$breakpoint-medium} {
   ol,
   ul {
-    margin: 2rem 0;
+    margin: 2vh 0;
+
+      > li {
+    margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
   }
 }
 
 @media #{$breakpoint-large} {
   ol,
   ul {
-    margin: 3rem 0;
+    margin: 3vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: 1.5vh 0;
+      }
+    }
+  }
+}
+
+dl {
+  line-height: 1.6;
+  column-count: 1;
+
+  > dt {
+    text-transform: uppercase;
+    font-size: 82.75%;
+  }
+
+  > dd {
+
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      text-transform: uppercase;
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      text-transform: uppercase;
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  ol,
+  ul {
+    margin: 3vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: 1.5vh 0;
+      }
+    }
   }
 }
 
@@ -149,9 +234,7 @@ h3, h3.h3, .h3,
 h4, h4.h4, .h4,
 h5, h5.h5, .h5,
 h6, h6.h6, .h6 {
-  line-height: 1;
-  margin: 1rem 0;
-  max-width: 16em;
+  font-weight: bold;
 }
 
 @media #{$breakpoint-not-small} {
@@ -161,7 +244,7 @@ h6, h6.h6, .h6 {
   h4, h4.h4, .h4,
   h5, h5.h5, .h5,
   h6, h6.h6, .h6 {
-    margin: 1.25rem 0;
+    margin: 3vh 0;
   }
 }
 
@@ -172,7 +255,7 @@ h6, h6.h6, .h6 {
   h4, h4.h4, .h4,
   h5, h5.h5, .h5,
   h6, h6.h6, .h6 {
-    margin: 1.25rem 0;
+    margin: 3vh 0;
   }
 }
 
@@ -183,21 +266,21 @@ h6, h6.h6, .h6 {
   h4, h4.h4, .h4,
   h5, h5.h5, .h5,
   h6, h6.h6, .h6 {
-    margin: 2rem 0;
+    margin: 4vh 0;
   }
 }
 
 h1,
 h1.h1,
 .h1 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
 @media #{$breakpoint-not-small} {
   h1,
   h1.h1,
   .h1 {
-    font-size: 2.4rem;
+    font-size: 2.4em;
   }
 }
 
@@ -205,7 +288,7 @@ h1.h1,
   h1,
   h1.h1,
   .h1 {
-    font-size: 2.4rem;
+    font-size: 2.4em;
   }
 }
 
@@ -213,21 +296,21 @@ h1.h1,
   h1,
   h1.h1,
   .h1 {
-    font-size: 3.6rem;
+    font-size: 3.6em;
   }
 }
 
 h2,
 h2.h2,
 .h2 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 @media #{$breakpoint-not-small} {
   h2,
   h2.h2,
   .h2 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
   }
 }
 
@@ -235,7 +318,7 @@ h2.h2,
   h2,
   h2.h2,
   .h2 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
   }
 }
 
@@ -243,21 +326,21 @@ h2.h2,
   h2,
   h2.h2,
   .h2 {
-    font-size: 2.4rem;
+    font-size: 2.4em;
   }
 }
 
 h3,
 h3.h3,
 .h3 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 @media #{$breakpoint-not-small} {
   h3,
   h3.h3,
   .h3 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 }
 
@@ -265,7 +348,7 @@ h3.h3,
   h3,
   h3.h3,
   .h3 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 }
 
@@ -273,21 +356,21 @@ h3.h3,
   h3,
   h3.h3,
   .h3 {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
 h4,
 h4.h4,
 .h4 {
-  font-size: .875rem;
+  font-size: .875em;
 }
 
 @media #{$breakpoint-not-small} {
   h4,
   h4.h4,
   .h4 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -295,7 +378,7 @@ h4.h4,
   h4,
   h4.h4,
   .h4 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -303,21 +386,21 @@ h4.h4,
   h4,
   h4.h4,
   .h4 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 }
 
 h5,
 h5.h5,
 .h5 {
-  font-size: .75rem;
+  font-size: .75em;
 }
 
 @media #{$breakpoint-not-small} {
   h5,
   h5.h5,
   .h5 {
-    font-size: .875rem;
+    font-size: .875em;
   }
 }
 
@@ -325,7 +408,7 @@ h5.h5,
   h5,
   h5.h5,
   .h5 {
-    font-size: .875rem;
+    font-size: .875em;
   }
 }
 
@@ -333,21 +416,21 @@ h5.h5,
   h5,
   h5.h5,
   .h5 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
 h6,
 h6.h6,
 .h6 {
-  font-size: .75rem;
+  font-size: .75em;
 }
 
 @media #{$breakpoint-not-small} {
   h6,
   h6.h6,
   .h6 {
-    font-size: .875rem;
+    font-size: .875em;
   }
 }
 
@@ -355,7 +438,7 @@ h6.h6,
   h6,
   h6.h6,
   .h6 {
-    font-size: .875rem;
+    font-size: .875em;
   }
 }
 
@@ -363,55 +446,69 @@ h6.h6,
   h6,
   h6.h6,
   .h6 {
-    font-size: .875rem;
+    font-size: .875em;
   }
 }
 
 blockquote,
 blockquote.pull-quote {
-  font-size: 1rem;
-  margin: 3rem 0;
-  padding: 0 2rem;
+  font-size: 1em;
+  margin: 3em 0;
+  background-color: $light-gray;
+  padding: 1em 2em;
   border-left: 4px solid $navy;
-  max-width: 32rem;
+  max-width: 32em;
 
-  // & > p::before {
-  //   content: '"';
-  //   font-size: 3rem;
-  //   color: $near-white;
-  // }
+  > p,
+    blockquote {
+      margin: 0;
+      font-size: 1em;
+    }
 }
 
 @media #{$breakpoint-not-small} {
   blockquote,
   blockquote.pull-quote {
-    font-size: 1.2rem;
-    margin: 2rem 0;
+    font-size: 1.2em;
+    margin: 2vh 0;
   }
 }
 
 @media #{$breakpoint-medium} {
   blockquote,
   blockquote.pull-quote {
-    font-size: 1.2rem;
-    margin: 2rem 0;
+    font-size: 1.2em;
+    margin: 2vh 0;
   }
 }
 
 @media #{$breakpoint-large} {
   blockquote,
   blockquote.pull-quote {
-    font-size: 1.4rem;
-    margin: 2rem 0;
+    font-size: 1.4em;
+    margin: 2vh 0;
   }
+}
+
+abbr {
+  cursor: help;
+}
+
+code {
+  font-size: .875em;
+  color: $lime;
+  background-color: $navy;
+  padding: .125em .25em;
+  border-radius: 3px;
+  line-height: 1;
 }
 
 hr,
 hr.divider {
-  margin: 2rem 0;
+  margin: 2em 0;
   border: none;
-  border: 1px solid $light-gray;
-  max-width: 30rem;
+  border-top: 4px solid $light-gray;
+  max-width: 30em;
   width: 100%;
 }
 

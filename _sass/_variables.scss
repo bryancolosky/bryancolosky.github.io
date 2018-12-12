@@ -41,8 +41,4 @@ $font-family:   -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
                 'Liberation Sans', /* Linux */
                 sans-serif /* Everything else */ !default;
 
-$breakpoint-not-small:  'screen and (min-width: 30em)'                        !default;
-$breakpoint-medium:     'screen and (min-width: 30em) and (max-width: 60em)'  !default;
-$breakpoint-large:      'screen and (min-width: 60em)'                        !default;
-
 $z-max:         2147483647 !default

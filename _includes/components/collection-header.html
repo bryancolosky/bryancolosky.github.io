@@ -1,0 +1,24 @@
+<header class="collection-header">
+  <h1>
+    <span class="">
+    {% if page.intro %}
+      {{ page.intro }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+    </span>
+  </h1>
+
+  {% if page.overview %}
+  {% capture text %}{{ page.overview }}{% endcapture %}
+  <p class="lead">
+  {{ text }}
+  </p>
+  {% endif %}
+
+  {% if page.primary-anchor %}
+  {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
+  {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
+  {% include components/anchor-scroller.html target=anchor label=text icon="long-arrow-right" xl="true" %}
+  {% endif %}
+</header>

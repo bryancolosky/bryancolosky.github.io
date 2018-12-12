@@ -1,0 +1,19 @@
+---
+position: 1
+permalink: /about/resume/
+sitemap:
+  exclude: false
+  priority: 1.0
+
+layout:                 info
+template:               resume
+
+title:    Resume
+overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+primary-anchor:         professional-experience
+primary-anchor-text:    Hire Me
+
+downloads:
+- file-type:            pdf
+  path:                 downloads/pdf/bryancolosky-resume.pdf
+---

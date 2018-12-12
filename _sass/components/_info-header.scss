@@ -1,0 +1,28 @@
+header.info-header,
+.info-header {
+  padding: 3rem 2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  header.info-header,
+  .info-header {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  header.info-header,
+  .info-header {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  header.info-header,
+  .info-header {
+    padding-top:    5rem;
+    padding-bottom: 5rem;
+  }
+}

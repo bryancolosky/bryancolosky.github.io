@@ -1,0 +1,29 @@
+aside.content-aside,
+.content-aside {
+  padding: 3rem 2rem;
+  background-color: $white;
+}
+
+@media #{$breakpoint-not-small} {
+  aside.content-aside,
+  .content-aside {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  aside.content-aside,
+  .content-aside {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  aside.content-aside,
+  .content-aside {
+    padding-top:    5rem;
+    padding-bottom: 5rem;
+  }
+}

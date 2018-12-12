@@ -1,0 +1,26 @@
+$breakpoint-not-small:  'screen and (min-width: 30em)'                        !default;
+$breakpoint-medium:     'screen and (min-width: 30em) and (max-width: 60em)'  !default;
+$breakpoint-large:      'screen and (min-width: 60em)'                        !default;
+
+$body-bg:     $near-white;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background-color: $body-bg;
+  font-family: $font-family;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
+}

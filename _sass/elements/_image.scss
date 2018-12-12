@@ -1,6 +1,6 @@
-section, article, figure {
-  &> img,
-  &> img.image {
+section, article, figure, p {
+  & > img,
+  & > img.image {
     width: 100%;
   }
 }

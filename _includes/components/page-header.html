@@ -1,22 +1,23 @@
 <header class="page-header">
-  <h1 class="h1">
-    <span class="">
-      {% if page.intro %}
+  {% capture header %}
+    {% if page.intro %}
       {{ page.intro }}
-      {% else %}
+    {% else %}
       {{ page.title }}
-      {% endif %}
-    </span>
-  </h1>
+    {% endif %}
+  {% endcapture %}
+  {% include elements/header.html type="Header" scale="1" text=header %}
+
   {% if page.overview %}
+  {% capture text %}{{ page.overview }}{% endcapture %}
   <p class="lead">
-    {{ page.overview }}
+  {{ text }}
   </p>
-  {% if page.anchor %}
-  {% capture url %}{{ page.url }}{% endcapture %}
-  {% capture anchor %}{{ page.anchor }}{% endcapture %}
-  {% include components/anchor-scroller.html href=url target=anchor text="Learn More" icon="long-arrow-right" xl="true" %}
-  {% endif %}
   {% endif %}
 
+  {% if page.primary-anchor %}
+  {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
+  {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
+  {% include components/anchor-scroller.html target=anchor label=text icon="long-arrow-right" xl="true" %}
+  {% endif %}
 </header>

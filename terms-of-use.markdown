@@ -1,4 +1,10 @@
 ---
+position: 6
+permalink: /terms-of-use/
+sitemap:
+  exclude: true
+  priority: 0
+
 title: Terms of Use
 date: 0000-00-00 00:00:00 Z
 
@@ -8,12 +14,6 @@ overview:
 
 layout: docs
 template:
-
-position: 6
-permalink: /terms-of-use/
-sitemap:
-  exclude: true
-  priority: 0
 ---
 ## Acceptable use
 

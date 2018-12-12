@@ -1,0 +1,20 @@
+<header class="info-header">
+  {% capture header %}
+    {% if page.intro %}
+      {{ page.intro }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  {% endcapture %}
+  {% include elements/header.html type="Header" scale="1" text=header %}
+
+  <span><small>Download</small></span>
+  <ul class="list">
+    <li class="">
+      <a class="btn btn-download btn-download--pdf" href="#">Adobe PDF<i class="fal fa-fw fa-file-pdf"></i></a>
+    </li>
+    <li>
+      <a class="btn btn-download btn-download--doc" href="#">Microsoft Word<i class="fal fa-fw fa-file-word"></i></a>
+    </li>
+  </ul>
+</header>

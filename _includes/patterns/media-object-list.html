@@ -1,0 +1,15 @@
+<ul class="list media-object-list">
+  <li class="media-object">
+    <h4 class="media-object-title">
+      <a class="link link-external" href="{{ item.website }}" target="_blank">{{ item.company }} <i class="fal fa-xs fa-external-link"></i></a>
+    </h4>
+    <span>
+      {{ item.position }}
+      <br>
+      <small><time>{{ item.startDate | date: "%Y" }}</time> – <time>{{ item.endDate | date: "%Y" }}</time></small>
+    </span>
+    <p class="lh-copy measure-wide"><small>{{ item.summary }}</small></p>
+    <span class="label ttu"><small>Responsibilities</small></span>
+    {% include patterns/tag-list.html %}
+  </li>
+</ul>

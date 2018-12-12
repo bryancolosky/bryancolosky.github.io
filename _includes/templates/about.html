@@ -1,10 +1,29 @@
+<!-- RETURN LAYOUT -->
 {{ content }}
 
-{% capture block %}
-{% include components/article.html %}
+<!-- COMPONENTS -->
+{% capture profile %}
+
+  {% capture portrait %}
+    {% assign img = site.gravatar_userimage %}
+    {% include elements/figure.html caption="" src=img %}
+  {% endcapture %}
+
+  {% capture location %}
+    {% include components/map.html %}
+  {% endcapture %}
+
+  {% include components/content-article.html type="media-object" size="60" figure=portrait map=location %}
+
 {% endcapture %}
 
-{% include components/content-panel.html template=block %}
+{% capture aside %}
+  {% include components/content-aside.html type="sidebar" size="40" header="Connect" %}
+{% endcapture %}
 
+<!-- TEMPLATE -->
+{% include components/content-panel.html display="flex-grid" block=profile sidebar=aside %}
+
+<!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}
-{% include components/content-panel.html content=text %}
+{% include components/content-panel.html markdown=text %}

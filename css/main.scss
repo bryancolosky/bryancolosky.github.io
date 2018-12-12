@@ -5,7 +5,8 @@
 /* Foundations */
 @import
         "foundations/colors",
-        "foundations/layout-defintions",
+        "foundations/layout-definitions",
+        "foundations/layout-definitions/flex-grid",
         "foundations/typography"
 ;
 
@@ -16,7 +17,9 @@
         "elements/figure",
         "elements/image",
         "elements/lead",
-        "elements/link"
+        "elements/link",
+        "elements/table",
+        "elements/tag"
 ;
 
 /* Components */
@@ -24,7 +27,11 @@
         "components/anchor-scroller",
         "components/banner",
         "components/breadcrumbs",
+        "components/collection-header",
+        "components/content-article",
+        "components/content-aside",
         "components/content-panel",
+        "components/info-header",
         "components/link-list",
         "components/navigation",
         "components/navigation-list",
@@ -34,6 +41,12 @@
         "components/logo",
         "components/page-header",
         "components/policy-list",
+        "components/project-panel",
         "components/site-footer",
         "components/site-header"
+;
+
+/* Patterns */
+@import
+        "patterns/collection-feed"
 ;

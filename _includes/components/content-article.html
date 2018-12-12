@@ -1,0 +1,9 @@
+<article class="content-article
+{% if include.type != null %}
+{{ include.type }}
+flex-grid-item--{{ include.size }}
+{% endif %}">
+  {{ include.figure }}
+  {{ include.map }}
+  {{ include.content }}
+</article>

@@ -19,8 +19,8 @@ a.link,
       background-color: lighten($link-color, 5%);
     }
 
-    svg {
-      transform: translate(.3em, 0);
+    svg, i {
+      transform: translate(.25em, 0);
       transition: all 0.2s ease-in-out;
     }
   }
@@ -37,10 +37,39 @@ a.link,
     transition: all 0.1s ease-in-out;
   }
 
-  svg {
+  svg, i {
     transform: translate(0, 0);
     transition: all 0.2s ease-in-out;
   }
+
+  &.link__theme-dark {
+    color: $white;
+
+    &:hover {
+      &:after {
+        background-color: darken($teal, 5%);
+      }
+    }
+
+    &:after {
+      background-color: $teal;
+    }
+  }
+
+  &.link__theme-light {
+    color: $font-color;
+
+    &:hover {
+      &:after {
+        background-color: lighten($link-color, 5%);
+      }
+    }
+
+    &:after {
+      background-color: $link-color;
+    }
+  }
+
 }
 
 a.link-secondary {
@@ -54,6 +83,7 @@ a.link-secondary {
     background-color: $moon-gray;
   }
 }
+
 
 a.link-external {
   &:hover {

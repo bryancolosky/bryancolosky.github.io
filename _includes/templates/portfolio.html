@@ -1,1 +1,25 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
 
+<!-- COMPONENTS -->
+{% capture main %}
+
+  {% capture projects %}
+
+    {% for item in site.projects limit:null %}
+      {% if item.published == true %}
+      {% include components/project-panel.html %}
+      {% endif %}
+    {% endfor %}
+
+  {% endcapture %}
+
+  {% include patterns/collection-feed.html type="media-object" size="full" content=projects %}
+{% endcapture %}
+
+<!-- RETURN TEMPLATE -->
+{% include components/content-panel.html display="flex-grid" block=main %}
+
+<!-- MARKDOWN CONTENT -->
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include components/content-panel.html markdown=text %}

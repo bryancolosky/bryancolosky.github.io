@@ -1,0 +1,30 @@
+article.content-article,
+.content-article {
+  background-color: $white;
+  padding: 3rem 2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  article.content-article,
+  .content-article {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  article.content-article,
+  .content-article {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  article.content-article,
+  .content-article {
+    padding-top:    5rem;
+    padding-bottom: 5rem;
+  }
+}

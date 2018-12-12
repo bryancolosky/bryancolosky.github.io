@@ -1,4 +1,9 @@
 ---
+permalink: /license/
+sitemap:
+  exclude: true
+  priority: 0
+
 title: License
 date: 0000-00-00 00:00:00 Z
 
@@ -10,11 +15,6 @@ overview:
 position: 0
 layout: docs
 template:
-
-permalink: /license/
-sitemap:
-  exclude: true
-  priority: 0
 ---
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

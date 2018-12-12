@@ -1,4 +1,10 @@
 ---
+position: 0
+permalink: /privacy/
+sitemap:
+  exclude: true
+  priority: 0
+
 title: Privacy Policy
 date: 0000-00-00 00:00:00 Z
 
@@ -8,12 +14,6 @@ overview:
 
 layout: docs
 template:
-
-position: 0
-permalink: /privacy/
-sitemap:
-  exclude: true
-  priority: 0
 ---
 
 Bryan Colosky ("I", "me", or "my") operates https://www.bryancolosky.com (the "Site"). This page informs you of my policies regarding the collection, use and disclosure of Personal Information I receive from users of the Site.

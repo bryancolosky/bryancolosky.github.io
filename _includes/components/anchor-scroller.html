@@ -1,10 +1,10 @@
 <div class="anchor-scroller js--scroll">
-  <a href="#{{ include.target }}" data-scroll="{{ include.target }}" class="link{% if include.anchor == "top" %} link-external{% endif %}">
-    {% if include.anchor == "top" %}
+  <a href="#{{ include.target }}" data-scroll="{{ include.target }}" class="link{% if include.target == 'top' %} link-external{% endif %}">
+    {% if include.target == "top" %}
     <small>Back to Top</small>
     {% endif %}
-    <span {% if include.xl %}style="font-size:1.4rem;font-weight:bold;"{% endif %}>{{ include.text | capitalize }}</span>
-    {% if include.icon %}&nbsp;<i class="fa fal fa-{{ include.icon }}"></i>
-    {% endif %}
+    <span class="{% if include.xl %}f4{% endif %}">{{ include.label | capitalize }}
+    {% if include.icon %}<i class="fa-fw fal fa-{{ include.icon }}"></i>{% endif %}
+    </span>
   </a>
 </div>

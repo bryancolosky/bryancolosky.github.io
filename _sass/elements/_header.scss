@@ -1,0 +1,25 @@
+header.header,
+.header {
+  font-size: 1.2rem;
+}
+
+@media #{$breakpoint-not-small} {
+  header.header,
+  .header {
+    font-size: 1.4rem;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  header.header,
+  .header {
+    font-size: 1.4rem;
+  }
+}
+
+@media #{$breakpoint-large} {
+  header.header,
+  .header {
+    font-size: 1.6rem;
+  }
+}

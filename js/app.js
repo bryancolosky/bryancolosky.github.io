@@ -51,8 +51,6 @@
           navToggle.onclick = toggleNav;
         }
 
-
-
         window.onload = function(event) {
           event.preventDefault();
           var windowElement = $('html');
@@ -89,6 +87,7 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+
       }
     },
   };

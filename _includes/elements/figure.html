@@ -1,5 +1,9 @@
-<figure class="media">
-  {% if site.gravatar_userimage != null %}
+<figure class="media
+{% if include.type != null %}
+{{ include.type }}
+flex-grid-item--{{ include.size }}
+{% endif %}">
+  {% if include.src != gravatar_userimage %}
   {% capture src %}{{ site.gravatar_userimage }}{% endcapture %}
   {% include elements/image.html size="1080" id=src %}
   {% endif %}

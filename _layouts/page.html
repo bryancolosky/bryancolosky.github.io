@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-{% include components/page-header.html %}
+{% if page.header != false %}
+  {% include components/page-header.html %}
+{% endif %}
+
 {% unless page.template %}
-{% capture text %}{{ content }}{% endcapture %}
-{% include components/content-panel.html content=text %}
+  {% capture text %}{{ content | markdownify }}{% endcapture %}
+  {% include components/content-panel.html markdown=text %}
 {% endunless %}

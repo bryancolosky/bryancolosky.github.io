@@ -5,9 +5,8 @@
 
     <li class="">
       <a class="link" href='{{ site.baseurl }}/'><i class="fal fa-long-arrow-left"></i> Home</a>
+      &nbsp;<span>/&nbsp;</span>
     </li>
-
-    <span>/</span>
 
     {% assign crumbs = page.url | split: '/' %}
     {% for crumb in crumbs offset: 1 %}

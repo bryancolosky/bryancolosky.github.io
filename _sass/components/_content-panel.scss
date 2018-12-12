@@ -6,16 +6,16 @@ section.content-panel,
 @media #{$breakpoint-not-small} {
   section.content-panel,
   .content-panel {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top:    4rem;
+    padding-bottom: 4rem;
   }
 }
 
 @media #{$breakpoint-medium} {
   section.content-panel,
   .content-panel {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top:    4rem;
+    padding-bottom: 4rem;
 
   }
 }
@@ -23,7 +23,7 @@ section.content-panel,
 @media #{$breakpoint-large} {
   section.content-panel,
   .content-panel {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top:    5rem;
+    padding-bottom: 5rem;
   }
 }

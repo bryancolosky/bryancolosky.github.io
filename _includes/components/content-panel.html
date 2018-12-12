@@ -1,4 +1,8 @@
-<section class="content-panel">
-  {{ include.template }}
-  {{ include.content }}
+<section class="content-panel
+{% if include.display != null %}
+{{ include.display }}
+{% endif %}">
+  {{ include.block }}
+  {{ include.sidebar }}
+  {{ include.markdown }}
 </section>

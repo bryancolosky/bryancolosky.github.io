@@ -1,0 +1,49 @@
+<section class="project-panel
+  {% if item.theme %}
+  {% assign theme = item.theme %}
+
+  {% case theme %}
+  {% when 'washed' %}
+  bg-washed-{{ item.color }}
+
+  {% when 'light' %}
+    {% unless item.color == 'black' %}
+    bg-{{ item.color }}
+    project-panel__theme-light
+      {% else %}
+      navy bg-white
+    {% endunless %}
+
+  {% when 'dark' %}
+    {% unless item.color == 'black' %}
+    bg-{{ item.color }}
+    project-panel__theme-dark
+
+    {% else %}
+    washed-green bg-near-black
+    {% endunless %}
+
+  {% endcase %}
+  {% endif %}">
+
+  <article class="project-panel-body">
+    {% include elements/header.html type="Header" scale="2" text="Challenge"%}
+    <p class="">
+      {{ item.challenge }}
+    </p>
+  </article>
+
+  {% if item.device != null %}
+  <figure class="project-art project-art__right">
+    <picture class="w-100">
+      <source media="(min-width: 60em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <source media="(min-width: 30em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <img src="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+    </picture>
+    <figcaption class="pa2 georgia">
+      <small>{{ item.title }} - {{ item.device.type }} {{ item.device.model }}</small>
+    </figcaption>
+  </figure>
+  {% endif %}
+
+</section>

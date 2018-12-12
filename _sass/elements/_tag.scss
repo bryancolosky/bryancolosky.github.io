@@ -1,0 +1,43 @@
+li.tag,
+span.tag,
+.tag {
+  font-size: .875em;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: .3rem .4rem;
+  margin: .125rem .125rem;
+  line-height: 1;
+
+  .tag__theme-light {
+    border: 1px solid rgba(0,0,0,0.1);
+    color: inherit;
+  }
+
+  .tag__theme-dark {
+    border: 1px solid rgba(255,255,255,0.1);
+    color: $washed-green;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  li.tag,
+  span.tag,
+  .tag {
+
+  }
+}
+
+@media #{$breakpoint-medium} {
+  li.tag,
+  span.tag,
+  .tag {
+
+  }
+}
+
+@media #{$breakpoint-large} {
+  li.tag,
+  span.tag,
+  .tag {
+
+  }
+}
