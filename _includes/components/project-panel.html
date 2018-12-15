@@ -27,16 +27,16 @@
   {% endif %}">
 
   <figure class="project-art project-art__left">
-    <!-- <picture class="w-100">
-      <source media="(min-width: 60em)" srcset="{{ item.url }}{{ item.title | slugify }}-art--large.jpg">
-      <source media="(min-width: 30em)" srcset="{{ item.url }}{{ item.title | slugify }}-art--medium.jpg">
-      <img src="{{ item.url }}{{ item.title | slugify }}-art--small.jpg" alt="{{ project.name }} - Figure 1">
-    </picture> -->
     <picture class="w-100">
+      <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art--large.jpg">
+      <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art--medium.jpg">
+      <img src="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art--small.jpg" alt="{{ project.name }} - Figure 1">
+    </picture>
+    <!-- <picture class="w-100">
       <source media="(min-width: 60em)" srcset="https://via.placeholder.com/720x720.jpg/001B44/FFFFFF/?text=Large+Art">
       <source media="(min-width: 30em)" srcset="https://via.placeholder.com/360x640.jpg/001B44/FFFFFF/?text=Medium+Art">
       <img src="https://via.placeholder.com/320x180.jpg/001B44/FFFFFF/?text=Small+Art" alt="{{ item.title }} - Figure 1">
-    </picture>
+    </picture> -->
   </figure>
 
   <article class="project-panel-body">
