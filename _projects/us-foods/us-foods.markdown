@@ -2,8 +2,8 @@
 title:  US Foods®
 date:   2018-04-20 11:29:28
 
-position: 1
-published: true
+position:  1
+published: false
 sitemap:
   exclude: false
   priority: 0.9
@@ -16,7 +16,7 @@ categories: [Web]
 tags: [UX, UI, Wireframes, e-Commerce]
 
 theme: light
-color: gold
+color: yellow
 
 main-image: food
 device:

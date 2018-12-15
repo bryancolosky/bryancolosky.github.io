@@ -16,8 +16,8 @@ header: false
 categories: [Web]
 tags: [Information Architecture, Navigation, UI]
 
-theme:      dark
-color:      dark-green
+theme:      light
+color:      green
 
 main-image: lego
 device:

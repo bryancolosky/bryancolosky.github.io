@@ -15,8 +15,8 @@ header: false
 categories: [Web]
 tags: [Information Architecture, Navigation, UI]
 
-theme:      washed
-color:      red
+theme:      light
+color:      light-red
 
 main-image: truck
 device:

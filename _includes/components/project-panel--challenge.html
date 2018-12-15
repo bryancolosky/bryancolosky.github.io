@@ -38,9 +38,9 @@
     <picture class="w-100">
       <source media="(min-width: 60em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
       <source media="(min-width: 30em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
-      <img src="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <img src="/svg/{{ item.device.type }}/svg/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
     </picture>
-    <figcaption class="pa2 georgia">
+    <figcaption class="w-100 tc pa2 georgia">
       <small>{{ item.title }} - {{ item.device.type }} {{ item.device.model }}</small>
     </figcaption>
   </figure>

@@ -4,11 +4,11 @@
 
   {% case theme %}
   {% when 'washed' %}
-  bg-washed-{{ item.color }}
+  bg-washed-{{ item.color | slugify }}
 
   {% when 'light' %}
     {% unless item.color == 'black' %}
-    bg-{{ item.color }}
+    bg-{{ item.color | slugify }}
     project-panel__theme-light
       {% else %}
       navy bg-white
@@ -16,7 +16,7 @@
 
   {% when 'dark' %}
     {% unless item.color == 'black' %}
-    bg-{{ item.color }}
+    bg-{{ item.color | slugify }}
     project-panel__theme-dark
 
     {% else %}
@@ -32,11 +32,13 @@
       <source media="(min-width: 30em)" srcset="{{ item.url }}{{ item.title | slugify }}-art--medium.jpg">
       <img src="{{ item.url }}{{ item.title | slugify }}-art--small.jpg" alt="{{ project.name }} - Figure 1">
     </picture> -->
-    <picture class="w-100">
-      <source media="(min-width: 60em)" srcset="https://via.placeholder.com/720x720.jpg/001B44/FFFFFF/?text=Large+Art">
-      <source media="(min-width: 30em)" srcset="https://via.placeholder.com/360x640.jpg/001B44/FFFFFF/?text=Medium+Art">
-      <img src="https://via.placeholder.com/320x180.jpg/001B44/FFFFFF/?text=Small+Art" alt="{{ item.title }} - Figure 1">
+
+    <picture class="db w-100">
+      <source media="(min-width: 60em)" srcset="https://via.placeholder.com/720x720.jpg/FFFFFF/001B44/?text=mq__large+1:1+art">
+      <source media="(min-width: 30em)" srcset="https://via.placeholder.com/360x640.jpg/FFFFFF/001B44/?text=mq__medium+9:16+art">
+      <img class="w-100" src="https://via.placeholder.com/320x180.jpg/FFFFFF/001B44/?text=mq__small+16:9+art" alt="{{ item.title }}">
     </picture>
+
   </figure>
 
   <article class="project-panel-body">
