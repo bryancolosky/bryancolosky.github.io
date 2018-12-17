@@ -1,10 +1,10 @@
 <figure class="w-100 ma0 pv4">
-  <picture class="w-100">
-    <source media="(min-width: 60em)" srcset="https://via.placeholder.com/1200x960.jpg/FFFFFF/001B44/?text=Large+Diagram">
-    <source media="(min-width: 30em)" srcset="https://via.placeholder.com/960x720.jpg/FFFFFF/001B44/?text=Medium+Diagram">
-    <img src="https://via.placeholder.com/360x240.jpg/FFFFFF/001B44/?text=Small+Diagram" alt="{{ page.title }} - Diagram">
+  <picture class="db pa2 bg-white">
+    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-diagram--large.jpg">
+    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-diagram--medium.jpg">
+    <img src="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-diagram--small.jpg" alt="{{ item.name }} - Checkout Flow">
   </picture>
   <figcaption class="w-100 tc pa2 georgia">
-    <small>Figure 1.1 - Diagram</small>
+    <small>Figure 1.0 - Diagram</small>
   </figcaption>
 </figure>
