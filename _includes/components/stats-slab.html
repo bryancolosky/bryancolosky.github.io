@@ -1,30 +1,62 @@
 <div class="w-100 pa4 pa6-l bg-white navy">
-  <label class="ma0">Project Stats</label>
+  <label class="ma0">Project Overview</label>
+
   <div class="flex flex-wrap flex-row ma0 w-100">
-    <dl class="fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-      <dd class="f6 ma0">WCAG</dd>
-      <dd class="f4 fw6 ml0">AA</dd>
-    </dl>
 
     <dl class="fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-      <dd class="f6 ma0">A11Y</dd>
-      <dd class="f4 fw6 ml0">9.55</dd>
+      <dt class="f6 ma0">Year</dt>
+      <dd class="f4 fw6 ml0">{{ page.date | date: "%Y" }}</dd>
     </dl>
 
+    {% for kpi in item.kpi %}
     <dl class="fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-      <dd class="f6 ma0">i18n</dd>
-      <dd class="f4 fw6 ml0">3</dd>
-    </dl>
 
-    <dl class="fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-      <dd class="f6 ma0">Colors</dd>
-      <dd class="f4 fw6 ml0">33</dd>
-    </dl>
+    {% for stat in kpi %}
+    {% assign term = stat[0] %}
+    {% assign definition = stat[1] %}
 
-    <dl class="fl fn-l w-50 dib-l w-auto-l lh-title mr5-l">
-      <dd class="f6 ma0">Fonts</dd>
-      <dd class="f4 fw6 ml0">4</dd>
+      <dt class="f6 ma0">{{ term | capitalize }}</dt>
+
+      <dd class="f4 fw6 ml0">
+      {% if definition.length != 0 %}
+
+      {% for item in definition %}
+      {% assign string = item %}
+      {% case string %}
+
+        {% when 'ios' %}
+        <i class="fab fa-fw fa-apple"></i>
+
+        {% when 'android' %}
+        <i class="fab fa-fw fa-android"></i>
+
+        {% when 'web' %}
+        <i class="far fa-fw fa-globe"></i>
+
+        {% when 'mobile' %}
+        <i class="far fa-fw fa-mobile"></i>
+
+        {% when 'tablet' %}
+        <i class="far fa-fw fa-tablet"></i>
+
+        {% when 'laptop' %}
+        <i class="far fa-fw fa-laptop"></i>
+
+        {% when 'desktop' %}
+        <i class="far fa-fw fa-desktop"></i>
+
+        {% else %}
+        {{ definition | capitalize }}
+
+      {% endcase %}
+      {% endfor %}
+
+      {% endif %}
+      </dd>
+
+    {% endfor %}
     </dl>
+    {% endfor %}
 
   </div>
 </div>

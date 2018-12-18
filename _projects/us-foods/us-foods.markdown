@@ -26,6 +26,14 @@ device:
 
 overview: US Foods® is one of America’s largest food companies and a leading foodservice distributor, partnering with approximately 250,000 restaurants and foodservice operators to help their businesses succeed. With more than 60 locations, US Foods® provides their customers a large food selection and a full suite of e-commerce, technology and business solutions.
 
+link: us-foods.com
+
+kpi:
+- timeline:   Retainer
+- design:     3 months
+- platforms:  [web]
+- devices:    [laptop, desktop]
+
 challenge:
 
 design-approach:

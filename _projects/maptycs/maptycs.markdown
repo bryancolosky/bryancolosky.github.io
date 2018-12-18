@@ -27,6 +27,14 @@ device:
 
 overview: Maptycs is a risk Analytics system that helps risk and insurance professionals maximize the value of information. Maptycs transforms and consolidates your risk and insurance data making it not only easier access, but also easier to analyze and spot trends.
 
+link: maptycs.com
+
+kpi:
+- timeline:   2 years
+- design:         6 months
+- platforms:  [web, ios, android]
+- devices:    [mobile, tablet, laptop, desktop]
+
 challenge:
 
 design-approach:

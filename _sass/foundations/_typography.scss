@@ -172,7 +172,6 @@ dl {
   column-count: 1;
 
   > dt {
-    text-transform: uppercase;
     font-size: 82.75%;
   }
 
@@ -183,12 +182,9 @@ dl {
 
 @media #{$breakpoint-not-small} {
   dl {
-    line-height: 1.6;
-    column-count: 1;
 
     > dt {
-      text-transform: uppercase;
-      font-size: 82.75%;
+
     }
 
     > dd {
@@ -199,12 +195,9 @@ dl {
 
 @media #{$breakpoint-medium} {
   dl {
-    line-height: 1.6;
-    column-count: 1;
 
     > dt {
-      text-transform: uppercase;
-      font-size: 82.75%;
+
     }
 
     > dd {

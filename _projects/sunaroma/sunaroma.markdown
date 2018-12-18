@@ -26,6 +26,14 @@ device:
 
 overview: Sunaroma is a family owned cosmetics brand from the Brooklyn, New York. All the company's products are formulated with the highest-quality ingredients derived from fruits, vegetables, essential oils and organic synthetics.
 
+link: sunaroma.com
+
+kpi:
+- timeline:   1 year
+- design:     2 months
+- platforms:  [web]
+- devices:    [mobile, laptop, desktop]
+
 challenge:
 
 design-approach:

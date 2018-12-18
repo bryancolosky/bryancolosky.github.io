@@ -1,6 +1,6 @@
 ---
 title: AbelCine
-date: 2018-04-20 11:29:28
+date: 2016-01-20 11:29:28
 
 position: 1
 permalink: /projects/abelcine/
@@ -27,6 +27,14 @@ device:
   color: Rose-Gold
 
 overview: AbelCine is professional camera shop and equipment rental-house focused on digital cinema, broadcast, high-speed, VR, and 360° video, as well as optics, audio, lighting, workflows, and post.
+
+link: abelcine.com
+
+kpi:
+- timeline:   2.5 years
+- design:     8 months
+- platforms:  [web]
+- devices:    [mobile, laptop, desktop]
 
 challenge: AbelCine came with the challenge of rebuilding their e-Commerce platform from the ground up. Part of its remit was to improve the user experience and include a much cleaner UI that matched their brand and achieved more conversions. The current code and deployment solution also needed revisiting to be scalable and flexible.
 
