@@ -29,3 +29,7 @@
 
 <!-- RETURN TEMPLATE -->
 {% include components/content-panel.html display="flex-grid" block=main %}
+
+<!-- MARKDOWN CONTENT -->
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include components/content-panel.html markdown=text %}
