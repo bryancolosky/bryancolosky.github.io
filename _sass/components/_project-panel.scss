@@ -4,7 +4,6 @@ section.project-panel,
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 3rem 2rem;
 
   > figure.project-art,
   > .project-art {
@@ -13,11 +12,11 @@ section.project-panel,
     width: 100%;
 
     &__right {
-      padding-left: 2rem;
+      padding-left: 0;
     }
 
     &__left {
-      padding-right: 2rem;
+      padding-right: 0;
     }
   }
 

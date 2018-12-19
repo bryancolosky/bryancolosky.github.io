@@ -33,7 +33,7 @@ link: baldorfoods.com
 kpi:
 - timeline:   2 years
 - design:     4 months
-- platforms:  [web, ios]
+- platforms:  [web, ios, android]
 - devices:    [mobile, laptop, desktop]
 
 challenge: With 3 regional distribution centers, hourly price updates per customer account, and daily ordering cutoffs times, not only did Baldor Foods need to provide its customers with a robust ordering system, but also coordinate a large amount data and business intelligence across several endpoints.
