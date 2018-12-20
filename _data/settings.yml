@@ -1,2 +1,7 @@
-section-padding: pv5 ph3
-panel-padding: pv4 ph3
+# Section Settings
+section-padding: pv5 ph3 pv4-ns ph4-ns pv6-l ph5-l
+section-margin:  mv4 mh3 mv4-ns mh4-ns mv4-l mh4-l
+
+# Panel Settings
+panel-padding:  pv5 ph3 pv4-ns ph4-ns pv6-l ph5-l
+panel-margin:   mv4 mh3 pv4-ns mh4-ns mv4-l mh4-l

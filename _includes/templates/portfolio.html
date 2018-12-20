@@ -6,7 +6,8 @@
 
   {% capture projects %}
 
-    {% for item in site.projects limit:null %}
+    {% assign feed = site.projects | sort: 'title' %}
+    {% for item in feed %}
       {% if item.published == true %}
       {% include components/project-panel.html %}
       {% endif %}

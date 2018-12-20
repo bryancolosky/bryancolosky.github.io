@@ -8,7 +8,6 @@ header.site-header,
   right: 0;
   bottom: auto;
   left: 0;
-  padding: .25rem 2rem;
   z-index: $z-max;
   background-color: $near-white;
 
@@ -23,7 +22,6 @@ header.site-header,
   }
 
   &.window--scroll-y-0 {
-    background-color: $transparent;
     border-bottom: none;
     transition: all 0.2s ease-in-out;
   }

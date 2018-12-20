@@ -1,10 +1,9 @@
-section.banner,
-.banner {
+section.cover,
+.cover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   height: 100vh;
-  margin: 0 2rem;
 }
 
 @media #{$breakpoint-not-small} {
