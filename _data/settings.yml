@@ -5,3 +5,16 @@ section-margin:  mv4 mh3 mv4-ns mh4-ns mv4-l mh4-l
 # Panel Settings
 panel-padding:  pv5 ph3 pv4-ns ph4-ns pv6-l ph5-l
 panel-margin:   mv4 mh3 pv4-ns mh4-ns mv4-l mh4-l
+
+
+# Media Query Breakpoints
+mobile-s: 320px
+mobile-m: 375px
+mobile-l: 425px
+
+tablet:   768px
+
+laptop:   1024px
+laptop-l: 1440px
+
+4K:       2560px

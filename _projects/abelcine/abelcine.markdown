@@ -39,4 +39,9 @@ kpi:
 challenge: AbelCine came with the challenge of rebuilding their e-Commerce platform from the ground up. Part of its remit was to improve the user experience and include a much cleaner UI that matched their brand and achieved more conversions. The current code and deployment solution also needed revisiting to be scalable and flexible.
 
 design-approach:
+
+art: []
+planning: [sitemap, diagram]
+lo-res: [account, navigation_mobile, navigation_alt, navigation, product-detail]
+hi-res: []
 ---
