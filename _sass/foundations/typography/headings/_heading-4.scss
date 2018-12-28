@@ -1,0 +1,69 @@
+h4,
+h4.heading-4,
+.heading-4 {
+  font-size: 1.125em;
+}
+
+@include mq(mobile-s) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 1.125em;
+  }
+}
+
+@include mq(mobile-m) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 1.275em;
+  }
+}
+
+@include mq(mobile-l) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 1.2em;
+  }
+}
+
+@include mq(tablet) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 1.4em;
+  }
+}
+
+@include mq(laptop) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 1.6em;
+  }
+}
+
+@include mq(laptop-l) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 2em;
+  }
+}
+
+@include mq(desktop) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 2.4em;
+  }
+}
+
+@include mq(desktop-hd) {
+  h4,
+  h4.heading-4,
+  .heading-4 {
+    font-size: 3.2em;
+  }
+}

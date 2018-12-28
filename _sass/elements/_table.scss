@@ -19,7 +19,7 @@ table.table {
   }
 }
 
-@media #{$breakpoint-not-small} {
+@include mq(mobile-s) {
   table,
   table.table {
 
@@ -34,7 +34,7 @@ table.table {
   }
 }
 
-@media #{$breakpoint-medium} {
+@include mq(mobile-m) {
   table,
   table.table {
 
@@ -49,7 +49,82 @@ table.table {
   }
 }
 
-@media #{$breakpoint-large} {
+@include mq(mobile-l) {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@include mq(tablet) {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@include mq(laptop) {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@include mq(laptop-l) {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@include mq(desktop) {
+  table,
+  table.table {
+
+    td,
+    th {
+
+    }
+
+    thead th {
+
+    }
+  }
+}
+
+@include mq(desktop-hd) {
   table,
   table.table {
 

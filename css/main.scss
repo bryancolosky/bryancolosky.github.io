@@ -7,6 +7,7 @@
         "foundations/colors",
         "foundations/layout-definitions",
         "foundations/layout-definitions/flex-grid",
+        "foundations/spacing",
         "foundations/typography"
 ;
 
@@ -41,14 +42,13 @@
         "components/logo",
         "components/page-header",
         "components/policy-list",
-        "components/project-panel",
-        "components/site-footer",
-        "components/site-header"
+        "components/project-panel"
 ;
 
 /* Patterns */
 @import
         "patterns/collection-feed",
-        "patterns/project-detail"
-
+        "patterns/project-detail",
+        "patterns/site-footer",
+        "patterns/site-header"
 ;

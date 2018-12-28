@@ -4,25 +4,24 @@ section.cover,
   flex-wrap: wrap;
   align-items: center;
   height: 100vh;
-}
 
-@media #{$breakpoint-not-small} {
-  section.banner,
-  .banner {
+  @include spacing-padding-left();
+  @include spacing-padding-right();
 
+  @include mq(mobile-s) {
   }
-}
-
-@media #{$breakpoint-medium} {
-  section.banner,
-  .banner {
-
+  @include mq(mobile-m) {
   }
-}
-
-@media #{$breakpoint-large} {
-  section.banner,
-  .banner {
-
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
   }
 }

@@ -1,29 +1,23 @@
 aside.content-aside,
 .content-aside {
-  padding: 3rem 2rem;
   background-color: $white;
-}
 
-@media #{$breakpoint-not-small} {
-  aside.content-aside,
-  .content-aside {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
+  @include spacing-padding();
+
+  @include mq(mobile-s) {
   }
-}
-
-@media #{$breakpoint-medium} {
-  aside.content-aside,
-  .content-aside {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
+  @include mq(mobile-m) {
   }
-}
-
-@media #{$breakpoint-large} {
-  aside.content-aside,
-  .content-aside {
-    padding-top:    5rem;
-    padding-bottom: 5rem;
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
   }
 }

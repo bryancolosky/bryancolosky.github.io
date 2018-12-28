@@ -1,0 +1,269 @@
+ol,
+ul {
+  line-height: 1.6;
+  column-count: 1;
+  max-width: 30em;
+  margin: 1vh 0;
+  padding: 0 2vw;
+
+  > li {
+    margin: 0;
+
+    > ol, ul {
+      margin: .5vh 0;
+    }
+  }
+}
+
+@include mq(mobile-s) {
+  ol,
+  ul {
+    margin: 2vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(mobile-m) {
+  ol,
+  ul {
+    margin: 2vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(mobile-l) {
+  ol,
+  ul {
+    margin: 2vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(tablet) {
+  ol,
+  ul {
+    margin: 3vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(laptop) {
+  ol,
+  ul {
+    margin: 3vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(laptop-l) {
+  ol,
+  ul {
+    margin: 4vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(desktop) {
+  ol,
+  ul {
+    margin: 5vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+@include mq(desktop-hd) {
+  ol,
+  ul {
+    margin: 5vh 0;
+
+    > li {
+      margin: 0;
+
+      > ol, ul {
+        margin: .75vh 0;
+      }
+    }
+  }
+}
+
+dl {
+  line-height: 1.6;
+  column-count: 1;
+
+  > dt {
+    font-size: 82.75%;
+  }
+
+  > dd {
+
+  }
+}
+
+@include mq(mobile-s) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(mobile-m) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(mobile-l) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(tablet) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(laptop) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(laptop-l) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(desktop) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}
+
+@include mq(desktop-hd) {
+  dl {
+    line-height: 1.6;
+    column-count: 1;
+
+    > dt {
+      font-size: 82.75%;
+    }
+
+    > dd {
+
+    }
+  }
+}

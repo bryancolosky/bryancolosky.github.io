@@ -1,0 +1,69 @@
+h6,
+h6.heading-6,
+.heading-6 {
+  font-size: .875em;
+}
+
+@include mq(mobile-s) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: .875em;
+  }
+}
+
+@include mq(mobile-m) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 1em;
+  }
+}
+
+@include mq(mobile-l) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 1em;
+  }
+}
+
+@include mq(tablet) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 1.1em;
+  }
+}
+
+@include mq(laptop) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 1.2em;
+  }
+}
+
+@include mq(laptop-l) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 1.6em;
+  }
+}
+
+@include mq(desktop) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 2em;
+  }
+}
+
+@include mq(desktop-hd) {
+  h6,
+  h6.heading-6,
+  .heading-6 {
+    font-size: 2.2em;
+  }
+}

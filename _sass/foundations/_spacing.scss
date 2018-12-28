@@ -1,0 +1,148 @@
+$spacing-prefix: 'bcds-' !default;
+
+$spacing-sizes: (
+  default:    1rem,
+  mobile-s:   1.125rem,
+  mobile-m:   1.25rem,
+  mobile-l:   2rem,
+  tablet:     2.5rem,
+  laptop:     2.75rem,
+  laptop-l:   3rem,
+  desktop:    5rem,
+  desktop-hd: 7rem
+) !default;
+
+$device-scales: (
+  default:    1,
+  mobile-s:   1.125,
+  mobile-m:   1.25,
+  mobile-l:   2,
+  tablet:     2.5,
+  laptop:     2.75,
+  laptop-l:   3,
+  desktop:    5,
+  desktop-hd: 7
+) !default;
+
+@mixin __spacing-m($size-name, $size-value, $scale: 1) {
+  .#{$spacing-prefix}mt-#{$size-name} { margin-top:    $size-value * $scale; }
+  .#{$spacing-prefix}mr-#{$size-name} { margin-right:  $size-value * $scale; }
+  .#{$spacing-prefix}mb-#{$size-name} { margin-bottom: $size-value * $scale; }
+  .#{$spacing-prefix}ml-#{$size-name} { margin-left:   $size-value * $scale; }
+}
+
+@mixin __spacing-p($size-name, $size-value, $scale: 1) {
+  .#{$spacing-prefix}pt-#{$size-name} { padding-top:    $size-value * $scale; }
+  .#{$spacing-prefix}pr-#{$size-name} { padding-right:  $size-value * $scale; }
+  .#{$spacing-prefix}pb-#{$size-name} { padding-bottom: $size-value * $scale; }
+  .#{$spacing-prefix}pl-#{$size-name} { padding-left:   $size-value * $scale; }
+}
+
+@mixin generate-spacing-center {
+  .#{$spacing-prefix}mc { margin-right: auto; margin-left: auto; }
+}
+
+@mixin generate-spacing-reset {
+  .#{$spacing-prefix}mt-0 {     margin-top: 0; }
+  .#{$spacing-prefix}mr-0 {   margin-right: 0; }
+  .#{$spacing-prefix}mb-0 {  margin-bottom: 0; }
+  .#{$spacing-prefix}ml-0 {    margin-left: 0; }
+  .#{$spacing-prefix}pt-0 {    padding-top: 0; }
+  .#{$spacing-prefix}pr-0 {  padding-right: 0; }
+  .#{$spacing-prefix}pb-0 { padding-bottom: 0; }
+  .#{$spacing-prefix}pl-0 {   padding-left: 0; }
+}
+
+@mixin generate-spacing-margin {
+  @each $size-name, $size-value in $spacing-sizes {
+    $scale: map-get($device-scales, 'default');
+    @include __spacing-m($size-name, $size-value, $scale);
+  }
+
+  @each $bp-name, $bp-value in $breakpoints {
+    @media screen and (min-width: #{$bp-value}) {
+      @each $size-name, $size-value in $spacing-sizes {
+        $scale: map-get($device-scales, $bp-name);
+        @include __spacing-m($size-name, $size-value, $scale);
+      }
+    }
+  }
+}
+
+@mixin generate-spacing-padding {
+  @each $size-name, $size-value in $spacing-sizes {
+    $scale: map-get($device-scales, 'default');
+    @include __spacing-p($size-name, $size-value, $scale);
+  }
+
+  @each $bp-name, $bp-value in $breakpoints {
+    @media screen and (min-width: #{$bp-value}) {
+      @each $size-name, $size-value in $spacing-sizes {
+        $scale: map-get($device-scales, $bp-name);
+        @include __spacing-p($size-name, $size-value, $scale);
+      }
+    }
+  }
+}
+
+
+
+
+@mixin spacing-abstract($prop, $size-name) {
+  $size: map-get($spacing-sizes, $size-name);
+  $scale: map-get($device-scales, 'default');
+  #{$prop}: $size * $scale;
+
+  @each $bp-name, $bp-value in $breakpoints {
+    @media screen and (min-width: #{$bp-value}) {
+      $scale: map-get($device-scales, $bp-name);
+      #{$prop}: $size * $scale;
+    }
+  }
+}
+
+@mixin spacing-margin-top($size-name: 'default') {
+  @include spacing-abstract('margin-top', $size-name);
+}
+
+@mixin spacing-margin-right($size-name: 'default') {
+  @include spacing-abstract('margin-right', $size-name);
+}
+
+@mixin spacing-margin-bottom($size-name: 'default') {
+  @include spacing-abstract('margin-bottom', $size-name);
+}
+
+@mixin spacing-margin-left($size-name: 'default') {
+  @include spacing-abstract('margin-left', $size-name);
+}
+
+@mixin spacing-padding-top($size-name: 'default') {
+  @include spacing-abstract('padding-top', $size-name);
+}
+
+@mixin spacing-padding-right($size-name: 'default') {
+  @include spacing-abstract('padding-right', $size-name);
+}
+
+@mixin spacing-padding-bottom($size-name: 'default') {
+  @include spacing-abstract('padding-bottom', $size-name);
+}
+
+@mixin spacing-padding-left($size-name: 'default') {
+  @include spacing-abstract('padding-left', $size-name);
+}
+
+@mixin spacing-margin($size-name: 'default') {
+  @include spacing-abstract('margin-top', $size-name);
+  @include spacing-abstract('margin-right', $size-name);
+  @include spacing-abstract('margin-bottom', $size-name);
+  @include spacing-abstract('margin-left', $size-name);
+}
+
+@mixin spacing-padding($size-name: 'default') {
+  @include spacing-abstract('padding-top', $size-name);
+  @include spacing-abstract('padding-right', $size-name);
+  @include spacing-abstract('padding-bottom', $size-name);
+  @include spacing-abstract('padding-left', $size-name);
+}

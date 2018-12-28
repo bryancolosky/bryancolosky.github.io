@@ -1,28 +1,24 @@
 header.info-header,
 .info-header {
-  padding: 3rem 2rem;
-}
 
-@media #{$breakpoint-not-small} {
-  header.info-header,
-  .info-header {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
-  }
-}
+  @include spacing-padding-left();
+  @include spacing-padding-right();
 
-@media #{$breakpoint-medium} {
-  header.info-header,
-  .info-header {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
+  @include mq(mobile-s) {
   }
-}
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
+  }
 
-@media #{$breakpoint-large} {
-  header.info-header,
-  .info-header {
-    padding-top:    5rem;
-    padding-bottom: 5rem;
-  }
 }

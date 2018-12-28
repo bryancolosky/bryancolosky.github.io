@@ -97,23 +97,50 @@ a.link-external {
   }
 }
 
-@media #{$breakpoint-not-small} {
+@include mq(mobile-s) {
   a.link,
   .link {
-
   }
 }
 
-@media #{$breakpoint-medium} {
+@include mq(mobile-m) {
   a.link,
   .link {
-
   }
 }
 
-@media #{$breakpoint-large} {
+@include mq(mobile-l) {
   a.link,
   .link {
+  }
+}
 
+@include mq(tablet) {
+  a.link,
+  .link {
+  }
+}
+
+@include mq(laptop) {
+  a.link,
+  .link {
+  }
+}
+
+@include mq(laptop-l) {
+  a.link,
+  .link {
+  }
+}
+
+@include mq(desktop) {
+  a.link,
+  .link {
+  }
+}
+
+@include mq(desktop-hd) {
+  a.link,
+  .link {
   }
 }

@@ -18,26 +18,58 @@ span.tag,
   }
 }
 
-@media #{$breakpoint-not-small} {
+@include mq(mobile-s) {
   li.tag,
   span.tag,
   .tag {
-
   }
 }
 
-@media #{$breakpoint-medium} {
+@include mq(mobile-m) {
   li.tag,
   span.tag,
   .tag {
-
   }
 }
 
-@media #{$breakpoint-large} {
+@include mq(mobile-l) {
   li.tag,
   span.tag,
   .tag {
+  }
+}
 
+@include mq(tablet) {
+  li.tag,
+  span.tag,
+  .tag {
+  }
+}
+
+@include mq(laptop) {
+  li.tag,
+  span.tag,
+  .tag {
+  }
+}
+
+@include mq(laptop-l) {
+  li.tag,
+  span.tag,
+  .tag {
+  }
+}
+
+@include mq(desktop) {
+  li.tag,
+  span.tag,
+  .tag {
+  }
+}
+
+@include mq(desktop-hd) {
+  li.tag,
+  span.tag,
+  .tag {
   }
 }

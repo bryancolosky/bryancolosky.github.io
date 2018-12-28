@@ -98,10 +98,10 @@ skills:
   keywords: [HTML, CSS, Javascript, SASS & Less, PostCSS]
 - name: Frameworks & Libraries
   level: Proficient
-  keywords: [Bootstrap, Foundation, Jekyll, Node JS, Bower, JQuery, Google Maps API, Leaflet JS, SiteLeaf]
+  keywords: [Bootstrap, Foundation, Jekyll, Node JS, JQuery, Google Maps API, Leaflet JS]
 - name: Revision Control & Build Tools
   level: Proficient
-  keywords: [Git, Gulp JS, Grunt, Webpack]
+  keywords: [Git, Gulp JS, Webpack, Grunt]
 - name: IDEs
   level: Master
   keywords: [Atom, Sublime Text, Webstorm]
@@ -110,7 +110,7 @@ skills:
   keywords: [macOS, iOS, Linux, Windows, Android]
 - name: Graphics
   level: Master
-  keywords: [Illustrator, InDesign, Photoshop, XD, InVision, Axure, Sketch, FormZ, AutoCAD]
+  keywords: [Illustrator, InDesign, Photoshop, Adobe Xd, InVision, Axure, Sketch, FormZ, AutoCAD]
 - name: Analog
   level: Master
   keywords: [Steel & Wood Fabrication, Architectural Modeling, Hand Drafting, Paint, Print, Film]

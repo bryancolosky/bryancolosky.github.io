@@ -11,25 +11,25 @@ button.navigation-toggle,
   :focus {
     border: none;
   }
-}
 
-@media #{$breakpoint-not-small} {
-  button.navigation-toggle,
-  .navigation-toggle {
-
+  @include mq(mobile-s) {
   }
-}
-
-@media #{$breakpoint-medium} {
-  button.navigation-toggle,
-  .navigation-toggle {
-
+  @include mq(mobile-m) {
   }
-}
-
-@media #{$breakpoint-large} {
-  button.navigation-toggle,
-  .navigation-toggle {
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+    display: none;
+  }
+  @include mq(laptop-l) {
+    display: none;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
+  @include mq(desktop-hd) {
     display: none;
   }
 }

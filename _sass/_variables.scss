@@ -28,7 +28,8 @@ $white-05: rgba(255,255,255,.05);
 $white-025: rgba(255,255,255,.025);
 $white-0125: rgba(255,255,255,.0125);
 
-$font-family:   -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+$font-family:   proxima-nova, /* Adobe Typekit */
+                -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
                 'avenir next', avenir, /* MacOS and iOS */
                 'Segoe UI', /* Windows */
                 'lucida grande', /* Older MacOS */
@@ -41,4 +42,5 @@ $font-family:   -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
                 'Liberation Sans', /* Linux */
                 sans-serif /* Everything else */ !default;
 
+$base-unit:     1rem;
 $z-max:         2147483647 !default

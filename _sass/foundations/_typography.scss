@@ -10,61 +10,55 @@ $link-color:    $lime;
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
+
+  // @include mq(mobile-s) {
+  //   font-size: 14px;
+  // }
+  //
+  // @include mq(mobile-m) {
+  //   font-size: 16px;
+  // }
+  //
+  // @include mq(mobile-l) {
+  //   font-size: 16px;
+  // }
+  //
+  // @include mq(tablet) {
+  //   font-size: 18px;
+  // }
+  //
+  // @include mq(laptop) {
+  //   font-size: 20px;
+  // }
+  //
+  // @include mq(laptop-l) {
+  //   font-size: 20px;
+  // }
+  //
+  // @include mq(desktop) {
+  //   font-size: 24px;
+  // }
+  //
+  // @include mq(desktop-hd) {
+  //   font-size: 24px;
+  // }
+
 }
 
-@media #{$breakpoint-not-small} {
-  html {
-    font-size: 16px;
-  }
-}
 
-@media #{$breakpoint-medium} {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media #{$breakpoint-large} {
-  html {
-    font-size: 18px;
-  }
-}
 
 body {
   color: $font-color;
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: normal;
   font-size: 100%;
-}
-
-p {
-  line-height: 1.6;
-  column-count: 1;
-  max-width: 30em;
-  margin: 1vh 0;
-}
-
-@media #{$breakpoint-not-small} {
-  p {
-    margin: 2vh 0;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  p {
-    margin: 2vh 0;
-  }
-}
-
-@media #{$breakpoint-large} {
-  p {
-    margin: 3vh 0;
-  }
 }
 
 a {
   color: $font-color;
   text-decoration: none;
-
   position: relative;
   z-index: 0;
 
@@ -105,383 +99,27 @@ a {
   }
 }
 
-ol,
-ul {
-  line-height: 1.6;
-  column-count: 1;
-  max-width: 30em;
-  margin: 1vh 0;
-  padding: 0 2vw;
+/* Copy */
+@import
+        "typography/copy"
+;
 
-  > li {
-    margin: 0;
+/* Lists */
+@import
+        "typography/lists",
+        "typography/pull-quotes"
+;
 
-    > ol, ul {
-      margin: .5vh 0;
-    }
-  }
-}
-
-@media #{$breakpoint-not-small} {
-  ol,
-  ul {
-    margin: 2vh 0;
-
-    > li {
-      margin: 0;
-
-      > ol, ul {
-        margin: .75vh 0;
-      }
-    }
-  }
-}
-
-@media #{$breakpoint-medium} {
-  ol,
-  ul {
-    margin: 2vh 0;
-
-      > li {
-    margin: 0;
-
-      > ol, ul {
-        margin: .75vh 0;
-      }
-    }
-  }
-}
-
-@media #{$breakpoint-large} {
-  ol,
-  ul {
-    margin: 3vh 0;
-
-    > li {
-      margin: 0;
-
-      > ol, ul {
-        margin: 1.5vh 0;
-      }
-    }
-  }
-}
-
-dl {
-  line-height: 1.6;
-  column-count: 1;
-
-  > dt {
-    font-size: 82.75%;
-  }
-
-  > dd {
-
-  }
-}
-
-@media #{$breakpoint-not-small} {
-  dl {
-
-    > dt {
-
-    }
-
-    > dd {
-
-    }
-  }
-}
-
-@media #{$breakpoint-medium} {
-  dl {
-
-    > dt {
-
-    }
-
-    > dd {
-
-    }
-  }
-}
-
-@media #{$breakpoint-large} {
-  ol,
-  ul {
-    margin: 3vh 0;
-
-    > li {
-      margin: 0;
-
-      > ol, ul {
-        margin: 1.5vh 0;
-      }
-    }
-  }
-}
-
-h1, h1.h1, .h1,
-h2, h2.h2, .h2,
-h3, h3.h3, .h3,
-h4, h4.h4, .h4,
-h5, h5.h5, .h5,
-h6, h6.h6, .h6 {
-  font-weight: bold;
-}
-
-@media #{$breakpoint-not-small} {
-  h1, h1.h1, .h1,
-  h2, h2.h2, .h2,
-  h3, h3.h3, .h3,
-  h4, h4.h4, .h4,
-  h5, h5.h5, .h5,
-  h6, h6.h6, .h6 {
-    margin: 3vh 0;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h1, h1.h1, .h1,
-  h2, h2.h2, .h2,
-  h3, h3.h3, .h3,
-  h4, h4.h4, .h4,
-  h5, h5.h5, .h5,
-  h6, h6.h6, .h6 {
-    margin: 3vh 0;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h1, h1.h1, .h1,
-  h2, h2.h2, .h2,
-  h3, h3.h3, .h3,
-  h4, h4.h4, .h4,
-  h5, h5.h5, .h5,
-  h6, h6.h6, .h6 {
-    margin: 4vh 0;
-  }
-}
-
-h1,
-h1.h1,
-.h1 {
-  font-size: 1.8em;
-}
-
-@media #{$breakpoint-not-small} {
-  h1,
-  h1.h1,
-  .h1 {
-    font-size: 2.4em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h1,
-  h1.h1,
-  .h1 {
-    font-size: 2.4em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h1,
-  h1.h1,
-  .h1 {
-    font-size: 3.6em;
-  }
-}
-
-h2,
-h2.h2,
-.h2 {
-  font-size: 1.2em;
-}
-
-@media #{$breakpoint-not-small} {
-  h2,
-  h2.h2,
-  .h2 {
-    font-size: 1.6em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h2,
-  h2.h2,
-  .h2 {
-    font-size: 1.6em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h2,
-  h2.h2,
-  .h2 {
-    font-size: 2.4em;
-  }
-}
-
-h3,
-h3.h3,
-.h3 {
-  font-size: 1em;
-}
-
-@media #{$breakpoint-not-small} {
-  h3,
-  h3.h3,
-  .h3 {
-    font-size: 1.2em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h3,
-  h3.h3,
-  .h3 {
-    font-size: 1.2em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h3,
-  h3.h3,
-  .h3 {
-    font-size: 2em;
-  }
-}
-
-h4,
-h4.h4,
-.h4 {
-  font-size: .875em;
-}
-
-@media #{$breakpoint-not-small} {
-  h4,
-  h4.h4,
-  .h4 {
-    font-size: 1em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h4,
-  h4.h4,
-  .h4 {
-    font-size: 1em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h4,
-  h4.h4,
-  .h4 {
-    font-size: 1.2em;
-  }
-}
-
-h5,
-h5.h5,
-.h5 {
-  font-size: .75em;
-}
-
-@media #{$breakpoint-not-small} {
-  h5,
-  h5.h5,
-  .h5 {
-    font-size: .875em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h5,
-  h5.h5,
-  .h5 {
-    font-size: .875em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h5,
-  h5.h5,
-  .h5 {
-    font-size: 1em;
-  }
-}
-
-h6,
-h6.h6,
-.h6 {
-  font-size: .75em;
-}
-
-@media #{$breakpoint-not-small} {
-  h6,
-  h6.h6,
-  .h6 {
-    font-size: .875em;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  h6,
-  h6.h6,
-  .h6 {
-    font-size: .875em;
-  }
-}
-
-@media #{$breakpoint-large} {
-  h6,
-  h6.h6,
-  .h6 {
-    font-size: .875em;
-  }
-}
-
-blockquote,
-blockquote.pull-quote {
-  font-size: 1em;
-  margin: 3em 0;
-  background-color: $light-gray;
-  padding: 1em 2em;
-  border-left: 4px solid $navy;
-  max-width: 32em;
-
-  > p,
-    blockquote {
-      margin: 0;
-      font-size: 1em;
-    }
-}
-
-@media #{$breakpoint-not-small} {
-  blockquote,
-  blockquote.pull-quote {
-    font-size: 1.2em;
-    margin: 2vh 0;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  blockquote,
-  blockquote.pull-quote {
-    font-size: 1.2em;
-    margin: 2vh 0;
-  }
-}
-
-@media #{$breakpoint-large} {
-  blockquote,
-  blockquote.pull-quote {
-    font-size: 1.4em;
-    margin: 2vh 0;
-  }
-}
+/* Headings */
+@import
+        "typography/headings",
+        "typography/headings/heading-1",
+        "typography/headings/heading-2",
+        "typography/headings/heading-3",
+        "typography/headings/heading-4",
+        "typography/headings/heading-5",
+        "typography/headings/heading-6"
+;
 
 abbr {
   cursor: help;
@@ -503,25 +141,4 @@ hr.divider {
   border-top: 4px solid $light-gray;
   max-width: 30em;
   width: 100%;
-}
-
-@media #{$breakpoint-not-small} {
-  hr,
-  hr.divider {
-
-  }
-}
-
-@media #{$breakpoint-medium} {
-  hr,
-  hr.divider {
-
-  }
-}
-
-@media #{$breakpoint-large} {
-  hr,
-  hr.divider {
-
-  }
 }

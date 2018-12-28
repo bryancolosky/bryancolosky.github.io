@@ -3,23 +3,50 @@ header.header,
   font-size: 1.2rem;
 }
 
-@media #{$breakpoint-not-small} {
+@include mq(mobile-s) {
   header.header,
   .header {
-    font-size: 1.4rem;
   }
 }
 
-@media #{$breakpoint-medium} {
+@include mq(mobile-m) {
   header.header,
   .header {
-    font-size: 1.4rem;
   }
 }
 
-@media #{$breakpoint-large} {
+@include mq(mobile-l) {
   header.header,
   .header {
-    font-size: 1.6rem;
+  }
+}
+
+@include mq(tablet) {
+  header.header,
+  .header {
+  }
+}
+
+@include mq(laptop) {
+  header.header,
+  .header {
+  }
+}
+
+@include mq(laptop-l) {
+  header.header,
+  .header {
+  }
+}
+
+@include mq(desktop) {
+  header.header,
+  .header {
+  }
+}
+
+@include mq(desktop-hd) {
+  header.header,
+  .header {
   }
 }

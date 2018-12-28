@@ -1,0 +1,75 @@
+blockquote,
+blockquote.pull-quote {
+  font-size: 1em;
+  margin: 3em 0;
+  background-color: $light-gray;
+  padding: 1em 2em;
+  border-left: 4px solid $navy;
+  max-width: 32em;
+
+  > p,
+    blockquote {
+      margin: 0;
+      font-size: 1em;
+    }
+}
+
+@include mq(mobile-s) {
+  blockquote,
+  blockquote.pull-quote {
+  }
+}
+
+@include mq(mobile-m) {
+  blockquote,
+  blockquote.pull-quote {
+  }
+}
+
+@include mq(mobile-l) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.2em;
+    margin: 2vh 0;
+  }
+}
+
+@include mq(tablet) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.2em;
+    margin: 2vh 0;
+  }
+}
+
+@include mq(laptop) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.4em;
+    margin: 2vh 0;
+  }
+}
+
+@include mq(laptop-l) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.4em;
+    margin: 2vh 0;
+  }
+}
+
+@include mq(desktop) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.4em;
+    margin: 2vh 0;
+  }
+}
+
+@include mq(desktop-hd) {
+  blockquote,
+  blockquote.pull-quote {
+    font-size: 1.4em;
+    margin: 2vh 0;
+  }
+}

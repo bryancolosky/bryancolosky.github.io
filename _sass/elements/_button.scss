@@ -51,23 +51,50 @@ button.btn,
 
 }
 
-@media #{$breakpoint-not-small} {
+@include mq(mobile-s) {
   button.btn,
   .btn {
-
   }
 }
 
-@media #{$breakpoint-medium} {
+@include mq(mobile-m) {
   button.btn,
   .btn {
-
   }
 }
 
-@media #{$breakpoint-large} {
+@include mq(mobile-l) {
   button.btn,
   .btn {
+  }
+}
 
+@include mq(tablet) {
+  button.btn,
+  .btn {
+  }
+}
+
+@include mq(laptop) {
+  button.btn,
+  .btn {
+  }
+}
+
+@include mq(laptop-l) {
+  button.btn,
+  .btn {
+  }
+}
+
+@include mq(desktop) {
+  button.btn,
+  .btn {
+  }
+}
+
+@include mq(desktop-hd) {
+  button.btn,
+  .btn {
   }
 }

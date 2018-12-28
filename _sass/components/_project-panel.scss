@@ -5,18 +5,47 @@ section.project-panel,
   align-items: center;
   width: 100%;
 
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
+  }
+
   > figure.project-art,
   > .project-art {
-    margin: 0;
     padding: 0;
     width: 100%;
 
-    &__right {
-      padding-left: 0;
+    @include mq(mobile-s) {
     }
-
-    &__left {
-      padding-right: 0;
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+    }
+    @include mq(laptop) {
+      width: 50%;
+    }
+    @include mq(laptop-l) {
+      width: 50%;
+    }
+    @include mq(desktop) {
+      width: 40%;
+    }
+    @include mq(desktop-hd) {
+      width: 40%;
     }
   }
 
@@ -24,6 +53,8 @@ section.project-panel,
   > .project-panel-body {
     width: 100%;
     flex: 1;
+
+    @include spacing-padding();
   }
 
   &.project-panel__theme-dark {
@@ -34,87 +65,4 @@ section.project-panel,
     color: inherit;
   }
 
-}
-
-@media #{$breakpoint-not-small} {
-  section.project-panel,
-  .project-panel {
-
-    > figure.project-art,
-    > .project-art {
-      width: 25%;
-
-      &__right {
-        padding-left: 2rem;
-      }
-
-      &__left {
-        padding-right: 2rem;
-      }
-    }
-
-    > article.project-panel-body,
-    > .project-panel-body {
-      width: 75%;
-    }
-
-  }
-}
-
-@media #{$breakpoint-medium} {
-  section.project-panel,
-  .project-panel {
-
-    > figure.project-art,
-    > .project-art {
-      width: 25%;
-
-      &__right {
-        padding-left: 2rem;
-      }
-
-      &__left {
-        padding-right: 2rem;
-      }
-    }
-
-    > article.project-panel-body,
-    > .project-panel-body {
-      width: 75%;
-    }
-
-  }
-}
-
-@media #{$breakpoint-large} {
-  section.project-panel,
-  .project-panel {
-
-    > figure.project-art,
-    > .project-art {
-      width: 40%;
-
-      &__right {
-        padding-left: 2rem;
-      }
-
-      &__left {
-        padding-right: 2rem;
-      }
-    }
-
-    > article.project-panel-body,
-    > .project-panel-body {
-      width: 60%;
-
-      &__right {
-        padding-left: 2rem;
-      }
-
-      &__left {
-        padding-right: 2rem;
-      }
-    }
-
-  }
 }

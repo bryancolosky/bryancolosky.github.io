@@ -4,25 +4,21 @@ ul.navigation-list,
   width: 100%;
   margin: 0;
   padding: 0;
-}
 
-@media #{$breakpoint-not-small} {
-  ul.navigation-list,
-  .navigation-list {
-
+  @include mq(mobile-s) {
   }
-}
-
-@media #{$breakpoint-medium} {
-  ul.navigation-list,
-  .navigation-list {
-
+  @include mq(mobile-m) {
   }
-}
-
-@media #{$breakpoint-large} {
-  ul.navigation-list,
-  .navigation-list {
-
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
   }
 }

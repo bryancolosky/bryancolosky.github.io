@@ -1,30 +1,23 @@
 article.content-article,
 .content-article {
   background-color: $white;
-  padding: 3rem 2rem;
-}
 
-@media #{$breakpoint-not-small} {
-  article.content-article,
-  .content-article {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
+  @include spacing-padding();
+
+  @include mq(mobile-s) {
   }
-}
-
-@media #{$breakpoint-medium} {
-  article.content-article,
-  .content-article {
-    padding-top:    4rem;
-    padding-bottom: 4rem;
-
+  @include mq(mobile-m) {
   }
-}
-
-@media #{$breakpoint-large} {
-  article.content-article,
-  .content-article {
-    padding-top:    5rem;
-    padding-bottom: 5rem;
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
   }
 }
