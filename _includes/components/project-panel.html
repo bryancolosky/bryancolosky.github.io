@@ -1,30 +1,4 @@
-<section class="project-panel
-  {% if item.theme %}
-  {% assign theme = item.theme %}
-
-  {% case theme %}
-  {% when 'washed' %}
-  bg-washed-{{ item.color | slugify }}
-
-  {% when 'light' %}
-    {% unless item.color == 'black' %}
-    bg-{{ item.color | slugify }}
-    project-panel__theme-light
-      {% else %}
-      navy bg-white
-    {% endunless %}
-
-  {% when 'dark' %}
-    {% unless item.color == 'black' %}
-    bg-{{ item.color | slugify }}
-    project-panel__theme-dark
-
-    {% else %}
-    washed-green bg-near-black
-    {% endunless %}
-
-  {% endcase %}
-  {% endif %}">
+<section class="project-panel {% cycle 'flex-row', 'flex-row-reverse' %}">
 
   <figure class="project-art">
     <picture class="db">
@@ -34,32 +8,11 @@
     </picture>
   </figure>
 
-  <article class="project-panel-body">
+  <article class="project-panel-body bg-white">
     <header class="">
       {% unless item.url == page.url %}
       <h2 class="">
-        <a class="link
-        {% if item.theme %}
-        {% assign theme = item.theme %}
-
-        {% case theme %}
-
-        {% when 'light' %}
-          {% unless item.color == 'white' %}
-          link__theme-light
-            {% else %}
-            navy link__theme-light
-          {% endunless %}
-
-        {% when 'dark' %}
-          {% unless item.color == 'black' %}
-          link__theme-dark
-            {% else %}
-          washed-green link__theme-dark
-          {% endunless %}
-
-        {% endcase %}
-        {% endif %}"
+        <a class="link"
         href="{{ item.url }}">
           {{ item.title }}
         </a>
@@ -76,84 +29,24 @@
     {% if item.url == page.url %}
     <ul class="tag-list list">
       {% for each in item.tags %}
-      <li class="tag
-      {% if item.theme %}
-      {% assign theme = project.theme %}
-
-      {% case theme %}
-
-      {% when 'light' %}
-      tag__theme-light
-
-      {% when 'dark' %}
-      tag__theme-dark
-
-      {% else %}
-
-      {% endcase %}
-      {% endif %}">
+      <li class="tag">
         <small>{{ each }}</small>
       </li>
       {% endfor %}
     </ul>
-
     {% endif %}
 
-    <p class="">
-      {{ item.overview }}
+    <p class="measure-wide">
+      {{ item.overview | truncatewords: 999999, " ..." }}
     </p>
 
     <footer class="">
       {% unless item.url == page.url %}
-      <a class="link
-        {% if item.theme %}
-        {% assign theme = item.theme %}
-
-        {% case theme %}
-        {% when 'washed' %}
-
-        {% when 'light' %}
-        {% unless item.color == 'white' %}
-        link__theme-light
-        {% else %}
-        black link__theme-light
-        {% endunless %}
-
-        {% when 'dark' %}
-        {% unless item.color == 'black' %}
-        link__theme-dark
-        {% else %}
-        white link__theme-dark
-        {% endunless %}
-
-        {% endcase %}
-        {% endif %}"
+      <a class="link"
         href="{{ item.url }}">View {{ item.title }} Details<i class="fal fa-fw fa-long-arrow-right"></i>
       </a>
       {% else %}
-      <a class="link
-        {% if item.theme %}
-        {% assign theme = item.theme %}
-
-        {% case theme %}
-        {% when 'washed' %}
-
-        {% when 'light' %}
-        {% unless item.color == 'white' %}
-        link__theme-light
-        {% else %}
-        black link__theme-light
-        {% endunless %}
-
-        {% when 'dark' %}
-        {% unless item.color == 'black' %}
-        link__theme-dark
-        {% else %}
-        white link__theme-dark
-        {% endunless %}
-
-        {% endcase %}
-        {% endif %}"
+      <a class="link"
         href="{{ item.external-url }}">{{ item.title | slugify | append: ".com" }} <i class="fal fa-fw fa-xs fa-external-link"></i>
       </a>
       {% endunless %}

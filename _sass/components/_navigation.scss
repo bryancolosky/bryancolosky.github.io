@@ -13,6 +13,8 @@ nav.navigation,
   background-color: $near-white;
   z-index: -1;
 
+  @include spacing-padding();
+
   @include mq(mobile-s) {
   }
   @include mq(mobile-m) {

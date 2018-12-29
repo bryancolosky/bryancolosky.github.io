@@ -3,8 +3,8 @@ title:  IGY Marinas
 date:   2018-04-20 11:29:28
 
 position: 1
-permalink: /projects/igy/
-published: true
+permalink: /projects/igy-marinas/
+published: false
 sitemap:
   exclude: false
   priority: 0.9

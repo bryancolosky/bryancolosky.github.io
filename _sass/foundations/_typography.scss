@@ -12,37 +12,37 @@ $link-color:    $lime;
 html {
   font-size: 16px;
 
-  // @include mq(mobile-s) {
-  //   font-size: 14px;
-  // }
-  //
-  // @include mq(mobile-m) {
-  //   font-size: 16px;
-  // }
-  //
-  // @include mq(mobile-l) {
-  //   font-size: 16px;
-  // }
-  //
-  // @include mq(tablet) {
-  //   font-size: 18px;
-  // }
-  //
-  // @include mq(laptop) {
-  //   font-size: 20px;
-  // }
-  //
-  // @include mq(laptop-l) {
-  //   font-size: 20px;
-  // }
-  //
-  // @include mq(desktop) {
-  //   font-size: 24px;
-  // }
-  //
-  // @include mq(desktop-hd) {
-  //   font-size: 24px;
-  // }
+  @include mq(mobile-s) {
+    font-size: 14px;
+  }
+
+  @include mq(mobile-m) {
+    font-size: 16px;
+  }
+
+  @include mq(mobile-l) {
+    font-size: 16px;
+  }
+
+  @include mq(tablet) {
+    font-size: 18px;
+  }
+
+  @include mq(laptop) {
+    font-size: 20px;
+  }
+
+  @include mq(laptop-l) {
+    font-size: 20px;
+  }
+
+  @include mq(desktop) {
+    font-size: 24px;
+  }
+
+  @include mq(desktop-hd) {
+    font-size: 24px;
+  }
 
 }
 

@@ -1,8 +1,10 @@
 header.info-header,
 .info-header {
 
-  @include spacing-padding-left();
-  @include spacing-padding-right();
+  @include spacing-padding();
+
+  @include spacing-margin-top();
+  @include spacing-margin-bottom();
 
   @include mq(mobile-s) {
   }

@@ -1,8 +1,7 @@
 section.content-panel,
 .content-panel {
 
-  @include spacing-padding-left();
-  @include spacing-padding-right();
+  @include spacing-padding();
 
   @include mq(mobile-s) {
   }

@@ -5,6 +5,9 @@ section.project-panel,
   align-items: center;
   width: 100%;
 
+  @include spacing-margin-top();
+  @include spacing-margin-bottom();
+
   @include mq(mobile-s) {
   }
   @include mq(mobile-m) {
@@ -39,13 +42,13 @@ section.project-panel,
       width: 50%;
     }
     @include mq(laptop-l) {
-      width: 50%;
+      width: 60%;
     }
     @include mq(desktop) {
-      width: 40%;
+      width: 65%;
     }
     @include mq(desktop-hd) {
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -55,14 +58,27 @@ section.project-panel,
     flex: 1;
 
     @include spacing-padding();
-  }
 
-  &.project-panel__theme-dark {
-    color: $washed-green;
-  }
-
-  &.project-panel__theme-light {
-    color: inherit;
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+    }
+    @include mq(laptop) {
+      width: 50%;
+    }
+    @include mq(laptop-l) {
+      width: 40%;
+    }
+    @include mq(desktop) {
+      width: 35%;
+    }
+    @include mq(desktop-hd) {
+      width: 50%;
+    }
   }
 
 }
