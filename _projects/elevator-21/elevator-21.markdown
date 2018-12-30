@@ -4,7 +4,7 @@ date: 2018-04-20 11:29:28
 
 position: 1
 permalink: /projects/elevator/
-published: true
+published: false
 sitemap:
   exclude: false
   priority: 0.9

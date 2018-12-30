@@ -39,13 +39,13 @@ section.project-panel,
     @include mq(tablet) {
     }
     @include mq(laptop) {
-      width: 50%;
+      width: 35%;
     }
     @include mq(laptop-l) {
       width: 60%;
     }
     @include mq(desktop) {
-      width: 65%;
+      width: 55%;
     }
     @include mq(desktop-hd) {
       width: 50%;
@@ -68,13 +68,13 @@ section.project-panel,
     @include mq(tablet) {
     }
     @include mq(laptop) {
-      width: 50%;
+      width: 65%;
     }
     @include mq(laptop-l) {
       width: 40%;
     }
     @include mq(desktop) {
-      width: 35%;
+      width: 45%;
     }
     @include mq(desktop-hd) {
       width: 50%;

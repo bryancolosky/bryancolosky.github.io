@@ -4,7 +4,7 @@ date: 2011-09-02 11:29:28
 
 position: 1
 permalink: /projects/redwood-bench/
-published: true
+published: false
 sitemap:
   exclude: false
   priority: 0.9
