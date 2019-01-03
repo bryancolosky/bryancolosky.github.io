@@ -11,13 +11,18 @@ article.content-article,
   @include mq(mobile-l) {
   }
   @include mq(tablet) {
+    width: 60%;
   }
   @include mq(laptop) {
+    width: 60%;
   }
   @include mq(laptop-l) {
+    width: 60%;
   }
   @include mq(desktop) {
+    width: 60%;
   }
   @include mq(desktop-hd) {
+    width: 60%;
   }
 }

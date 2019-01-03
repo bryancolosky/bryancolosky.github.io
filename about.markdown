@@ -10,11 +10,18 @@ template:               about
 
 title:    About
 intro:    Hi. Here's a little about myself.
+image:    about
 
 overview: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
 
 primary-anchor:         my-background
 primary-anchor-text:    Learn more
+
+kpi:
+- timeline:   2.5 years
+- design:     8 months
+- platforms:  [web]
+- devices:    [mobile, laptop, desktop]
 ---
 
 ## My Background

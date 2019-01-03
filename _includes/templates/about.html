@@ -9,16 +9,21 @@
     {% include elements/figure.html caption="" src=img %}
   {% endcapture %}
 
+  {% capture stats %}
+    {% assign item = page %}
+    {% include components/stats-slab.html %}
+  {% endcapture %}
+
   {% capture location %}
     {% include components/map.html %}
   {% endcapture %}
 
-  {% include components/content-article.html type="media-object" size="60" figure=portrait map=location %}
+  {% include components/content-article.html type="media-object" figure=portrait kpi=stats map=location %}
 
 {% endcapture %}
 
 {% capture aside %}
-  {% include components/content-aside.html type="sidebar" size="40" header="Connect" %}
+  {% include components/content-aside.html type="sidebar" header="Connect" %}
 {% endcapture %}
 
 <!-- TEMPLATE -->

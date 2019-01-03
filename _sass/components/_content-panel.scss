@@ -1,5 +1,7 @@
 section.content-panel,
 .content-panel {
+  display: flex;
+  flex-wrap: wrap;
 
   @include spacing-padding();
 
