@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "Bryan Colosky's Portfolio",
+  "description": "Welcome to the portfolio of Bryan Colosky.",
+  "icons": {
+    "60": "/dist/favicons/firefox_app_60x60.png",
+    "128": "/dist/favicons/firefox_app_128x128.png",
+    "512": "/dist/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Bryan Colosky",
+    "url": "http://bryancolosky.com/"
+  }
+}

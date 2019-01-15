@@ -45,3 +45,5 @@ If we make any material changes to this Privacy Policy, we will notify you eithe
 ## Contact Me
 
 If you have any questions about this Privacy Policy, please contact me.
+
+### hello@bryancolosky.com

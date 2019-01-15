@@ -1,54 +1,29 @@
-'use strict';
+const { src, dest, parallel } = require('gulp');
+const favicons = require('favicons').stream;
 
-var gulp = require('gulp'),
-    favicons = require("gulp-favicons");
+function icons() {
+  return src('src/favicons/favicon.src.png')
+    .pipe(favicons({
+        appName: "Bryan Colosky's Portfolio",
+        appShortName: "Portfolio",
+        appDescription: "Welcome to the portfolio of Bryan Colosky.",
+        developerName: "Bryan Colosky",
+        developerURL: "http://bryancolosky.com/",
+        background: "white",
+        path: "/dist/favicons",
+        url: "http://bryancolosky.com/",
+        display: "standalone",
+        orientation: "portrait",
+        version: 1.0,
+        logging: false,
+        html: "../../_includes/favicons.html",
+        pipeHTML: true,
+        replace: true
+    }))
+    .pipe(dest('dist/favicons'))
+}
 
-var icons = (function() {
-    return {
-        compile: function(config) {
-          gulp.src(config.src + 'favicon.src.png')
-              .pipe(favicons({
-                  appName: "My Favicons",
-                  appDescription: "These are my Favicons",
-                  developerName: "Bryan Colosky",
-                  developerURL: "http://bryancolosky.com/",
-                  background: config.background,
-                  path: config.path,
-                  url: "http://bryancolosky.com/",
-                  display: "standalone",
-                  orientation: "portrait",
-                  version: 1.0,
-                  logging: false,
-                  online: false,
-                  html: config.html,
-                  replace: true
-              }))
-              .pipe(gulp.dest(config.dest));
+exports.favicons = icons;
+exports.default = parallel(icons);
 
-            return this;
-        }
-    };
-}());
-
-gulp.task('icons', function() {
-    return icons
-        .compile({
-            // Favicon .png source file
-            src: 'images/favicons/',
-            // Destination of generated favicons
-            dest: 'images/favicons/',
-            // Html source to write favicon <link>'s
-            html: '_includes/favicons.html',
-            // Favicon <link src="..."> paths
-            path: '/images/favicons/',
-            // Background for generated tiles for monchrome images ie. Windows tiles
-            background: 'transparent'
-        });
-
-});
-
-gulp.task('watch', function() {
-    gulp.watch(['images/favicons/favicon.src.png'], ['icons']);
-});
-
-gulp.task('default', ['icons', 'watch']);
+watch('src/favicons/*.src.png', series(icons));

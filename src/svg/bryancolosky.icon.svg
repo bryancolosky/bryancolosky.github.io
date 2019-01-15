@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <defs>
+    <style>
+      .cls-1{fill:#fff;}
+      .cls-2{fill:#ff725c;}
+      .cls-3{fill:#9ea7aa;}
+      .cls-4{fill:#263238;}
+      .cls-5{fill:#01ff70;}
+    </style>
+  </defs>
+  <title>Icon</title>
+  <g id="Icon">
+    <rect id="Background" class="cls-1" width="320" height="220"/>
+    <g id="Art">
+      <rect id="Stripe" class="cls-2" y="180" width="320" height="40"/>
+      <rect id="Earth" class="cls-3" x="80" y="140" width="160" height="20"/>
+      <polygon id="Bear" class="cls-4" points="140 60 140 40 120 40 120 60 100 60 100 100 120 100 120 140 160 140 160 120 180 120 180 140 200 140 200 120 220 120 220 140 240 140 240 60 140 60"/>
+      <g id="Star">
+        <rect class="cls-5" x="40" y="60" width="20" height="20"/>
+        <rect class="cls-5" y="60" width="20" height="20"/>
+        <polygon class="cls-5" points="60 40 60 20 40 20 40 0 20 0 20 20 0 20 0 40 20 40 20 60 40 60 40 40 60 40"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -2,9 +2,9 @@
 
   <figure class="project-art">
     <picture class="db">
-      <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/art.jpg">
-      <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/art@0,75x.jpg">
-      <img class="db w-100" src="{{ site.baseurl }}/images/projects/{{ item.title | slugify }}/art@0,5x.jpg" alt="{{ item.name }} - Art">
+      <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art.jpg">
+      <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art@0,75x.jpg">
+      <img class="db w-100" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-art@0,5x.jpg" alt="{{ item.name }} - Art">
     </picture>
   </figure>
 

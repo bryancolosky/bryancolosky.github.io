@@ -10,9 +10,9 @@
   {% if item.device != null %}
   <figure class="project-art mw5">
     <picture class="w-100">
-      <source media="(min-width: 60em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
-      <source media="(min-width: 30em)" srcset="/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
-      <img class="db w-100" src="/svg/{{ item.device.type }}/svg/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <img class="db w-100" src="{{ site.baseurl }}/src/svg/{{ item.device.type }}/svg/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
     </picture>
     <figcaption class="w-100 tc pa2 georgia">
       <small>{{ item.title }} - {{ item.device.type }} {{ item.device.model }}</small>

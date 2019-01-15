@@ -1,10 +1,10 @@
 <figure class="w-100 ma0 pv4">
-  <picture class="w-100">
-    <source media="(min-width: 60em)" srcset="https://via.placeholder.com/1200x320.jpg/FFFFFF/001B44/?text=Large+Navigation">
-    <source media="(min-width: 30em)" srcset="https://via.placeholder.com/960x240.jpg/FFFFFF/001B44/?text=Medium+Navigation">
-    <img class="db w-100" src="https://via.placeholder.com/360x180.jpg/FFFFFF/001B44/?text=Small+Navigation" alt="{{ page.title }} - Navigation">
+  <picture class="db pa2">
+    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation.jpg">
+    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation@0,75x.jpg">
+      <img class="db center" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation@0,5x.jpg" alt="{{ item.name }} - Figure 1">
   </picture>
-  <figcaption class="pa2 georgia">
-    <small>Prototype A - Navigation</small>
+  <figcaption class="w-100 tc pa2 georgia">
+    <small>Figure 1.0 - Navigation</small>
   </figcaption>
 </figure>
