@@ -1,36 +1,112 @@
 const { src, dest, parallel, series, watch } = require('gulp');
 const favicons = require('favicons').stream;
+const responsive = require('gulp-responsive');
 
-function images() {
-  return src('src/favicons/favicon.src.png')
-    .pipe(responsive({
-      '*.jpg': [{
-        width: 300,
+function responsiveImages() {
+  return src('src/images/**/*.{png,jpg}')
+    .pipe(responsive(
+      {
+      '**/*.{png,jpg}': [{
+        width: 320,
         rename: {
-          suffix: '-300px',
-        }
+          suffix: '-mobile-s',
+          extname: '.jpg',
+        },
       }, {
-        width: 600,
+        width: 320 * 2,
         rename: {
-          suffix: '-600px',
-        }
+          suffix: '-mobile-s@2x',
+          extname: '.jpg',
+        },
       }, {
-        width: 1900,
+        width: 375,
         rename: {
-          suffix: '-1900px'
-        }
+          suffix: '-mobile-m',
+          extname: '.jpg',
+        },
       }, {
-        width: 630,
+        width: 375 * 2,
         rename: {
-          suffix: '-630px'
-        }
-      }
-      ]}, {
-      quality: 80,
-      progressive: true,
-      withMetadata: false,
-      errorOnEnlargement: true,
-    }))
+          suffix: '-mobile-m@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 425,
+        rename: {
+          suffix: '-mobile-l',
+          extname: '.jpg',
+        },
+      }, {
+        width: 425 * 2,
+        rename: {
+          suffix: '-mobile-l@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 768,
+        rename: {
+          suffix: '-tablet',
+          extname: '.jpg',
+        },
+      }, {
+        width: 768 * 2,
+        rename: {
+          suffix: '-tablet@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1024,
+        rename: {
+          suffix: '-laptop',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1024 * 2,
+        rename: {
+          suffix: '-laptop@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1440,
+        rename: {
+          suffix: '-laptop-l',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1440 * 2,
+        rename: {
+          suffix: '-laptop-l@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1920,
+        rename: {
+          suffix: '-desktop',
+          extname: '.jpg',
+        },
+      }, {
+        width: 1920 * 2,
+        rename: {
+          suffix: '-desktop@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 2560,
+        rename: {
+          suffix: '-desktop-hd',
+          extname: '.jpg',
+        },
+      }, {
+        width: 2560 * 2,
+        rename: {
+          suffix: '-desktop-hd@2x',
+          extname: '.jpg',
+        },
+      }],
+    }, {
+      errorOnEnlargement: false
+    }
+    ))
     .pipe(dest('dist/images'))
 }
 
@@ -56,12 +132,6 @@ function icons() {
     .pipe(dest('dist/favicons'))
 }
 
-function watch(){
-  gulp.watch('src/favicons/*.src.png', icons)
-}
-
-exports.images = images;
+exports.images = responsiveImages;
 exports.favicons = icons;
-exports.watch = watch
-
 exports.default = parallel(icons);
