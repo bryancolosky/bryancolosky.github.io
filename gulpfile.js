@@ -1,5 +1,38 @@
-const { src, dest, parallel } = require('gulp');
+const { src, dest, parallel, series, watch } = require('gulp');
 const favicons = require('favicons').stream;
+
+function images() {
+  return src('src/favicons/favicon.src.png')
+    .pipe(responsive({
+      '*.jpg': [{
+        width: 300,
+        rename: {
+          suffix: '-300px',
+        }
+      }, {
+        width: 600,
+        rename: {
+          suffix: '-600px',
+        }
+      }, {
+        width: 1900,
+        rename: {
+          suffix: '-1900px'
+        }
+      }, {
+        width: 630,
+        rename: {
+          suffix: '-630px'
+        }
+      }
+      ]}, {
+      quality: 80,
+      progressive: true,
+      withMetadata: false,
+      errorOnEnlargement: true,
+    }))
+    .pipe(dest('dist/images'))
+}
 
 function icons() {
   return src('src/favicons/favicon.src.png')
@@ -23,7 +56,12 @@ function icons() {
     .pipe(dest('dist/favicons'))
 }
 
-exports.favicons = icons;
-exports.default = parallel(icons);
+function watch(){
+  gulp.watch('src/favicons/*.src.png', icons)
+}
 
-watch('src/favicons/*.src.png', series(icons));
+exports.images = images;
+exports.favicons = icons;
+exports.watch = watch
+
+exports.default = parallel(icons);
