@@ -1,0 +1,49 @@
+<section class="project-header">
+  <article class="project-header-body bg-white">
+    <header class="">
+      {% unless item.url == page.url %}
+      <h2 class="">
+        <a class="link"
+        href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </h2>
+
+      {% else %}
+      <h1 class="">
+        {{ page.title }}
+      </h1>
+      {% endunless %}
+
+    </header>
+
+    {% if item.url == page.url %}
+    <ul class="tag-list list">
+      {% for each in item.tags %}
+      <li class="tag">
+        <small>{{ each }}</small>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <p class="measure-wide">
+      {{ item.overview }}
+    </p>
+
+    <footer class="">
+      {% unless item.url == page.url %}
+      <a class="link"
+        href="{{ item.url }}">View {{ item.title }} Details<i class="fal fa-fw fa-long-arrow-right"></i>
+      </a>
+      {% else %}
+      <a class="link link-external"
+        href="{{ item.external-url }}">{{ item.title | slugify | append: ".com" }} <i class="fal fa-fw fa-xs fa-external-link"></i>
+      </a>
+      {% endunless %}
+    </footer>
+  </article>
+
+  {% include elements/picture.html picture="art" class="project-art" %}
+
+</section>

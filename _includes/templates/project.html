@@ -6,7 +6,12 @@
 
   {% capture overview %}
   {% assign item = page %}
-  {% include components/project-panel.html %}
+  {% include components/project-header.html %}
+  {% endcapture %}
+
+  {% capture details %}
+  {% assign item = page %}
+  {% include components/project-panel--challenge.html %}
   {% endcapture %}
 
   {% capture stats %}
@@ -14,21 +19,17 @@
   {% include components/stats-slab.html %}
   {% endcapture %}
 
-  {% capture details %}
+  {% capture wireframes %}
   {% assign item = page %}
-  {% include components/project-panel--challenge.html %}
-  {% include components/project-figure--sitemap.html %}
-  {% include components/project-figure--diagram.html %}
   {% include components/project-gallery--wireframes.html %}
-  {% include components/project-gallery--screens.html %}
   {% endcapture %}
 
-  {% include patterns/project-detail.html type="media-object" size="full" content=overview kpi=stats challenge=details %}
+  {% include patterns/project-detail.html header=overview content=details kpi=stats gallery=wireframes %}
 
 {% endcapture %}
 
 <!-- RETURN TEMPLATE -->
-{% include components/content-panel.html display="flex-grid" block=main %}
+{% include components/content-panel.html block=main %}
 
 <!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}

@@ -1,0 +1,23 @@
+<section class="project-panel">
+
+  <article class="project-panel-body">
+    {% include elements/header.html type="Header" scale="2" text="Challenge"%}
+    <p class="measure-wide">
+      {{ item.challenge }}
+    </p>
+  </article>
+
+  {% if item.device != null %}
+  <figure class="project-art">
+    <picture class="w-100">
+      <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+      <img class="db w-100" src="{{ site.baseurl }}/src/svg/{{ item.device.type }}/svg/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
+    </picture>
+    <figcaption class="w-100 tc pa2 georgia">
+      <small>{{ item.title }} - {{ item.device.type }} {{ item.device.model }}</small>
+    </figcaption>
+  </figure>
+  {% endif %}
+
+</section>

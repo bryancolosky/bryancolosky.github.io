@@ -10,100 +10,87 @@ function responsiveImages() {
         width: 320,
         rename: {
           suffix: '-mobile-s',
-          extname: '.jpg',
         },
       }, {
         width: 320 * 2,
         rename: {
           suffix: '-mobile-s@2x',
-          extname: '.jpg',
         },
       }, {
         width: 375,
         rename: {
           suffix: '-mobile-m',
-          extname: '.jpg',
         },
       }, {
         width: 375 * 2,
         rename: {
           suffix: '-mobile-m@2x',
-          extname: '.jpg',
         },
       }, {
         width: 425,
         rename: {
           suffix: '-mobile-l',
-          extname: '.jpg',
         },
       }, {
         width: 425 * 2,
         rename: {
           suffix: '-mobile-l@2x',
-          extname: '.jpg',
         },
       }, {
         width: 768,
         rename: {
           suffix: '-tablet',
-          extname: '.jpg',
         },
       }, {
         width: 768 * 2,
         rename: {
           suffix: '-tablet@2x',
-          extname: '.jpg',
         },
       }, {
         width: 1024,
         rename: {
           suffix: '-laptop',
-          extname: '.jpg',
         },
       }, {
         width: 1024 * 2,
         rename: {
           suffix: '-laptop@2x',
-          extname: '.jpg',
         },
       }, {
         width: 1440,
         rename: {
           suffix: '-laptop-l',
-          extname: '.jpg',
         },
       }, {
         width: 1440 * 2,
         rename: {
           suffix: '-laptop-l@2x',
-          extname: '.jpg',
         },
       }, {
         width: 1920,
         rename: {
           suffix: '-desktop',
-          extname: '.jpg',
         },
       }, {
         width: 1920 * 2,
         rename: {
           suffix: '-desktop@2x',
-          extname: '.jpg',
         },
       }, {
         width: 2560,
         rename: {
           suffix: '-desktop-hd',
-          extname: '.jpg',
         },
       }, {
         width: 2560 * 2,
         rename: {
           suffix: '-desktop-hd@2x',
-          extname: '.jpg',
         },
       }],
     }, {
+      quality: 80,
+      progressive: true,
+      withMetadata: false,
       errorOnEnlargement: false
     }
     ))
@@ -134,4 +121,4 @@ function icons() {
 
 exports.images = responsiveImages;
 exports.favicons = icons;
-exports.default = parallel(icons);
+exports.default = parallel(icons, responsiveImages);

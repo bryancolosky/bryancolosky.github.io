@@ -1,21 +1,15 @@
-<figure class="media
-{% if include.type != null %}
-{{ include.type }}
-{% endif %}">
+<figure class="{{ include.class }} w-100">
   {% if include.src != gravatar_userimage %}
   {% capture src %}{{ site.gravatar_userimage }}{% endcapture %}
   {% include elements/image.html size="1080" id=src %}
   {% endif %}
+
+  {% assign file = include.filename %}
+  {% include elements/picture.html class="project-art" picture=file %}
+
+  {% if include.caption %}
+  <figcaption class="measure w-100 tc pa2 center georgia mv4">
+    <small>{{ include.caption }}</small>
+  </figcaption>
+  {% endif %}
 </figure>
-
-{% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
-{% if include.caption %}
-
-<figure>
-  <img src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
-  <figcaption>{{ include.caption }}</figcaption>
-</figure>
-
-{% else %}
-<img src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
-{% endif %}

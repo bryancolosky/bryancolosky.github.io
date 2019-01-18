@@ -9,7 +9,7 @@
   {% include elements/header.html type="Header" scale="1" text=header %}
 
   {% if page.overview %}
-  {% capture text %}{{ page.overview }}{% endcapture %}
+  {% capture text %}{{ page.overview }}&nbsp;{{ site.data.resume.availability }}.{% endcapture %}
   <p class="lead measure-wide">
   {{ text }}
   </p>

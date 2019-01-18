@@ -1,43 +1,11 @@
-<figure class="w-100 ma0 pv4">
-  <picture class="db pa2">
-    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation.jpg">
-    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation@0,75x.jpg">
-      <img class="db center" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation@0,5x.jpg" alt="{{ item.name }} - Figure 1">
-  </picture>
-  <figcaption class="w-100 tc pa2 georgia">
-    <small>Navigation Option 1</small>
-  </figcaption>
-</figure>
+{% include elements/figure.html filename="diagram--sitemap" caption="Figure 1.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
 
-<figure class="w-100 ma0 pv4">
-  <picture class="db pa2">
-    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation-alt.jpg">
-    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation-alt@0,75x.jpg">
-      <img class="db center" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--navigation-alt@0,5x.jpg" alt="{{ item.name }} - Figure 1">
-  </picture>
-  <figcaption class="w-100 tc pa2 georgia">
-    <small>Navigation Option 1</small>
-  </figcaption>
-</figure>
+{% include elements/figure.html filename="diagram--checkout-flow" caption="Figure 2.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
 
-<figure class="w-100 ma0 pv4">
-  <picture class="db pa2">
-    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--account.jpg">
-    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--account@0,75x.jpg">
-    <img class="db center" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--account@0,5x.jpg" alt="{{ item.name }} - Figure 1">
-  </picture>
-  <figcaption class="w-100 tc pa2 georgia">
-    <small>User Account (Pro) - Account Home / Index</small>
-  </figcaption>
-</figure>
+{% include elements/figure.html filename="wireframe--navigation" caption="Figure 3.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
 
-<figure class="w-100 ma0 pv4">
-  <picture class="db pa2">
-    <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--product-detail.jpg">
-    <source media="(min-width: 30em)" srcset="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--product-detail@0,75x.jpg">
-    <img class="db center" src="{{ site.baseurl }}/src/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-wireframe--product-detail@0,5x.jpg" alt="{{ item.name }} - Figure 1">
-  </picture>
-  <figcaption class="w-100 tc pa2 georgia">
-    <small>Configurable Product Detail</small>
-  </figcaption>
-</figure>
+{% include elements/figure.html filename="wireframe--navigation-alt" caption="Figure 4.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
+
+{% include elements/figure.html filename="wireframe--account" caption="Figure 5.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
+
+{% include elements/figure.html filename="wireframe--product-detail" caption="Figure 6.0 — Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}
