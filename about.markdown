@@ -40,4 +40,4 @@ I now work as a Senior Information Architect and a Lead UX Designer at a top ful
 ## Design Approach
 When it comes to design, I value white space, typography, and function. I focus on design and technology as broader approaches to experience, product performance and consumer perception. I firmly believe that experience is about the ideas & process, not resultant artifacts.
 
-![Bryan Colosky - Self Portrait ](/images/portrait.jpg){:class="image"}
+![Bryan Colosky - Self Portrait ](/dist/images/portrait.jpg){:class="image"}

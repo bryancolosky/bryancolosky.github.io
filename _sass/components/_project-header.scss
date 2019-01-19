@@ -39,16 +39,12 @@ section.project-header,
     @include mq(tablet) {
     }
     @include mq(laptop) {
-      width: 35%;
     }
     @include mq(laptop-l) {
-      width: 60%;
     }
     @include mq(desktop) {
-      width: 55%;
     }
     @include mq(desktop-hd) {
-      width: 50%;
     }
   }
 
@@ -68,16 +64,12 @@ section.project-header,
     @include mq(tablet) {
     }
     @include mq(laptop) {
-      width: 65%;
     }
     @include mq(laptop-l) {
-      width: 40%;
     }
     @include mq(desktop) {
-      width: 45%;
     }
     @include mq(desktop-hd) {
-      width: 50%;
     }
   }
 

@@ -1,6 +1,6 @@
 ---
 title:  Maptycs
-date:   2018-04-20 11:29:28
+date:   2014-04-20 11:29:28
 
 position: 1
 permalink: /projects/maptycs/
@@ -31,11 +31,11 @@ link: maptycs.com
 
 kpi:
 - timeline:   2 years
-- design:         6 months
+- design:     10 months
 - platforms:  [web, ios, android]
 - devices:    [mobile, tablet, laptop, desktop]
 
-challenge:
+challenge: lorem ipsum
 
 design-approach:
 ---

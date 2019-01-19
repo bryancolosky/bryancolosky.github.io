@@ -7,6 +7,16 @@ function responsiveImages() {
     .pipe(responsive(
       {
       '**/*.{png,jpg}': [{
+        width: 760,
+        rename: {
+          suffix: '-default',
+        },
+      },{
+        width: 760 * 2,
+        rename: {
+          suffix: '-default@2x',
+        },
+      },{
         width: 320,
         rename: {
           suffix: '-mobile-s',

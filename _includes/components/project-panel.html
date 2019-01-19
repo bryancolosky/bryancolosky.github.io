@@ -1,6 +1,7 @@
 <section class="project-panel {% cycle 'flex-row', 'flex-row-reverse' %}">
 
-  {% include elements/picture.html picture="art" class="project-art" %}
+  {% include elements/picture.html img="art" class="project-art" %}
+
   <article class="project-panel-body bg-white">
     <header class="">
       {% unless item.url == page.url %}
@@ -30,7 +31,7 @@
     {% endif %}
 
     <p class="measure-wide">
-      {{ item.overview | truncatewords: 999999, " ..." }}
+      {{ item.overview | truncatewords: 13, " ..." }}
     </p>
 
     <footer class="">

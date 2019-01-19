@@ -6,12 +6,12 @@
 
   {% capture overview %}
   {% assign item = page %}
-  {% include components/project-header.html %}
+  {% include patterns/project-header.html %}
   {% endcapture %}
 
   {% capture details %}
   {% assign item = page %}
-  {% include components/project-panel--challenge.html %}
+  {% include patterns/project-panel--challenge.html %}
   {% endcapture %}
 
   {% capture stats %}
@@ -21,10 +21,20 @@
 
   {% capture wireframes %}
   {% assign item = page %}
-  {% include components/project-gallery--wireframes.html %}
+  {% include patterns/project-gallery--wireframes.html %}
   {% endcapture %}
 
-  {% include patterns/project-detail.html header=overview content=details kpi=stats gallery=wireframes %}
+  {% capture screens %}
+  {% assign item = page %}
+  {% include patterns/project-gallery--screens.html %}
+  {% endcapture %}
+
+  {% capture study %}
+  {% assign item = page %}
+  {% include patterns/project-figure--study.html %}
+  {% endcapture %}
+
+  {% include patterns/project-detail.html header=overview content=details kpi=stats wires=wireframes design=screens research=study %}
 
 {% endcapture %}
 
