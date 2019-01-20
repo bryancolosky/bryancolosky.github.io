@@ -19,22 +19,27 @@
   {% include components/stats-slab.html %}
   {% endcapture %}
 
+  {% capture diagrams %}
+  {% assign item = page %}
+
+  {% for diagram in item.diagrams %}
+  {% assign name = diagram.name | slugify | prepend: "diagram--" %}
+  {% include elements/figure.html filename=name caption=text %}
+  {% endfor %}
+
+  {% endcapture %}
+
   {% capture wireframes %}
   {% assign item = page %}
-  {% include patterns/project-gallery--wireframes.html %}
+
+  {% for wire in item.wireframes %}
+  {% assign name = wire.name | slugify | prepend: "wireframe--" %}
+  {% include elements/figure.html filename=name caption=text %}
+  {% endfor %}
+
   {% endcapture %}
 
-  {% capture screens %}
-  {% assign item = page %}
-  {% include patterns/project-gallery--screens.html %}
-  {% endcapture %}
-
-  {% capture study %}
-  {% assign item = page %}
-  {% include patterns/project-figure--study.html %}
-  {% endcapture %}
-
-  {% include patterns/project-detail.html header=overview content=details kpi=stats wires=wireframes design=screens research=study %}
+  {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes design=screens  %}
 
 {% endcapture %}
 
@@ -43,4 +48,4 @@
 
 <!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}
-{% include components/content-panel.html markdown=text %}
+{% include components/panel.html markdown=text %}

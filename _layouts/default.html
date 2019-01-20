@@ -7,51 +7,50 @@
     {% include components/site-header.html %}
 
     {% assign main = page.template %}
-        <main id="content" role="main">
+    <main id="content" role="main">
+    {% case main %}
 
-        {% case main %}
+      {% when 'home' %}
+      {% include templates/home.html %}
 
-        {% when 'home' %}
-        {% include templates/home.html %}
+      {% when 'about' %}
+      {% include templates/about.html %}
 
-        {% when 'about' %}
-        {% include templates/about.html %}
+        {% when 'resume' %}
+        {% include templates/resume.html %}
 
-          {% when 'resume' %}
-          {% include templates/resume.html %}
+        {% when 'travel' %}
+        {% include templates/travel.html %}
 
-          {% when 'travel' %}
-          {% include templates/travel.html %}
+      {% when 'portfolio' %}
+      {% include templates/portfolio.html %}
 
-        {% when 'portfolio' %}
-        {% include templates/portfolio.html %}
+        {% when 'projects' %}
+        {% include templates/projects.html %}
 
-          {% when 'projects' %}
-          {% include templates/projects.html %}
+          {% when 'project' %}
+          {% include templates/project.html %}
 
-            {% when 'project' %}
-            {% include templates/project.html %}
+        {% when 'photography' %}
+        {% include templates/photography.html %}
 
-          {% when 'photography' %}
-          {% include templates/photography.html %}
+          {% when 'photograph' %}
+          {% include templates/photograph.html %}
 
-            {% when 'photograph' %}
-            {% include templates/photograph.html %}
+      {% when 'contact' %}
+      {% include templates/contact.html %}
 
-        {% when 'contact' %}
-        {% include templates/contact.html %}
+      {% else %}
 
-        {% else %}
+      {{ content }}
 
-        {{ content }}
-
-        {% endcase %}
-        </main>
+      {% endcase %}
+    </main>
 
 
-        {% unless page.template == 'home' %}
-        {% include components/site-footer.html %}
-        {% endunless %}
+    {% unless page.template == 'home' %}
+    {% include components/site-footer.html %}
+    {% endunless %}
   </body>
 
 </html>

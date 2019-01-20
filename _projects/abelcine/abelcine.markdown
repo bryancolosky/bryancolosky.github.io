@@ -40,8 +40,13 @@ challenge: AbelCine came with the challenge of rebuilding their e-Commerce platf
 
 design-approach:
 
-art: []
-planning: [sitemap, diagram]
-lo-res: [account, navigation_mobile, navigation_alt, navigation, product-detail]
-hi-res: []
+diagrams:
+- name: Sitemap
+- name: Checkout Flow
+
+wireframes:
+- name: Navigation
+- name: Navigation Alt
+- name: Mobile Navigation
+- name: Account
 ---

@@ -38,4 +38,13 @@ kpi:
 challenge: lorem ipsum
 
 design-approach:
+
+diagrams:
+- name: Multiregional
+
+wireframes:
+- name: Map Dark
+- name: Map Light
+- name: Map Admin
+- name: Map Transit
 ---

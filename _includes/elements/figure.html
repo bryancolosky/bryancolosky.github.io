@@ -1,4 +1,4 @@
-<figure class="w-100 {{ include.class }}">
+<figure class="media {{ include.class }}">
   {% if include.src != gravatar_userimage %}
   {% capture src %}{{ site.gravatar_userimage }}{% endcapture %}
   {% include elements/image.html size="1080" id=src %}
@@ -8,7 +8,7 @@
   {% include elements/picture.html class="project-art" img=file %}
 
   {% if include.caption %}
-  <figcaption class="measure w-100 tc pa2 center georgia mv4">
+  <figcaption class="measure w-100 tc pa2 center georgia i mv4">
     <small>{{ include.caption }}</small>
   </figcaption>
   {% endif %}

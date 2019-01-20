@@ -7,5 +7,5 @@ layout: default
 
 {% unless page.template %}
   {% capture text %}{{ content | markdownify }}{% endcapture %}
-  {% include components/content-panel.html markdown=text %}
+  {% include components/panel.html markdown=text %}
 {% endunless %}

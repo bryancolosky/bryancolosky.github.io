@@ -1,12 +1,9 @@
 section.panel,
 .panel {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: block;
   width: 100%;
 
-  @include spacing-margin-top();
-  @include spacing-margin-bottom();
+  @include spacing-padding();
 
   @include mq(mobile-s) {
   }
@@ -23,62 +20,6 @@ section.panel,
   @include mq(desktop) {
   }
   @include mq(desktop-hd) {
-  }
-
-  > figure.project-art,
-  > .project-art {
-    padding: 0;
-    width: 100%;
-
-    @include mq(mobile-s) {
-    }
-    @include mq(mobile-m) {
-    }
-    @include mq(mobile-l) {
-    }
-    @include mq(tablet) {
-    }
-    @include mq(laptop) {
-      width: 45%;
-    }
-    @include mq(laptop-l) {
-      width: 40%;
-    }
-    @include mq(desktop) {
-      width: 35%;
-    }
-    @include mq(desktop-hd) {
-      width: 30%;
-    }
-  }
-
-  > div.panel-body,
-  > .panel-body {
-    width: 100%;
-    flex: 1;
-
-    @include spacing-padding();
-
-    @include mq(mobile-s) {
-    }
-    @include mq(mobile-m) {
-    }
-    @include mq(mobile-l) {
-    }
-    @include mq(tablet) {
-    }
-    @include mq(laptop) {
-      width: 55%;
-    }
-    @include mq(laptop-l) {
-      width: 60%;
-    }
-    @include mq(desktop) {
-      width: 65%;
-    }
-    @include mq(desktop-hd) {
-      width: 70%;
-    }
   }
 
 }

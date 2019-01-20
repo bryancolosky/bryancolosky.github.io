@@ -39,4 +39,16 @@ kpi:
 challenge: With 3 regional distribution centers, hourly price updates per customer account, and daily ordering cutoffs times, not only did Baldor Foods need to provide its customers with a robust ordering system, but also coordinate a large amount data and business intelligence across several endpoints.
 
 design-approach:
+
+diagrams:
+- name: Sitemap
+
+wireframes:
+- name: iOS Home
+- name: iOS Search
+- name: iOS Product Dialog
+- name: Search
+- name: Filter
+- name: Mobile Navigation
+
 ---

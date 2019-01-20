@@ -38,4 +38,10 @@ kpi:
 challenge: When approached, HAVI’s core service offerings were spread across several websites with different branding and identities. Because of the fragmented ecosystem, customers of one service line were often unaware of the integrated nature of HAVI’s offerings. Combined with a high bounce rate, website visitors were not reaching out before leaving the website.
 
 design-approach:
+
+diagrams:
+- name: Multiregional
+
+wireframes:
+- name: Navigation
 ---
