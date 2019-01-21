@@ -16,18 +16,11 @@ header: false
 categories: [Web]
 tags:       [Branding Identity, UX, UI]
 
+image: map
 theme:      dark
 color:      dark-blue
 
-main-image: map
-device:
-  type:     iPhone
-  model:    5C
-  color:    Blue
-
 overview: Maptycs is a risk Analytics system that helps risk and insurance professionals maximize the value of information. Maptycs transforms and consolidates your risk and insurance data making it not only easier access, but also easier to analyze and spot trends.
-
-link: maptycs.com
 
 kpi:
 - timeline:   2 years
@@ -35,16 +28,32 @@ kpi:
 - platforms:  [web, ios, android]
 - devices:    [mobile, tablet, laptop, desktop]
 
+link: maptycs.com
+
 challenge: lorem ipsum
 
 design-approach:
 
-diagrams:
-- name: Multiregional
+device:
+  type:     iPhone
+  model:    5C
+  color:    Blue
 
-wireframes:
+ux:
+- research:
+  name: Design Studio
+- sketches:
+  name: Design Studio
+
+prototypes:
+- name: Menu Tasks
+
+ui:
 - name: Map Dark
 - name: Map Light
 - name: Map Admin
 - name: Map Transit
+- name: Overlay EQ
+- name: Overlay Nuclear
+- name: Report Histogram
 ---

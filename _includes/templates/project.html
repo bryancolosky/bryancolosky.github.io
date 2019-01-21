@@ -39,7 +39,27 @@
 
   {% endcapture %}
 
-  {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes design=screens  %}
+  {% capture prototypes %}
+  {% assign item = page %}
+
+  {% for protoype in item.prototypes %}
+  {% assign name = protoype.name | slugify | prepend: "prototype--" %}
+  {% include elements/figure.html filename=name caption=text %}
+  {% endfor %}
+
+  {% endcapture %}
+
+  {% capture screens %}
+  {% assign item = page %}
+
+  {% for screen in item.ui %}
+  {% assign name = screen.name | slugify | prepend: "ui--" %}
+  {% include elements/figure.html filename=name caption=text %}
+  {% endfor %}
+
+  {% endcapture %}
+
+  {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes mvp=prototypes design=screens  %}
 
 {% endcapture %}
 
@@ -48,4 +68,4 @@
 
 <!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}
-{% include components/panel.html markdown=text %}
+{% include components/content-panel.html markdown=text %}
