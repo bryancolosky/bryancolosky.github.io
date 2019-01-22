@@ -1,7 +1,7 @@
 ---
 title: Design System
 permalink: "/design-system/"
-position: 6
+position: 3
 sitemap:
   exclude: false
   priority: 1.0
