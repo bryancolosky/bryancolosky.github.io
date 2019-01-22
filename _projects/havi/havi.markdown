@@ -8,7 +8,7 @@ tags:
 - Information Architecture
 - Navigation
 - UI
-position: 0
+position: 1
 sitemap:
   exclude: false
   priority: 0.9

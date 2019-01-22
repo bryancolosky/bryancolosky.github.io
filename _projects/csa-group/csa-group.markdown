@@ -9,7 +9,7 @@ tags:
 - Sitemap
 - Wireframes
 - Content
-position: 6
+position: 7
 sitemap:
   exclude: false
   priority: 0.9
