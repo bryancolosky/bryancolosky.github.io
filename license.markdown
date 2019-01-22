@@ -2,7 +2,7 @@
 title: License
 date: 1970-01-01 00:00:00 Z
 permalink: "/license/"
-position: 0
+position: 5
 sitemap:
   exclude: true
   priority: 0

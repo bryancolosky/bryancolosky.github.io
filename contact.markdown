@@ -1,7 +1,7 @@
 ---
 title: Contact
 permalink: "/contact/"
-position: 3
+position: 4
 sitemap:
   exclude: false
   priority: 1.0

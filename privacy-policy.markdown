@@ -2,7 +2,7 @@
 title: Privacy Policy
 date: 1970-01-01 00:00:00 Z
 permalink: "/privacy/"
-position: 0
+position: 6
 sitemap:
   exclude: true
   priority: 0
