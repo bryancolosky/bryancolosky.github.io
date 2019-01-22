@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 permalink: "/portfolio/"
-position: 2
+position: 4
 sitemap:
   exclude: false
   priority: 1.0
