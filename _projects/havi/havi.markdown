@@ -30,14 +30,14 @@ overview: HAVI is a global company focused on innovating, optimizing and managin
 link: havi.com
 
 kpi:
-- timeline:   1 year
-- design:     2 months
+- timeline:   6 months
+- design:     6 weeks
 - platforms:  [web]
 - devices:    [mobile, laptop, desktop]
 
 challenge: When approached, HAVI’s core service offerings were spread across several websites with different branding and identities. Because of the fragmented ecosystem, customers of one service line were often unaware of the integrated nature of HAVI’s offerings. Combined with a high bounce rate, website visitors were not reaching out before leaving the website.
 
-design-approach:
+design-approach:  The goal was to present a unified, global, integrated company to prospective clients and the world. By unifying the full customer experience through a single website showcasing the full portfolio of HAVI’s services, HAVI will be well-positioned to generate leads, grow the business, and increase visibility with prospective employees.
 
 diagrams:
 - name: Multiregional

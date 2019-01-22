@@ -31,7 +31,7 @@
       {{ item.overview }}
     </p>
 
-    <footer class="">
+    <!-- <footer class="">
       {% unless item.url == page.url %}
       <a class="link"
         href="{{ item.url }}">View {{ item.title }} Details<i class="fal fa-fw fa-long-arrow-right"></i>
@@ -41,7 +41,7 @@
         href="{{ item.external-url }}">{{ item.title | slugify | append: ".com" }} <i class="fal fa-fw fa-xs fa-external-link"></i>
       </a>
       {% endunless %}
-    </footer>
+    </footer> -->
   </article>
 
   {% include elements/picture.html img="art" class="project-art" %}

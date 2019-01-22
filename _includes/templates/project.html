@@ -13,7 +13,6 @@
   {% assign item = page %}
   {% include patterns/project-panel--challenge.html %}
   {% endcapture %}
-
   {% capture stats %}
   {% assign item = page %}
   {% include components/stats-slab.html %}
@@ -21,42 +20,34 @@
 
   {% capture diagrams %}
   {% assign item = page %}
-
   {% for diagram in item.diagrams %}
   {% assign name = diagram.name | slugify | prepend: "diagram--" %}
   {% include elements/figure.html filename=name caption=text %}
   {% endfor %}
-
   {% endcapture %}
 
   {% capture wireframes %}
   {% assign item = page %}
-
   {% for wire in item.wireframes %}
   {% assign name = wire.name | slugify | prepend: "wireframe--" %}
   {% include elements/figure.html filename=name caption=text %}
   {% endfor %}
-
   {% endcapture %}
 
   {% capture prototypes %}
   {% assign item = page %}
-
   {% for protoype in item.prototypes %}
   {% assign name = protoype.name | slugify | prepend: "prototype--" %}
   {% include elements/figure.html filename=name caption=text %}
   {% endfor %}
-
   {% endcapture %}
 
   {% capture screens %}
   {% assign item = page %}
-
   {% for screen in item.ui %}
   {% assign name = screen.name | slugify | prepend: "ui--" %}
   {% include elements/figure.html filename=name caption=text %}
   {% endfor %}
-
   {% endcapture %}
 
   {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes mvp=prototypes design=screens  %}
