@@ -1,27 +1,27 @@
 ---
+title: About
+permalink: "/about/"
 position: 1
-permalink: /about/
 sitemap:
   exclude: false
   priority: 1.0
-
-layout:                 page
-template:               about
-
-title:    About
-intro:    Hi. Here's a little about myself.
-image:    about
-
-overview: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
-
-primary-anchor:         content
-primary-anchor-text:    Learn more
-
+layout: page
+template: about
+intro: Hi. Here's a little about myself.
+image: about
+overview: I’m a multidisciplinary designer living in Brooklyn, New York — I divide
+  my time between working with code, design systems, architecture and photography.
+primary-anchor: content
+primary-anchor-text: Learn more
 kpi:
-- timeline:   2.5 years
-- design:     8 months
-- platforms:  [web]
-- devices:    [mobile, laptop, desktop]
+- timeline: 2.5 years
+- design: 8 months
+- platforms:
+  - web
+- devices:
+  - mobile
+  - laptop
+  - desktop
 ---
 
 ## My Background

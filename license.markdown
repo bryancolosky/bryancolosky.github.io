@@ -1,20 +1,17 @@
 ---
-permalink: /license/
+title: License
+date: 1970-01-01 00:00:00 Z
+permalink: "/license/"
+position: 0
 sitemap:
   exclude: true
   priority: 0
-
-title: License
-date: 0000-00-00 00:00:00 Z
-
-header:
+header: 
 description: Page overview & description.
-intro:
-overview:
-
-position: 0
+intro: 
+overview: 
 layout: docs
-template:
+template: 
 ---
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

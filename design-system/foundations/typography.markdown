@@ -1,13 +1,11 @@
 ---
-title:    Typography
-intro:
-overview:
-
-layout:   docs
-template:
-
+title: Typography
+permalink: "/design-system/foundations/typography/"
 position: 3
-permalink: /design-system/foundations/typography/
+intro: 
+overview: 
+layout: docs
+template: 
 sitemap:
   exclude: false
   priority: 1.0

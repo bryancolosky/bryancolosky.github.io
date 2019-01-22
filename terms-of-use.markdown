@@ -1,20 +1,18 @@
 ---
+title: Terms of Use
+date: 1970-01-01 00:00:00 Z
+permalink: "/terms-of-use/"
 position: 6
-permalink: /terms-of-use/
 sitemap:
   exclude: true
   priority: 0
-
-title: Terms of Use
-date: 0000-00-00 00:00:00 Z
-
-description:
-intro:
-overview:
-
+description: 
+intro: 
+overview: 
 layout: docs
-template:
+template: 
 ---
+
 ## Acceptable use
 
 You must not:
