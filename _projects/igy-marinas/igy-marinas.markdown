@@ -11,7 +11,7 @@ tags:
 - UI
 - Sitemap
 - Wireframes
-position: 1
+position: 9
 sitemap:
   exclude: false
   priority: 0.9

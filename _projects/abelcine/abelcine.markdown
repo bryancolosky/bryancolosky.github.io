@@ -9,7 +9,7 @@ tags:
 - Sitemap
 - Wireframes
 - e-Commerce
-position: 1
+position: 8
 sitemap:
   exclude: false
   priority: 0.9

@@ -8,7 +8,7 @@ tags:
 - Branding Identity
 - UX
 - UI
-position: 1
+position: 2
 sitemap:
   exclude: false
   priority: 0.9
