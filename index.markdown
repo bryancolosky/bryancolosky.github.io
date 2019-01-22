@@ -1,7 +1,7 @@
 ---
 title: Home
 permalink: "/"
-position: 3
+position: 0
 sitemap:
   exclude: false
   priority: 1.0
