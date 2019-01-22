@@ -2,7 +2,7 @@
   {% if include.src != gravatar_userimage %}
   {% capture src %}{{ site.gravatar_userimage }}{% endcapture %}
   {% include elements/image.html size="1080" id=src %}
-  {% endif %}
+  {% else %}
 
   {% assign file = include.filename %}
   {% include elements/picture.html class="project-art" img=file %}
@@ -12,4 +12,7 @@
     <small>{{ include.caption }}</small>
   </figcaption>
   {% endif %}
+
+  {% endif %}
+
 </figure>

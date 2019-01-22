@@ -14,7 +14,7 @@ image:    about
 
 overview: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
 
-primary-anchor:         my-background
+primary-anchor:         content
 primary-anchor-text:    Learn more
 
 kpi:
@@ -27,7 +27,7 @@ kpi:
 ## My Background
 I was born and raised in the small desert town of Apple Valley, California. It is an expansively barren & dystopic desert landscape situated in California's southern desert. It's always a source of inspiration in my life.
 
-![Apple Valley - Sunset ](https://source.unsplash.com/-yghAF5_OrQ/){:class="image"}
+<!-- ![Apple Valley - Sunset ](https://source.unsplash.com/-yghAF5_OrQ/){:class="image"} -->
 
 I first began my journey into design while studying Architecture at Cal Poly, San Luis Obispo. During my final year, I took assignments with part time work at the University Admissions Office where I maintained existing websites by fixing bugs and adding new features. I gained a considerable amount of experience that I needed to step into the industry.
 
@@ -40,4 +40,4 @@ I now work as a Senior Information Architect and a Lead UX Designer at a top ful
 ## Design Approach
 When it comes to design, I value white space, typography, and function. I focus on design and technology as broader approaches to experience, product performance and consumer perception. I firmly believe that experience is about the ideas & process, not resultant artifacts.
 
-![Bryan Colosky - Self Portrait ](/dist/images/portrait.jpg){:class="image"}
+<!-- ![Bryan Colosky - Self Portrait ](/dist/images/portrait.jpg){:class="image"} -->

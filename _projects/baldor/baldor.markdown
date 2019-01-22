@@ -47,6 +47,8 @@ wireframes:
 - name: iOS Home
 - name: iOS Search
 - name: iOS Product Dialog
+- name: iOS Product Cards Horizontal
+- name: iOS Product Cards Vertical
 - name: Search
 - name: Filter
 - name: Mobile Navigation
