@@ -1,6 +1,7 @@
 ---
 title: Baldor
 date: 2018-04-20 11:29:28 Z
+published: true
 permalink: "/projects/baldor/"
 categories:
 - Web
@@ -51,14 +52,22 @@ design-approach: Drawing on insights from user surveys and customer support chan
   order products for its customers.
 diagrams:
 - name: Sitemap
+  caption: Diagram 1.0 – A simple wire-flow to show the sequence of app screens, and to reveal the most typical user-task flows within the app.
 wireframes:
 - name: iOS Home
+  caption: iOS Figure 1.0 – Full-screen app wireframe revealing home screen layout and information hierarchy.
 - name: iOS Search
+  caption: iOS Figure 2.0 – Prompted search and keyword stemming screen sequences.
 - name: iOS Product Dialog
+  caption:
 - name: iOS Product Cards Horizontal
+  caption: iOS Figure 3.0 – Horizontal product card thumb ergonomics study, and individual product card modifiers/states.
 - name: iOS Product Cards Vertical
+  caption: iOS Figure 4.0 – Vertical product card thumb ergonomics study, and individual product card modifiers/states.
 - name: Search
+  caption:
 - name: Filter
+  caption: Web Figure 2.0 – Product wireframes in which selecting facets or filters changes the products displayed.
 - name: Mobile Navigation
+  caption:
 ---
-

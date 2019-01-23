@@ -1,7 +1,15 @@
 ---
 title: AbelCine
 date: 2016-01-20 11:29:28 Z
+published: true
 permalink: "/projects/abelcine/"
+position: 3
+sitemap:
+  exclude: false
+  priority: 0.9
+layout: page
+template: project
+header: false
 categories:
 - Web
 tags:
@@ -9,16 +17,9 @@ tags:
 - Sitemap
 - Wireframes
 - e-Commerce
-position: 1
-sitemap:
-  exclude: false
-  priority: 0.9
-layout: page
-template: project
-header: false
 theme: dark
 color: dark-pink
-link: abelcine.com
+
 kpi:
 - timeline: 18 months
 - design: 6 months
@@ -28,7 +29,7 @@ kpi:
   - mobile
   - laptop
   - desktop
-details: 
+details:
 overview: AbelCine is professional camera shop and equipment rental-house focused
   on digital cinema, broadcast, high-speed, VR, and 360° video, as well as optics,
   audio, lighting, workflows, and post.
@@ -53,4 +54,3 @@ wireframes:
 - name: Mobile Navigation
 - name: Account
 ---
-

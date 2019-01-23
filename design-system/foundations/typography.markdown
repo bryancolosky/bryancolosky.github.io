@@ -2,10 +2,10 @@
 title: Typography
 permalink: "/design-system/foundations/typography/"
 position: 3
-intro: 
-overview: 
+intro:
+overview:
 layout: docs
-template: 
+template:
 sitemap:
   exclude: false
   priority: 1.0
@@ -60,13 +60,13 @@ _  _  _  _
 
 ---------------
 
-![image-title-here](/images/contact.jpg){:class="image"}
+![image-title-here](/dist/images/contact-default.jpg){:class="image"}
 
-![image-title-here](/images/poster.jpg){:class="image"}
+![image-title-here](/dist/images/poster-default.jpg){:class="image"}
 
-![image-title-here](/images/about.jpg){:class="image"}
+![image-title-here](/dist/images/profile-default.jpg){:class="image"}
 
-![image-title-here](/images/portrait.jpg){:class="image"}
+![image-title-here](/dist/images/portrait-default.jpg){:class="image"}
 
 > Blockquote lorem ipsum dolor sit amet, consectetur adipisicing elit.
 

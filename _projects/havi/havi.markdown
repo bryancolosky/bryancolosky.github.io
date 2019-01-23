@@ -1,23 +1,23 @@
 ---
 title: HAVI
 date: 2018-04-20 11:29:28 Z
+published: true
 permalink: "/projects/havi/"
-categories:
-- Web
-tags:
-- Information Architecture
-- Navigation
-- UI
-position: 1
+position: 2
 sitemap:
   exclude: false
   priority: 0.9
 layout: page
 template: project
 header: false
+categories:
+- Web
+tags:
+- Information Architecture
+- Navigation
+- UI
 theme: light
 color: green
-main-image: lego
 device:
   type: iPhone
   model: 5C
@@ -50,4 +50,3 @@ diagrams:
 wireframes:
 - name: Navigation
 ---
-

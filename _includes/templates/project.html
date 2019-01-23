@@ -22,7 +22,8 @@
   {% assign item = page %}
   {% for diagram in item.diagrams %}
   {% assign name = diagram.name | slugify | prepend: "diagram--" %}
-  {% include elements/figure.html filename=name caption=text %}
+  {% assign text = diagram.caption %}
+  {% include elements/figure.html src=name caption=text %}
   {% endfor %}
   {% endcapture %}
 
@@ -30,7 +31,8 @@
   {% assign item = page %}
   {% for wire in item.wireframes %}
   {% assign name = wire.name | slugify | prepend: "wireframe--" %}
-  {% include elements/figure.html filename=name caption=text %}
+  {% assign text = wire.caption %}
+  {% include elements/figure.html src=name caption=text %}
   {% endfor %}
   {% endcapture %}
 
@@ -38,7 +40,8 @@
   {% assign item = page %}
   {% for protoype in item.prototypes %}
   {% assign name = protoype.name | slugify | prepend: "prototype--" %}
-  {% include elements/figure.html filename=name caption=text %}
+  {% assign text = protoype.caption %}
+  {% include elements/figure.html src=name caption=text %}
   {% endfor %}
   {% endcapture %}
 
@@ -46,7 +49,8 @@
   {% assign item = page %}
   {% for screen in item.ui %}
   {% assign name = screen.name | slugify | prepend: "ui--" %}
-  {% include elements/figure.html filename=name caption=text %}
+  {% assign text = screen.caption %}
+  {% include elements/figure.html src=name caption=text %}
   {% endfor %}
   {% endcapture %}
 

@@ -5,8 +5,8 @@
 {% capture profile %}
 
   {% capture portrait %}
-    {% assign img = site.gravatar_userimage %}
-    {% include elements/figure.html caption="" src=img %}
+    {% assign profile = site.gravatar_userimage %}
+    {% include elements/figure.html caption="Costa Rica – 2015" src=profile %}
   {% endcapture %}
 
   {% capture stats %}
@@ -18,7 +18,7 @@
     {% include components/map.html %}
   {% endcapture %}
 
-  {% include components/content-article.html figure=portrait kpi=stats map=location %}
+  {% include components/content-article.html id="profile" figure=portrait kpi=stats map=location %}
 
 {% endcapture %}
 
@@ -27,8 +27,8 @@
 {% endcapture %}
 
 <!-- TEMPLATE -->
-{% include components/content-panel.html block=profile sidebar=aside %}
+{% include components/content-panel.html block=profile sidebar=aside%}
 
 <!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}
-{% include components/content-panel.html markdown=text %}
+{% include components/block-panel.html markdown=text %}

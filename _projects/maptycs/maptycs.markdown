@@ -1,21 +1,21 @@
 ---
 title: Maptycs
 date: 2014-04-20 11:29:28 Z
+published: true
 permalink: "/projects/maptycs/"
-categories:
-- Web
-tags:
-- Branding Identity
-- UX
-- UI
-position: 1
+position: 4
 sitemap:
   exclude: false
   priority: 0.9
 layout: page
 template: project
 header: false
-image: map
+categories:
+- Web
+tags:
+- Branding Identity
+- UX
+- UI
 theme: dark
 color: dark-blue
 overview: Maptycs is a risk Analytics system that helps risk and insurance professionals
@@ -34,7 +34,6 @@ kpi:
   - tablet
   - laptop
   - desktop
-link: maptycs.com
 challenge: Risk managers, CFO's, and insurance brokers needed a new web application
   to help consolidate data from assets, claims, and policies that had been spread
   over e-mail, hard-drives, and paper sources. Risk managers especially needed to
@@ -101,4 +100,3 @@ ui:
 - name: Overlay Nuclear
 - name: Report Histogram
 ---
-

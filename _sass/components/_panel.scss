@@ -1,12 +1,10 @@
 section.panel,
 .panel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   width: 100%;
 
-  @include spacing-padding();
+  @include spacing-margin-top();
+  @include spacing-margin-bottom();
 
   @include mq(mobile-s) {
   }

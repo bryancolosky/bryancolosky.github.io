@@ -1,16 +1,20 @@
 <section class="panel {{ include.type }}">
   <article class="panel-body">
     {% include elements/header.html type="Header" scale="2" text="Challenge"%}
-    <p class="measure-wide">{{ item.challenge }}</p>
+    <p class="measure-wide">
+      {{ item.challenge }}
+    </p>
   </article>
 </section>
 
-<section class="panel {{ include.type }}">
+<section class="media-object {{ include.type }}">
   <article class="panel-body">
     {% include elements/header.html type="Header" scale="2" text="Solution"%}
-    <p class="measure-wide">{{ item.design-approach }}</p>
+    <p class="measure-wide">
+      {{ item.design-approach }}
+    </p>
   </article>
-  <!-- {% if item.device != null %}
+  {% if item.device != null %}
   <figure class="project-art">
     <picture class="db w-100 mw5 center">
       <source media="(min-width: 60em)" srcset="{{ site.baseurl }}/src/svg/{{ item.device.type }}/SVG/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
@@ -18,5 +22,5 @@
       <img class="db w-100 mw5 center" src="{{ site.baseurl }}/src/svg/{{ item.device.type }}/svg/{{ item.device.type }}-{{ item.device.model }}-{{ item.device.color }}.svg">
     </picture>
   </figure>
-  {% endif %} -->
+  {% endif %}
 </section>

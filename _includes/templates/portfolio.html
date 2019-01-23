@@ -3,23 +3,19 @@
 
 <!-- COMPONENTS -->
 {% capture main %}
-
-  {% capture projects %}
-
-    {% assign feed = site.projects | sort: 'title' %}
+  {% capture data %}
+    {% assign feed = site.projects | sort: 'position' %}
     {% for item in feed %}
       {% if item.published == true %}
       {% include components/project-panel.html %}
       {% endif %}
     {% endfor %}
-
   {% endcapture %}
-
-  {% include patterns/collection-feed.html type="media-object" size="full" content=projects %}
+  {% include patterns/feed.html content=data %}
 {% endcapture %}
 
 <!-- RETURN TEMPLATE -->
-{% include components/content-panel.html display="flex-grid" block=main %}
+{% include components/content-panel.html block=main %}
 
 <!-- MARKDOWN CONTENT -->
 {% capture text %}{{ page.content | markdownify }}{% endcapture %}

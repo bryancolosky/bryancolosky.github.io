@@ -1,6 +1,7 @@
 p {
   line-height: 1.6;
   column-count: 1;
+  max-width: 36rem;
 
   @include mq(mobile-s) {
   }
