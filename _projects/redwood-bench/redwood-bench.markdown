@@ -10,7 +10,7 @@ tags:
 - Fabrication
 - Construction
 - Autocad
-position: 1
+position: 8
 sitemap:
   exclude: false
   priority: 0.9

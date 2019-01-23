@@ -9,7 +9,7 @@ tags:
 - UI
 - Wireframes
 - e-Commerce
-position: 1
+position: 11
 sitemap:
   exclude: false
   priority: 0.9

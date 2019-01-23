@@ -9,7 +9,7 @@ tags:
 - Render
 - AutoCad
 - FormZ
-position: 1
+position: 4
 sitemap:
   exclude: false
   priority: 0.9

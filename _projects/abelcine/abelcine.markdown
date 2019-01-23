@@ -47,10 +47,18 @@ device:
   color: Rose-Gold
 diagrams:
 - name: Sitemap
+  caption: Figure 1.0 – Full content sitemap depicting user conversions, automated actions, and layout templates.
 - name: Checkout Flow
+  caption: Figure 2.0 – User checkout flow diagram.
 wireframes:
 - name: Navigation
+  caption: Figure 1.0 – Text-based "Buy" mega-menu exploratory wireframe.
 - name: Navigation Alt
+  caption: Figure 2.0 – Visual "Rent" mega-menu exploratory wireframe.
 - name: Mobile Navigation
+  caption: Figure 3.0 – Mobile navigation wireframe to conduct tree testing.
+- name: Product Detail
+  caption: Figure 4.0 – Product detail wireframe to conduct first click and usability testing.
 - name: Account
+  caption: Figure 5.0 – Consumer user accounts information architecture and wireframe.
 ---

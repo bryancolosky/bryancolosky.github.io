@@ -2,7 +2,7 @@
 title: Terms of Use
 date: 1970-01-01 00:00:00 Z
 permalink: "/terms-of-use/"
-position: 6
+position: 7
 sitemap:
   exclude: true
   priority: 0
