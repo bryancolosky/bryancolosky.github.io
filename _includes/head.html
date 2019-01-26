@@ -59,9 +59,7 @@
   <!-- Google Maps API -->
   <script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDst8ZNEf0eYpN0AutpvaVsza7Y60iuCGY"></script>
 
-  <!-- Custom JS -->
-  <script type="text/javascript" src="{{ site.baseurl }}/src/js/app.js"></script>
-
+  <!-- Google Analytics -->
   {% if site.google_analytics and site.github %}
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -70,5 +68,8 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   {% endif %}
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="{{ site.baseurl }}/src/js/app.js"></script>
 
 </head>
