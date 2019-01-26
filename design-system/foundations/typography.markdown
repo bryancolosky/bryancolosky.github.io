@@ -66,7 +66,9 @@ _  _  _  _
 
 ![image-title-here](/dist/images/profile-default.jpg){:class="image"}
 
-![image-title-here](/dist/images/portrait-default.jpg){:class="image"}
+![Bryan Colosky - Self Portrait](/dist/images/portrait-default.jpg){:class="image"}
+
+![Apple Valley - Sunset ](https://source.unsplash.com/-yghAF5_OrQ/){:class="image"}
 
 > Blockquote lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
