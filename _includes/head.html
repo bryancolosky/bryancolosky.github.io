@@ -62,4 +62,13 @@
   <!-- Custom JS -->
   <script type="text/javascript" src="{{ site.baseurl }}/src/js/app.js"></script>
 
+  {% if site.google_analytics and site.github %}
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  {% endif %}
+
 </head>
