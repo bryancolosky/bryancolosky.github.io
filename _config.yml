@@ -40,17 +40,98 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+  patterns:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
+  -
+    scope:
+      path: "_projects"
     values:
-      layout: projects
-  - scope:
-      path: ""
+      layout: feed
+      type: project
+  -
+    scope:
+      path: "_photographs"
       type: "photographs"
     values:
-      layout: photographs
+      layout: feed
+      type: photograph
+  -
+    scope:
+      path: "_docs"
+    values:
+      layout: doc
+      type: doc
+  -
+    scope:
+      path: "_docs/foundations"
+    values:
+      layout: doc
+      type: foundation
+  -
+    scope:
+      path: "_docs/guidelines"
+    values:
+      layout: doc
+      type: guideline
+  -
+    scope:
+      path: "_docs/components"
+    values:
+      layout: doc
+      type: component
+  -
+    scope:
+      path: "_patterns"
+    values:
+      layout: pattern.webpack
+      type: pattern
+      maturity: planned
+      title: Not Assigned
+      styles: Not Assigned
 
-# Excludes
-exclude: [package.json, package-lock.json, bower.json, gulpfile.js, node_modules, bower_components, gulp, /**/styles, /**/scripts, .bowerrc, .sass-cache, .DS_Store, .gitignore, .editorconfig, .jshintrc, /*.txt, /*.ai, /*.pdf, /*.indd, /*.idlk, /*.psd, /*.yml, /*~orig*]
+exclude:
+  - LICENSE
+  - Gemfile
+  - node_modules
+  - bower_components
+  - favicons
+  - html
+  - images
+  - js
+  - scss
+  - svg
+  - vendor
+  - Gemfile.lock
+  - gulpfile.js
+  - postcss.config.js
+  - webpack.config.js
+  - bower.json
+  - package.json
+  - package-lock.json
+  - yarn-error.log
+  - yarn.lock
+  - README.md
+  - .bowerrc
+  - .editorconfig
+  - .DS_Store
+  - .gitignore
+  - .jekyll-metadata
+  - .jshintrc
+  - .sass-cache
+  - /*.ai
+  - /*.indd
+  - /*.idlk
+  - /*.log
+  - /*.pdf
+  - /*.psd
+  - /*.rp
+  - /*.terminal
+  - /*src*
+  - /*orig*

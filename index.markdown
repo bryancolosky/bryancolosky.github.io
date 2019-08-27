@@ -10,4 +10,3 @@ overview: I’m a multidisciplinary designer.
 layout: default
 template: home
 ---
-

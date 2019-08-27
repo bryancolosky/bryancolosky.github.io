@@ -1,0 +1,33 @@
+{% include navigation.html %}
+<div class="cds_sidebar" id="cds_sidebar">
+  <a href="{{ site.baseurl }}" class="logo">
+    <div class="icon"><img src="{{ site.baseurl }}/icon.svg"></div>
+    <span class="title">{{ site.title }}</span>
+  </a>
+  <ul>
+    <li><a href="{{ site.baseurl }}/docs/about/getting-started/"{% if page.url == '/' %} class="active"{% endif %}>Getting Started</a></li>
+  </ul>
+  {% assign guidelines = site.docs | where: 'type', 'guideline' | sort: 'url' %}
+  <div class="group">
+    <div class="group-title overline">Guidelines</div>
+    <ul>{% for doc in guidelines %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign foundations = site.docs | where: 'type', 'foundation' | sort: 'url' %}
+  <div class="group">
+    <div class="group-title overline">Foundations</div>
+    <ul>
+    {% for doc in foundations %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% assign components = site.docs | where: 'type', 'component' | sort: 'url' %}
+  <div class="group">
+    <div class="group-title overline">Components</div>
+    <ul>{% for doc in components %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+</div>

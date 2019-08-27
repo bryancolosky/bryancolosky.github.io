@@ -1,0 +1,9 @@
+---
+layout: default.webpack
+---
+
+{% include components/collection-header.html %}
+{% unless page.template %}
+{% capture text %}{{ content | markdownify }}{% endcapture %}
+{% include components/content-panel.html markdown=text %}
+{% endunless %}

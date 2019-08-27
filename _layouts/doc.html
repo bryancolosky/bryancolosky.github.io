@@ -1,0 +1,22 @@
+---
+layout: default.webpack
+---
+<header id="mastheadArea" class="cds_masthead">
+  <div class="cds_contain">
+    <div class="head">
+      <h1 class="title header headline-1">{{ page.title }}</h1>
+      {% if page.info %}<div class="subtitle-1">{{ page.info }}</div>{% endif %}
+    </div>
+    {% if page.nav == true %}
+    <aside id="nav">
+      <div class="header overline">Contents</div>
+      <ul></ul>
+    </aside>
+    {% endif %}
+  </div>
+</header>
+<article id="documentationArea" class="cds_doc">
+  <div class="cds_contain">
+    {{ content }}
+  </div>
+</article>
