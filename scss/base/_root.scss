@@ -1,5 +1,12 @@
 // Root
 :root {
-  --color-silver: #{$color-silver};
-  --font-family: #{$font-family};
+  --color-near-white: #{$color-near-white};
+  --color-aqua: #{$color-aqua};
+  --color-navy: #{$color-navy};
+  --color-dark-blue: #{$color-dark-blue};
+  --color-lime: #{$color-lime};
+  --theme-cool__aqua: var(--color-aqua);
+  --theme-cool__dark-blue: var(--color-dark-blue);
+  --theme-cool__lime: var(--color-lime);
+  --theme-cool__navy: var(--color-navy);
 }

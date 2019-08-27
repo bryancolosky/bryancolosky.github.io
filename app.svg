@@ -1,0 +1,22 @@
+---
+---
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    {% include_relative svg/shapes/shape1.xml %}
+    {% include_relative svg/shapes/shape2.xml %}
+    {% include_relative svg/shapes/shape3.xml %}
+    {% include_relative svg/shapes/shape4.xml %}
+    {% include_relative svg/shapes/shape5.xml %}
+    {% include_relative svg/shapes/shape6.xml %}
+    {% include_relative svg/shapes/shape7.xml %}
+    {% include_relative svg/shapes/shape8.xml %}
+    {% include_relative svg/shapes/shape9.xml %}
+    {% include_relative svg/shapes/shape10.xml %}
+    {% include_relative svg/shapes/shape11.xml %}
+    {% include_relative svg/shapes/shape12.xml %}
+    {% include_relative svg/shapes/shape13.xml %}
+    {% include_relative svg/shapes/shape14.xml %}
+    {% include_relative svg/shapes/shape15.xml %}
+    {% include_relative svg/shapes/shape16.xml %}
+  <defs>
+</svg>
