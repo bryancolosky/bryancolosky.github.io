@@ -1,0 +1,60 @@
+<aside class="content-aside">
+  {% if include.header %}
+    {% assign work = site.data.resume.work %}
+    {% assign header = include.header %}
+    {% include elements/header.html type="Header" scale="3" text=header %}
+  {% endif %}
+  {% if include.content %}
+    <div class="aside__content">
+      {{ include.content }}
+    </div>
+  {% endif %}
+  <span class=""><small>Email</small></span>
+  <br>
+  <a href="{{ site.baseurl }}/about/resume/" class="link link-external">
+    hello@bryancolosky.com<i class="fal fa-fw fa-envelope"></i>
+  </a>
+  <br>
+  <br>
+  <span class=""><small>Phone</small></span>
+  <br>
+  <a href="{{ site.baseurl }}/about/resume/" class="link link-external">
+    1 (760) 265-1232<i class="fal fa-fw fa-phone"></i>
+  </a>
+  <hr>
+  <div class="banner">
+  <p>{{ site.data.resume.availability }}</p>
+  <a href="{{ site.baseurl }}/about/resume/" class="link link-primary">
+    Hire me<i class="fal fa-fw fa-long-arrow-right"></i>
+  </a>
+  </div>
+  <hr>
+  <span class=""><small>Follow & Share</small></span>
+  <ul class="list">
+    <li>
+      <a href="#" class="link link-external">
+        <i class="fa-lg fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link link-external">
+        <i class="fa-lg fab fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link link-external">
+        <i class="fa-lg fab fa-spotify"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link link-external">
+        <i class="fa-lg fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="link link-external">
+        <i class="fa-lg fab fa-twitter"></i>
+      </a>
+    </li>
+  </ul>
+</aside>

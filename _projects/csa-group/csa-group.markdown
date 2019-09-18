@@ -42,6 +42,5 @@ challenge: As a global organization and a provider of enterprise, mission-critic
   company's unique history, and industry role. Even further, the website required
   integration with CSA's e-commerce store, of which various audiences  purchase yearly
   and versioned compliancy standards documents.
-design-approach: 
+design-approach:
 ---
-

@@ -1,0 +1,60 @@
+// Typography
+.H1-text-style {
+  @include H1-text-style();
+}
+
+.H2-text-style {
+  @include H2-text-style();
+}
+
+.H3-text-style {
+  @include H3-text-style();
+}
+
+.H4-text-style {
+  @include H4-text-style();
+}
+
+.H5-text-style {
+  @include H5-text-style();
+}
+
+.H6-text-style {
+  @include H6-text-style();
+}
+
+.subtitle1-text-style {
+  @include subtitle1-text-style();
+}
+
+.subtitle2-text-style {
+  @include subtitle2-text-style();
+}
+
+.body2-text-style {
+  @include body2-text-style();
+}
+
+.body1-text-style {
+  @include body1-text-style();
+}
+
+.caption-text-style {
+  @include caption-text-style();
+}
+
+.overline-text-style {
+  @include overline-text-style();
+}
+
+.button-text-style {
+  @include button-text-style();
+}
+
+.link-text-style {
+  @include link-text-style();
+}
+
+.lead-text-style {
+  @include link-text-style();
+}

@@ -1,18 +1,16 @@
 ---
 title: Resume
 permalink: "/about/resume/"
-position: 1
+position: 2
 sitemap:
   exclude: false
-  priority: 1.0
-layout: info
+  priority: 0.9
+layout: page
 template: resume
-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
+overview:
 primary-anchor: professional-experience
-primary-anchor-text: Hire Me
+primary-anchor-text: Professional Experience
 downloads:
 - file-type: pdf
   path: downloads/pdf/bryancolosky-resume.pdf
 ---
-

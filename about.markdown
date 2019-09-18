@@ -24,7 +24,7 @@ I have lead a cross-functional team of UX designers and digital specialists at a
 ## Design Approach
 When it comes to design, I value white space, typography, and function. I focus on design and technology as broader approaches to experience, product performance and consumer perception. I firmly believe that experience is about the ideas & process, not resultant artifacts.
 
-## Personal background
+## Personal Background
 I was born and raised in the small desert town of Apple Valley, California. It is an expansively barren & dystopic desert landscape situated in California's southern desert. It's always a source of inspiration in my life.
 
 On the weekends, I enjoy cooking and exploring cultures through food, architecture, and sport. In 2014 I met my wonderful and beautiful wife, Melda. We love to travel to new places, taste craft beers, and look at the stars at night.

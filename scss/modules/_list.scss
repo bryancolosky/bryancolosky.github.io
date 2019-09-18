@@ -1,0 +1,30 @@
+// List
+ul.list,
+ol.list,
+.list {
+  padding: 0;
+  margin: space(base) 0;
+  width: 100%;
+
+  > li {
+    display: inline-block;
+    margin-right: space(tight);
+  }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
+  }
+}

@@ -1,0 +1,44 @@
+a.logo,
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  svg {
+    margin-right: space(base);
+
+    & image {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  span.logo-title,
+  .logo-title {
+    @include font-size($lead-font-size);
+    color: var(--body-color);
+    @include subtitle1-text-style;
+  }
+
+  &:focus,
+  &:active {
+    outline: 1px dotted var(--body-color);
+  }
+
+  &:hover {
+    svg {
+      transform: none;
+      transition: none;
+
+      & image {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &:after {
+    display: none;
+  }
+}

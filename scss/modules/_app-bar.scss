@@ -1,0 +1,77 @@
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: $z-max;
+  background-color: var(--color-near-white);
+  padding: space(extra-tight) space(base);
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    padding: {
+      right: space(bit-loose);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    padding: {
+      right: space(extra-loose);
+      left: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    padding: {
+      right: space(super-loose);
+      left: space(super-loose);
+    }
+  }
+
+  &.app-bar--pinned {
+    border-bottom: 1px solid var(--color-light-gray);
+    transform: translate(0,0);
+  }
+
+  &.app-bar--unpinned {
+    border-bottom: none;
+    transform: translate(0,-100%);
+  }
+
+  &.window--scroll-y-0 {
+    border-bottom: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-0--false {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-100 {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.window--scroll-y-100--false {
+    transition: all 0.2s ease-in-out;
+  }
+}

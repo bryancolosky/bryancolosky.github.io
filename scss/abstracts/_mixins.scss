@@ -1,0 +1,232 @@
+// Mixins
+
+/* Media Queries */
+/* @include mq(breakpoint) {} */
+@mixin mq($breakpoint, $type: min) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    // Determine query type.
+    @if $type == max {
+        $breakpoint-value: $breakpoint-value - 1px;
+    }
+    // Write the media query.
+    @media screen and (#{$type}-width: $breakpoint-value) {
+      @content;
+    }
+
+  // If the breakpoint doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+/* @include mq-range($lower, $lower) {} */
+@mixin mq-range($lower, $upper) {
+
+  // If both the lower and upper breakpoints exist in the map.
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+
+    // Get the lower and upper breakpoints.
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    // Write the media query.
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+
+  // If one or both of the breakpoints don't exist.
+  } @else {
+
+    // If lower breakpoint is invalid.
+    @if (map-has-key($breakpoints, $lower) == false) {
+
+      // Log a warning.
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    // If upper breakpoint is invalid.
+    @if (map-has-key($breakpoints, $upper) == false) {
+
+      // Log a warning.
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}
+
+@mixin H1-text-style($weight: bold) {
+  @include font-size($headings-font-size-h1);
+  line-height: line-height(H1);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin H2-text-style($weight: bold) {
+  @include font-size($headings-font-size-h2);
+  line-height: line-height(H2);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin H3-text-style($weight: bold) {
+  @include font-size($headings-font-size-h3);
+  line-height: line-height(H3);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin H4-text-style($weight: bold) {
+  @include font-size($headings-font-size-h4);
+  line-height: line-height(H4);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin H5-text-style($weight: bold) {
+  @include font-size($headings-font-size-h5);
+  line-height: line-height(H5);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin H6-text-style($weight: bold) {
+  @include font-size($headings-font-size-h6);
+  line-height: line-height(H6);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin subtitle2-text-style($weight: normal) {
+  @include font-size($font-size-subtitle2);
+  line-height: line-height(subtitle2);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin subtitle1-text-style($weight: normal) {
+  @include font-size($font-size-subtitle1);
+  line-height: line-height(subtitle1);
+  font-weight: font-weight($weight);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin body2-text-style($weight: normal) {
+  @include font-size($font-size-body2);
+  line-height: line-height(body2);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+}
+
+@mixin body1-text-style($weight: normal) {
+  @include font-size($font-size-body1);
+  line-height: line-height(body1);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin caption-text-style($weight: normal) {
+  @include font-size($font-size-caption);
+  line-height: line-height(caption);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin button-text-style($weight: bold) {
+  @include font-size($font-size-button);
+  line-height: line-height(button);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+  letter-spacing: space(extra-tight) / 5;
+  text-transform: uppercase;
+}
+
+@mixin overline-text-style($weight: normal) {
+  @include font-size($font-size-overline);
+  line-height: line-height(overline);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin link-text-style($weight: inherit) {
+  position: relative;
+  color: var(--body-color);
+  line-height: line-height(link);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 0;
+
+  &:focus,
+  &:active {
+    outline: 1px dotted var(--body-color);
+  }
+
+  &:hover {
+
+    &:after {
+      height: em(space(bit-loose));
+      left: em(space(extra-tight));
+      background-color: lighten($color-aqua, 5%);
+    }
+
+    svg {
+      transform: translate(.3em, 0);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &:after {
+    height: em(space(tight));
+    width: 100%;
+    position: absolute;
+    left: em(space(extra-tight) * -.75);
+    bottom: em(space(extra-tight) * -.75);
+    background-color: $color-aqua;
+    content: " ";
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+  }
+
+  svg {
+    transform: translate(0, 0);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@mixin list-text-style($weight: normal) {
+  @include font-size($font-size-base);
+  line-height: line-height(list);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}
+
+@mixin lead-text-style($weight: normal) {
+  @include font-size($lead-font-size);
+  line-height: line-height(list);
+  font-weight: font-weight($weight);
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+}

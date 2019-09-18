@@ -1,0 +1,8 @@
+<ul class="list {{ include.class }}">
+  {% assign list = include.src %}
+  {% assign name = include.class %}
+  {% assign link_type = include.hierarchy %}
+  {% for item in list %}
+  {% include modules/list-item.html class=name hierarchy=link_type %}
+  {% endfor %}
+</ul>

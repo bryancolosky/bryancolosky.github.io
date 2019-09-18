@@ -1,0 +1,42 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
+
+<!-- COMPONENTS -->
+{% capture main %}
+
+  {% capture experience %}
+    {% assign work = site.data.resume.work %}
+    {% include modules/header.html type="Header" scale="2" text="Experience"%}
+    {% for item in work %}
+    {% if item.published == true %}
+    {% include patterns/media-object-list.html data=item %}
+    {% endif %}
+    {% endfor %}
+  {% endcapture %}
+
+  {% include modules/panel.html type="media-object" size="60" id="profile" content=experience %}
+{% endcapture %}
+
+{% capture aside %}
+
+  {% capture attributes %}
+    {% assign skills = site.data.resume.skills %}
+    {% for item in skills %}
+    <span class=""><small>{{ item.name }}</small></span>
+    <ul class="list">
+      {% for each in item.keywords %}
+      <li class="tag"><small>{{ each }}</small></li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  {% endcapture %}
+
+  {% include modules/aside.html header="Skills" type="Header" content=attributes %}
+{% endcapture %}
+
+<!-- RETURN TEMPLATE -->
+{% include modules/content.html view='split' block=main sidebar=aside %}
+
+<!-- MARKDOWN CONTENT -->
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include modules/markdown.html markdown=text %}

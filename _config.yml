@@ -48,6 +48,10 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+  policies:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
   -
     scope:
@@ -95,6 +99,12 @@ defaults:
       maturity: planned
       title: Not Assigned
       styles: Not Assigned
+  -
+    scope:
+      path: "_policies"
+    values:
+      layout: docs
+      type: policy
 
 exclude:
   - LICENSE

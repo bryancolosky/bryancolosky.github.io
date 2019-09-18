@@ -1,0 +1,54 @@
+// Cover
+.cover {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 320px;
+  height: 320px;
+  padding: space(none) space(tight);
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    margin: {
+      right: space(bit-loose);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    min-height: 100vh;
+    height: 100vh;
+    margin: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    min-height: 100vh;
+    height: 100vh;
+    margin: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    min-height: 100vh;
+    height: 100vh;
+    margin: {
+      right: space(extra-loose);
+      left: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    min-height: 100vh;
+    height: 100vh;
+    margin: {
+      right: space(super-loose);
+      left: space(super-loose);
+    }
+  }
+}

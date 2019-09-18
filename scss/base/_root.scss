@@ -1,12 +1,81 @@
 // Root
 :root {
-  --color-near-white: #{$color-near-white};
+  // Colors
   --color-aqua: #{$color-aqua};
   --color-navy: #{$color-navy};
   --color-dark-blue: #{$color-dark-blue};
+  --color-blue: #{$color-blue};
+  --color-light-blue: #{$color-light-blue};
+  --color-lightest-blue: #{$color-lightest-blue};
+  --color-dark-green: #{$color-dark-green};
+  --color-teal: #{$color-teal};
+  --color-olive: #{$color-olive};
   --color-lime: #{$color-lime};
+  --color-green: #{$color-green};
+  --color-light-green: #{$color-light-green};
+  --color-maroon: #{$color-maroon};
+  --color-dark-red: #{$color-dark-red};
+  --color-red: #{$color-red};
+  --color-light-red: #{$color-light-red};
+  --color-orange: #{$color-orange};
+  --color-yellow: #{$color-yellow};
+  --color-light-yellow: #{$color-light-yellow};
+  --color-fuchsia: #{$color-fuchsia};
+  --color-purple: #{$color-purple};
+  --color-light-purple: #{$color-light-purple};
+  --color-dark-pink: #{$color-dark-pink};
+  --color-hot-pink: #{$color-hot-pink};
+  --color-pink: #{$color-pink};
+  --color-light-pink: #{$color-light-pink};
+  --color-black: #{$color-black};
+  --color-near-black: #{$color-near-black};
+  --color-dark-gray: #{$color-dark-gray};
+  --color-mid-gray: #{$color-mid-gray};
+  --color-gray: #{$color-gray};
+  --color-silver: #{$color-silver};
+  --color-light-silver: #{$color-light-silver};
+  --color-moon-gray: #{$color-moon-gray};
+  --color-light-gray: #{$color-light-gray};
+  --color-near-white: #{$color-near-white};
+  --color-white: #{$color-white};
+  // Themes
   --theme-cool__aqua: var(--color-aqua);
   --theme-cool__dark-blue: var(--color-dark-blue);
+  --theme-cool__green: var(--color-dark-blue);
   --theme-cool__lime: var(--color-lime);
   --theme-cool__navy: var(--color-navy);
+  --theme-cool__olive: var(--color-olive);
+  --theme-cool__dark-pink: var(--color-dark-pink);
+  --theme-cool__hot-pink: var(--color-hot-pink);
+  --theme-cool__green: var(--color-green);
+  --theme-cool__maroon: var(--color-maroon);
+  --theme-cool__dark-red: var(--color-dark-red);
+  --theme-cool__red: var(--color-red);
+  --theme-cool__light-red: var(--color-light-red);
+  --theme-cool__orange: var(--color-orange);
+  --theme-cool__purple: var(--color-purple);
+  --theme-cool__teal: var(--color-teal);
+  --theme-cool__white: var(--color-white);
+
+  // Fonts
+  --font-family: #{inspect($font-family)};
+  --font-color: #{$font-color};
+  --font-size-base: #{$font-size-base};
+  --headings-font-size-h1: #{$headings-font-size-h1};
+  --headings-font-size-h2: #{$headings-font-size-h2};
+  --headings-font-size-h3: #{$headings-font-size-h3};
+  --headings-font-size-h4: #{$headings-font-size-h4};
+  --headings-font-size-h5: #{$headings-font-size-h5};
+  --headings-font-size-h6: #{$headings-font-size-h6};
+  --lead-font-size: #{$lead-font-size};
+  --font-size-subtitle1: #{$font-size-subtitle1};
+  --font-size-subtitle2: #{$font-size-subtitle2};
+  --font-size-body1: #{$font-size-body1};
+  --font-size-body2: #{$font-size-body2};
+  --font-size-caption: #{$font-size-caption};
+  --font-size-button: #{$font-size-button};
+  --font-size-overline: #{$font-size-overline};
+
+  --active-color: #{$active-color};
+  --active-color-hover: #{$active-color-hover};
 }

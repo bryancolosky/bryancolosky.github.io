@@ -1,0 +1,19 @@
+// Avatar
+.avatar {
+  display: block;
+}
+
+.avatar__svg {
+  position: relative;
+  display: block;
+}
+
+.avatar__clippath,
+.avatar__deco,
+.avatar__img {
+  transform-origin: 50% 50%;
+}
+
+.avatar--theme-cool__hot-pink .avatar__deco {
+  fill: var(--theme-cool__hot-pink);
+}

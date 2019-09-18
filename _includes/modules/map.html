@@ -1,0 +1,57 @@
+<section class="map">
+  <div id="map-canvas" class="map-canvas" style="background-color:transparent"></div>
+</section>
+
+<script type="text/javascript">
+function initMap() {
+  var styles =[
+    {"featureType":"water","elementType":"geometry","stylers":[{"color":"#EEEEEE"}]},
+    {"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#F4F4F4"}]},
+    {"featureType":"road","elementType":"geometry","stylers":[{"color":"#F4F4F4"},{"lightness":-5}]},
+    {"featureType":"poi","elementType":"geometry","stylers":[{"color":"#EEEEEE"},{"lightness":10}]},
+    {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#EEEEEE"},{"lightness":5}]},
+    {"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},
+    {"elementType":"labels.text.fill","stylers":[{"visibility":"simple"},{"color": "#111111"},{"lightness": 50}]},
+    {"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#EEEEEE"}]},
+    {"elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+    {"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#F4F4F4"},{"lightness":-10}]}];
+
+  var myLatLng = { lat: 40.661329, lng: -73.9482107};
+
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Bryan Colosky"});
+
+  var mapOptions = {
+    center: myLatLng,
+    backgroundColor: 'transparent',
+    disableDefaultUI: true,
+    zoomControl: false,
+    zoomControlOptions: {
+      position: google.maps.ControlPosition.LEFT_BOTTOM
+    },
+    zoom: 13,
+    scrollwheel: false,
+    draggable: true
+  };
+
+  function setMarkers(map) {
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon:  {
+        path: google.maps.SymbolPath.CIRCLE,
+        strokeWeight: 5,
+        strokeColor: '#01FF70',
+        scale: 7
+      },
+    });
+  }
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+  setMarkers(map);
+}
+
+  google.maps.event.addDomListener(window, 'load', initMap);
+</script>

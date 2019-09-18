@@ -1,0 +1,92 @@
+// Content
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: {
+    top: space(super-loose);
+    right: space(base);
+    bottom: space(super-loose);
+    left: space(base);
+  }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    margin: {
+      right: space(bit-loose);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    margin: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    margin: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    margin: {
+      right: space(extra-loose);
+      left: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    margin: {
+      right: space(super-loose);
+      left: space(super-loose);
+    }
+  }
+}
+
+
+.content__full-view {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0;
+}
+
+.content__split-view {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0;
+
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: space(base);
+    }
+    @include mq(laptop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: space(base);
+    }
+    @include mq(laptop-l) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: space(base);
+    }
+    @include mq(desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: space(base);
+    }
+    @include mq(desktop-hd) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: space(base);
+    }
+}

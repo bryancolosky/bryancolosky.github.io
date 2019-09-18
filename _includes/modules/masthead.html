@@ -1,0 +1,51 @@
+<header class="masthead {% if include.view %}masthead__{{ include.view }}-view{% endif %}">
+
+  {% capture header %}
+    {% if page.intro %}
+      {{ page.intro }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  {% endcapture %}
+
+  {% if item.color %}
+    {% assign hue = item.color %}
+    {% include modules/figure.html class='masthead__figure' deco=1 clip='circle' color=hue %}
+  {% endif %}
+
+  <div class="masthead__meta">
+
+    {% include modules/header.html type="Header" scale="1" text=header %}
+
+    {% if item.url == page.url %}
+    <ul class="list tag-list">
+      {% for each in item.tags %}
+      <li class="tag">
+        <small>{{ each }}</small>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if page.desc %}
+    {% capture text %}{{ page.description }}{% endcapture %}
+    <p class="masthead__desc">
+    {{ text }}
+    </p>
+    {% endif %}
+
+    {% if page.overview %}
+    {% capture text %}{{ page.overview }}&nbsp;{{ site.data.resume.availability }}.{% endcapture %}
+    <p class="masthead__lead">
+    {{ text }}
+    </p>
+    {% endif %}
+
+    {% if page.primary-anchor %}
+    {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
+    {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
+    {% include modules/anchor.html class='masthead__anchor' target=anchor label=text icon='long-arrow-right' %}
+    {% endif %}
+  </div>
+
+</header>

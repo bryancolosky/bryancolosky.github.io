@@ -18,8 +18,8 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
 
+        // JavaScript to be fired on all pages
         function smoothScroll(event) {
           event.preventDefault();
           if(location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -52,7 +52,6 @@
         }
 
         window.onload = function(event) {
-          event.preventDefault();
           var windowElement = $('html');
           var bodyElement = $('body');
           scroller();
@@ -62,14 +61,14 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-        var header = document.getElementById("site-header");
+        var header = document.getElementById("app-bar");
         var headroom  = new Headroom(header, {
           "offset": header.innerHeight,
           "tolerance": 1,
           "classes": {
-            "initial": "site-header",
-            "pinned": "site-header--pinned",
-            "unpinned": "site-header--unpinned",
+            "initial": "app-bar",
+            "pinned": "app-bar--pinned",
+            "unpinned": "app-bar--unpinned",
             "top":"window--scroll-y-0",
             "notTop":"window--scroll-y-0--false",
             "bottom":"window--scroll-y-100",

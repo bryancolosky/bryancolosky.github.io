@@ -118,6 +118,12 @@ module.exports = {
       template: path.resolve(__dirname, './html/iframe.html'),
       filename: path.resolve(__dirname, './_layouts/pattern.webpack.html'),
     }),
+    new HtmlWebpackPlugin({
+      alwaysWriteToDisk: true,
+      inject: false,
+      template: path.resolve(__dirname, './html/favicons.html'),
+      filename: path.resolve(__dirname, './_includes/meta/favicons.webpack.html'),
+    }),
     new HtmlWebpackHarddiskPlugin()
   ]
 }

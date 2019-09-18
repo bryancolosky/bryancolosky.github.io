@@ -9,7 +9,7 @@ tags:
 - Open Source
 - Rendering
 - AutoCad
-position: 6
+position: 13
 sitemap:
   exclude: false
   priority: 0.9
@@ -28,7 +28,7 @@ overview: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
   nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
   nulla pariatur.
-link: 
+link:
 kpi:
 - timeline: Retainer
 - design: 3 months
@@ -37,7 +37,6 @@ kpi:
 - devices:
   - laptop
   - desktop
-challenge: 
-design-approach: 
+challenge:
+design-approach:
 ---
-

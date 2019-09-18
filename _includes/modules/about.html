@@ -1,0 +1,28 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
+
+<!-- COMPONENTS -->
+{% capture profile %}
+
+  {% capture portrait %}
+    {% assign img = site.gravatar_userimage %}
+    {% include modules/figure.html class='figure__portrait' caption='Costa Rica – 2015' src=img deco=12 color='white' %}
+  {% endcapture %}
+
+  {% capture location %}
+    {% include modules/map.html %}
+  {% endcapture %}
+
+  {% include modules/panel.html id="profile" figure=portrait map=location %}
+
+{% endcapture %}
+
+{% capture aside %}
+  {% include modules/aside.html type='sidebar' header='Connect' %}
+{% endcapture %}
+
+<!-- RETURN TEMPLATE -->
+{% include modules/content.html view='split' block=profile sidebar=aside %}
+
+<!-- MARKDOWN CONTENT -->
+{% include modules/markdown.html %}

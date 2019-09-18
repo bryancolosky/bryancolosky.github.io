@@ -1,0 +1,43 @@
+<figure class="figure
+  {% if include.class %}
+    {{ include.class }}
+  {% endif %}">
+  {% if include.deco %}
+  <svg class="figure__svg" width="100%" height="100%" viewBox="0 0 500 500">
+    {% if forloop.index %}
+      {% assign shape = forloop.index %}
+    {% else %}
+      {% assign shape = include.deco %}
+    {% endif %}
+    <g class="figure__deco figure__deco--theme-cool__{{ include.color }}">
+      <use xlink:href="{{ site.baseurl }}/app.svg#shape{{ shape }}" />
+    </g>
+
+    {% if include.clip %}
+    <clipPath id="clipShape{{ include.clip | capitalize }}">
+      <use xlink:href="{{ site.baseurl }}/app.svg#{{ include.clip }}" />
+    </clipPath>
+    <g clip-path="url(#clipShape{{ include.clip | capitalize }})">
+      {% include modules/image.html img='art' class='figure__image' type='xlink' %}
+    </g>
+    {% else %}
+      {% capture gravatar %}{{ site.gravatar_userimage }}{% endcapture %}
+      {% include modules/image.html size='1080' id=gravatar img=src %}
+    {% endif %}
+  </svg>
+
+  {% elsif include.src == site.gravatar_userimage %}
+    {% capture gravatar %}{{ site.gravatar_userimage }}{% endcapture %}
+    {% include modules/image.html size='1080' id=gravatar img=src %}
+  {% else %}
+    {% assign src = include.src %}
+    {% include modules/picture.html img=src %}
+  {% endif %}
+
+  {% if include.caption %}
+  <figcaption class="figure__caption">
+    <small>{{ include.caption }}</small>
+  </figcaption>
+  {% endif %}
+
+</figure>

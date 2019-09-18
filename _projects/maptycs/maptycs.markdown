@@ -3,7 +3,7 @@ title: Maptycs
 date: 2014-04-20 11:29:28 Z
 published: true
 permalink: "/projects/maptycs/"
-position: 4
+position: 5
 sitemap:
   exclude: false
   priority: 0.9

@@ -3,10 +3,10 @@ layout: default.webpack
 ---
 
 {% if page.header != false %}
-  {% include components/page-header.html %}
+  {% include modules/masthead.html %}
 {% endif %}
 
 {% unless page.template %}
   {% capture text %}{{ content | markdownify }}{% endcapture %}
-  {% include components/block-panel.html markdown=text %}
+  {% include modules/content.html markdown=text %}
 {% endunless %}

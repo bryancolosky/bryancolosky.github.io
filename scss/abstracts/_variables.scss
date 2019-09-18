@@ -1,5 +1,8 @@
+// Alpha & Opacity
+$transparent: transparent;
+
 // Colors
-// Cool
+/* Cool */
 $color-aqua:           #7FDBFF;
 $color-navy:           #001B44;
 
@@ -15,9 +18,9 @@ $color-lime:           #01FF70;
 $color-green:          #2ECC40;
 $color-light-green:    #9EEBCF;
 
-// Warm
+/* Warm */
 $color-maroon:         #85144B;
-$color-dark-red:       #E7040f;
+$color-dark-red:       #E7040F;
 $color-red:            #FF4136;
 $color-light-red:      #ff725c;
 
@@ -30,11 +33,11 @@ $color-purple:         #5E2CA5;
 $color-light-purple:   #A463F2;
 
 $color-dark-pink:      #D5008F;
-$color-hot-pink:       #FF41b4;
+$color-hot-pink:       #FF41B4;
 $color-pink:           #FF80CC;
 $color-light-pink:     #FFA3D7;
 
-// Gray Scale
+/* Gray Scale */
 $color-black:          #000000;
 $color-near-black:     #111111;
 $color-dark-gray:      #333333;
@@ -48,6 +51,7 @@ $color-near-white:     #F4F4F4;
 $color-white:          #FFFFFF;
 
 // Typography
+/* Fonts */
 $sans-serif:    proxima-nova, /* Adobe Typekit */
                 -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
                 'avenir next', avenir, /* MacOS and iOS */
@@ -62,6 +66,103 @@ $sans-serif:    proxima-nova, /* Adobe Typekit */
                 'Liberation Sans', /* Linux */
                 sans-serif; /* Everything else */
 
-$font-family:    $sans-serif;
+$font-family: $sans-serif;
+$font-color: $color-navy;
 
-$font-size-base: 1rem;
+$active-color: $color-lime;
+$active-color-hover: lighten($active-color, 5%);
+
+/* Font Sizing */
+$default-browser-font-size: 16px;
+$font-size-base: $default-browser-font-size;
+
+$font-size-data: (
+  H1: $font-size-base * 6,
+  H2: $font-size-base * 3.75,
+  H3: $font-size-base * 3,
+  H4: $font-size-base  * 2.125,
+  H5: $font-size-base * 1.5,
+  H6: $font-size-base * 1.25,
+  subtitle2: $font-size-base * 0.875,
+  subtitle1: $font-size-base,
+  body2: $font-size-base * 0.875,
+  body1: $font-size-base,
+  caption: $font-size-base * 0.857,
+  button: $font-size-base * 0.857,
+  overline: $font-size-base * 0.857,
+  lead: $font-size-base * 1.6,
+  link: $font-size-base,
+  list: $font-size-base
+);
+
+$headings-font-size-h1: font-size(H1);
+$headings-font-size-h2: font-size(H2);
+$headings-font-size-h3: font-size(H3);
+$headings-font-size-h4: font-size(H4);
+$headings-font-size-h5: font-size(H5);
+$headings-font-size-h6: font-size(H6);
+$lead-font-size: font-size(lead);
+
+$font-size-subtitle2: font-size(subtitle2);
+$font-size-subtitle1: font-size(subtitle1);
+$font-size-body2: font-size(body2);
+$font-size-body1: font-size(body1);
+$font-size-caption: font-size(caption);
+$font-size-button: font-size(button);
+$font-size-overline: font-size(overline);
+
+$line-height-data: (
+  H1: normal,
+  H2: normal,
+  H3: normal,
+  H4: normal,
+  H5: normal,
+  H6: normal,
+  subtitle2: 1.6,
+  subtitle1: 1.6,
+  body2: 1.5,
+  body1: 1.5,
+  caption: 1.5,
+  button: 1.5,
+  overline: 1.5,
+  lead: 1.6,
+  link: 1.5,
+  list: 1.5
+);
+
+$font-weight-data: (
+  bold: 900,
+  normal: 400
+);
+
+// Spacing
+$point-unit: 8px;
+
+$spacing-data: (
+  none:         0,
+  extra-tight:  rem($point-unit / 2), // 4px
+  tight:        rem($point-unit),     // 8px
+  base:         rem($point-unit * 2), // 16px
+  bit-loose:    rem($point-unit * 3), // 24px
+  loose:        rem($point-unit * 4), // 32px
+  extra-loose:  rem($point-unit * 6), // 48px
+  super-loose:  rem($point-unit * 8)  // 64px
+);
+
+$breakpoints: (
+  none:       0,
+  auto:       auto,
+  mobile-s:   rem($point-unit * 40), // 320px
+  mobile-m:   rem($point-unit * 46.875), // 375px
+  mobile-l:   rem($point-unit * 53.125), // 425px
+  tablet:     rem($point-unit * 96), // 768px
+  laptop:     rem($point-unit * 128), // 1024px
+  laptop-l:   rem($point-unit * 180), // 1440px
+  desktop:    rem($point-unit * 240), // 1920px
+  desktop-hd: rem($point-unit * 320) // 2560px
+);
+
+$max-width: breakpoint(laptop-l);
+
+// Depth
+$z-max:         2147483647;

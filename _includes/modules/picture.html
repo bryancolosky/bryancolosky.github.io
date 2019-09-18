@@ -1,0 +1,16 @@
+<picture class="{{ include.class }} db w-100 center">
+
+  {% assign media-queries = site.data.settings.media-queries %}
+  {% for breakpoints in media-queries reversed %}
+
+    {% for breakpoint in breakpoints %}
+    {% assign mq = breakpoint[0] %}
+    {% assign size = breakpoint[1] %}
+    <source media="(min-width: {{ size }})" srcset="{{ site.baseurl }}/dist/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-{{ include.img }}-{{ mq }}.png">
+    <source media="(min-width: {{ size }})" srcset="{{ site.baseurl }}/dist/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-{{ include.img }}-{{ mq }}@2x.png">
+    {% endfor %}
+
+  {% endfor %}
+  <img class="db center" src="{{ site.baseurl }}/dist/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-{{ include.img }}-default.png" alt="{{ item.title }} - {{ include.alt }}">
+
+</picture>

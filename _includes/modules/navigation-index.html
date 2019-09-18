@@ -1,0 +1,15 @@
+{% assign pages = site.pages | sort:'position' | group_by: 'layout' %}
+{% assign nav = "" | split: ',' %}
+{% assign link_type = "primary" %}
+
+{% for index in pages %}
+  {% if index.name == 'page' %}
+    {% for item in index.items %}
+      {% unless item.sitemap.priority != 1.0 %}
+      {% assign nav = nav | push: item %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% include modules/list.html order=true style="inline" class="navigation-index" src=nav hierarchy=link_type %}

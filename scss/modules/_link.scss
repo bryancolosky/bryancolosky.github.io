@@ -1,0 +1,40 @@
+// Link
+a.link,
+.link {
+  @include link-text-style();
+  &:hover {
+    &:after {
+      background-color: lighten($color-lime, 5%);
+    }
+  }
+  &:after {
+    background-color: $color-lime;
+  }
+}
+
+a.link-secondary {
+  @include link-text-style();
+  &:hover {
+    &:after {
+      background-color: lighten($color-moon-gray, 5%);
+    }
+  }
+
+  &:after {
+    background-color: $color-moon-gray;
+  }
+}
+
+
+a.link-external {
+  @include link-text-style();
+  &:hover {
+    &:after {
+      background-color: lighten($color-aqua, 5%);
+    }
+  }
+
+  &:after {
+    background-color: $color-aqua;
+  }
+}

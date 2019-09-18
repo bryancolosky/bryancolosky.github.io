@@ -1,0 +1,23 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
+
+<!-- COMPONENTS -->
+{% capture main %}
+  {% capture data %}
+    {% assign feed = site.projects | sort: 'position' %}
+    {% for item in feed %}
+      {% if item.published == true %}
+      <li class="collection-item">
+      {% include modules/article-card.html class='collection-item__object' %}
+      </li>
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% include modules/collection.html content=data %}
+{% endcapture %}
+
+<!-- RETURN TEMPLATE -->
+{% include modules/content.html view='full' block=main %}
+
+<!-- MARKDOWN CONTENT -->
+{% include modules/markdown.html %}

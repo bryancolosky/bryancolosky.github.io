@@ -1,0 +1,14 @@
+{% capture entity %}
+{% assign text = item.title %}
+  {% if item.url %}
+    {% assign hierarchy = include.hierarchy %}
+    {% assign url = item.url %}
+    {% include modules/link.html href=url target="" type=hierarchy label=text %}
+  {% else %}
+  {{ text }}
+  {% endif %}
+{% endcapture %}
+
+<li class="{{ include.class }}-item">
+  {{ entity }}
+</li>

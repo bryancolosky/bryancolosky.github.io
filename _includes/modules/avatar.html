@@ -1,0 +1,13 @@
+<span class="avatar avatar--theme-cool__hot-pink">
+  <svg class="avatar__svg" width="{{ include.size }}" height="{{ include.size }}" viewBox="0 0 500 500">
+    <g class="avatar__deco">
+      <use xlink:href="{{ site.baseurl }}/app.svg#shape12" />
+    </g>
+    <clipPath id="clipShape">
+      <use xlink:href="{{ site.baseurl }}/app.svg#circle" />
+    </clipPath>
+    <g clip-path="url(#clipShape)">
+      <image class="avatar__img" xlink:href="https://www.gravatar.com/avatar/{{ site.gravatar_id }}?s=100" x="70" y="70" height="360" width="360" />
+    </g>
+  </svg>
+</span>

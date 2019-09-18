@@ -4,9 +4,8 @@ permalink: "/projects/"
 position: 2
 sitemap:
   exclude: false
-  priority: 1.0
+  priority: 0.9
 layout: docs
 template: projects
 header: false
 ---
-

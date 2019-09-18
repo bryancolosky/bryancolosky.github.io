@@ -1,74 +1,23 @@
-<section class="media-object media-object--style-{{ forloop.index }}">
-  <figure class="figure media-object__figure">
-    <svg class="figure__svg" width="500px" height="500px" viewBox="0 0 500 500">
+<article class="article article--theme-cool__navy">
+  <figure class="figure article__figure">
+    <svg class="figure__svg" width="100%" height="100%" viewBox="0 0 500 500">
       <g class="figure__deco">
         <use xlink:href="{{ site.baseurl }}/app.svg#shape{{ forloop.index }}" />
       </g>
       <clipPath id="clipShape{{ forloop.index }}">
-        <use xlink:href="{{ site.baseurl }}/app.svg#shape{{ forloop.index | plus:7 }}" />
+        <use xlink:href="{{ site.baseurl }}/app.svg#avatar" />
       </clipPath>
       <g clip-path="url(#clipShape{{ forloop.index }})">
-        <image class="figure__img" xlink:href="https://images.unsplash.com/photo-1566352363537-8ff042021e99" x="0" y="0" height="460px" width="720px" />
+        <image class="figure__img" xlink:href="https://images.unsplash.com/photo-1566352363537-8ff042021e99" x="0" y="0" height="420px" width="760px" />
       </g>
     </svg>
   </figure>
-  <div class="media-object__meta">
-    <!-- <div class="media-object__number">
-      <span class="media-object__specimen">UX</span>
-      <span class="media-object__reference">0{{ forloop.index }}</span>
-    </div> -->
-    <h1 class="media-object__title">{{ item.title }}</h1>
-    <h2 class="media-object__subtitle">Exoplanet Gliese 180 b</h2>
+  <div class="article__meta">
+    <div class="article__number">
+      <span class="article__specimen">UX</span>
+      <span class="article__reference">0{{ forloop.index }}</span>
+    </div>
+    <h1 class="article__title">{{ item.title }}</h1>
+    <h2 class="article__subtitle">Exoplanet Gliese 180 b</h2>
   </div>
-</section>
-
-<!-- <section class="project-panel {% cycle 'flex-row', 'flex-row-reverse' %}">
-
-  {% include elements/picture.html img="art" class="project-art" %}
-
-  <article class="project-panel-body bg-white">
-    <header class="">
-      {% unless item.url == page.url %}
-      <h2 class="">
-        <a class="link"
-        href="{{ item.url }}">
-          {{ item.title }}
-        </a>
-      </h2>
-
-      {% else %}
-      <h1 class="">
-        {{ page.title }}
-      </h1>
-      {% endunless %}
-
-    </header>
-
-    {% if item.url == page.url %}
-    <ul class="tag-list list">
-      {% for each in item.tags %}
-      <li class="tag">
-        <small>{{ each }}</small>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-
-    <p class="measure-wide">
-      {{ item.overview | truncatewords: 999999, " ..." }}
-    </p>
-
-    <footer class="">
-      {% unless item.url == page.url %}
-      <a class="link"
-        href="{{ item.url }}">View {{ item.title }} Details<i class="fal fa-fw fa-long-arrow-right"></i>
-      </a>
-      {% else %}
-      <a class="link"
-        href="{{ item.external-url }}">{{ item.title | slugify | append: ".com" }} <i class="fal fa-fw fa-xs fa-external-link"></i>
-      </a>
-      {% endunless %}
-    </footer>
-  </article>
-
-</section> -->
+</article>

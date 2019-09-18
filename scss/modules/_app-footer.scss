@@ -1,0 +1,58 @@
+.app-footer {
+  background-color: var(--color-white);
+  padding: space(super-loose) space(base);
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    padding: {
+      right: space(bit-loose);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    padding: {
+      right: space(extra-loose);
+      left: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    padding: {
+      right: space(super-loose);
+      left: space(super-loose);
+    }
+  }
+
+  ul.app-footer__links,
+  .app-footer__links {
+    font-size: var(--font-size-caption);
+    margin: {
+      top: space(super-loose);
+      bottom: space(base);
+    }
+  }
+
+  a.app-footer__anchor,
+  .app-footer__anchor {
+    margin: {
+      top: space(super-loose);
+      bottom: space(base);
+    }
+  }
+}

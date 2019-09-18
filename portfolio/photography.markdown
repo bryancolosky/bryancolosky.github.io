@@ -4,9 +4,8 @@ permalink: "/portfolio/photography/"
 position: 2
 sitemap:
   exclude: false
-  priority: 1.0
-layout: info
+  priority: 0.9
+layout: page
 template: photography
 header: false
 ---
-

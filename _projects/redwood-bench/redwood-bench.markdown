@@ -10,7 +10,7 @@ tags:
 - Fabrication
 - Construction
 - Autocad
-position: 8
+position: 9
 sitemap:
   exclude: false
   priority: 0.9
@@ -31,6 +31,5 @@ challenge: The objective was to catalyze social interaction by providing sitting
   relaxing, socializing, studying, eating, napping, seminar, class, and pin-up space
   for presenting students’ architectural design projects in an otherwise 'dead-space'
   within the college building.
-design-approach: 
+design-approach:
 ---
-

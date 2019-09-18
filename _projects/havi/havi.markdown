@@ -3,7 +3,7 @@ title: HAVI
 date: 2018-04-20 11:29:28 Z
 published: true
 permalink: "/projects/havi/"
-position: 2
+position: 4
 sitemap:
   exclude: false
   priority: 0.9

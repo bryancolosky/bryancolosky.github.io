@@ -9,7 +9,7 @@ tags:
 - UI
 - Wireframes
 - e-Commerce
-position: 10
+position: 11
 sitemap:
   exclude: false
   priority: 0.9
@@ -36,7 +36,6 @@ kpi:
   - mobile
   - laptop
   - desktop
-challenge: 
-design-approach: 
+challenge:
+design-approach:
 ---
-

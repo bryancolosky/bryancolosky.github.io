@@ -1,0 +1,62 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+{% include meta/favicons.webpack.html %}
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+<!--
+===============
+CSS
+===============
+-->
+
+<!-- Portfolio Styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+<!--
+===============
+Javascript
+===============
+-->
+
+<!-- Adobe Typekit -->
+<script src="https://use.typekit.net/{{ site.adobe_id }}.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- FontAwesome Pro -->
+<script defer src="https://pro.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-3yBLeJ4waqGSAf4A8pjZ13UF7GuhgbdKnBQvIp/TkWoXtQbtwjlIPNjkDRJ46UCn" crossorigin="anonymous"></script>
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Responsive shivs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<!-- Headroom -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+
+<!-- iFrame-resizer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js"></script>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDst8ZNEf0eYpN0AutpvaVsza7Y60iuCGY"></script>
+
+<!-- Google Analytics -->
+{% if site.google_analytics and site.github %}
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endif %}
+
+<!-- Custom JS -->
+<script type="text/javascript" src="{{ site.baseurl }}/dist/app.js"></script>

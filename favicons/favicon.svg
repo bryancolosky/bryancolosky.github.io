@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#ff725c;}.cls-3{fill:#9ea7aa;}.cls-4{fill:#263238;}.cls-5{fill:#01ff70;}</style></defs><title>favicon</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" width="320" height="220"/><rect class="cls-2" y="180" width="320" height="40"/><rect class="cls-3" x="80" y="140" width="160" height="20"/><polygon class="cls-4" points="140 60 140 40 120 40 120 60 100 60 100 100 120 100 120 140 160 140 160 120 180 120 180 140 200 140 200 120 220 120 220 140 240 140 240 60 140 60"/><rect class="cls-5" x="40" y="60" width="20" height="20"/><rect class="cls-5" y="60" width="20" height="20"/><polygon class="cls-5" points="60 40 60 20 40 20 40 0 20 0 20 20 0 20 0 40 20 40 20 60 40 60 40 40 60 40"/></g></g></svg>
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #f4f4f4;
+      }
+
+      .cls-4 {
+        fill: #ff725c;
+      }
+
+      .cls-5 {
+        fill: #999;
+      }
+
+      .cls-6 {
+        fill: #333;
+      }
+
+      .cls-7 {
+        fill: #01ff70;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="shape8" class="cls-1" d="M164.37,6.43C240.17-14,330.42,16.35,391.62,69.22c53.9,46.66,92.78,125.05,94.32,200,1.41,60.74-22.88,132.39-69.62,166.13C318.49,505.56,150.62,532,64.15,445.68c-73.26-73.22-54.81-224-17-324.2C67.1,68.5,113.28,20,164.37,6.43Z"/>
+    </clipPath>
+  </defs>
+  <title>favicon</title>
+  <g class="cls-2">
+    <rect id="Background" class="cls-3" width="500" height="500"/>
+    <rect id="Stripe" class="cls-4" y="329.75" width="500" height="170.25"/>
+    <rect id="Earth" class="cls-5" x="160" y="284.75" width="180" height="22.5"/>
+    <polygon id="Bear" class="cls-6" points="227.5 194.75 227.5 172.25 205 172.25 205 194.75 182.5 194.75 182.5 239.75 205 239.75 205 284.75 250 284.75 250 262.25 272.5 262.25 272.5 284.75 295 284.75 295 262.25 317.5 262.25 317.5 284.75 340 284.75 340 194.75 227.5 194.75"/>
+    <g id="Star">
+      <rect class="cls-7" x="115" y="194.75" width="22.5" height="22.5"/>
+      <rect class="cls-7" x="70" y="194.75" width="22.5" height="22.5"/>
+      <polygon class="cls-7" points="137.5 172.25 137.5 149.75 115 149.75 115 127.25 92.5 127.25 92.5 149.75 70 149.75 70 172.25 92.5 172.25 92.5 194.75 115 194.75 115 172.25 137.5 172.25"/>
+    </g>
+  </g>
+</svg>

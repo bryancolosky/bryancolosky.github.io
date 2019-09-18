@@ -1,15 +1,90 @@
-// * HTML
+// Generic
 *, html {
-  --body-background: var(--color-silver);
-  --body-font-family: var(--font-family);
-  background: var(--body-background);
-  @include font-size($font-size-base);
+  margin: space(none);
+  padding: space(none);
 }
 
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  pointer-events: none;
+body {
+  --body-font-family: var(--font-family);
+  --body-color: var(--color-navy);
+  --body-background: var(--color-near-white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: 100vh;
+  height: auto;
+  color: var(--body-color);
+  background: var(--body-background);
+  font-family: var(--body-font-family);
+  @include font-size($font-size-base);
+  @extend html;
+}
+
+h1 {
+  margin-top: space(loose);
+  margin-top: space(extra-loose);
+  @include H1-text-style();
+}
+
+h2 {
+  margin-top: space(bit-loose);
+  margin-bottom: space(loose);
+  @include H2-text-style();
+}
+
+h3 {
+  margin-top: space(bit-loose);
+  margin-bottom: space(loose);
+  @include H3-text-style();
+}
+
+h4 {
+  margin-top: space(base);
+  margin-bottom: space(bit-loose);
+  @include H4-text-style();
+}
+
+h5 {
+  margin-top: space(base);
+  margin-bottom: space(tight);
+  @include H5-text-style();
+}
+
+h6 {
+  margin-top: space(base);
+  margin-bottom: space(tight);
+  @include H6-text-style();
+}
+
+p {
+  margin-top: space(base);
+  margin-bottom: space(base);
+  @include body1-text-style();
+}
+
+ul, ol {
+  margin-top: space(tight);
+  margin-bottom: space(tight);
+  @include list-text-style();
+}
+
+a {
+  @include link-text-style();
+}
+
+button {
+  @include button-text-style;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+code {
+  font-size: var(---font-size-base);
+}
+
+pre {
+  margin: space(extra-loose) 0;
 }

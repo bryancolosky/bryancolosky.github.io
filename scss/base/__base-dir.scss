@@ -2,8 +2,14 @@
 // Base Directory
 // ==========
 
+// Import Generic
+@import 'generic';
+
 // Import Root
 @import 'root';
 
-// Import generic
-@import 'generic';
+// Import Tokens
+@import 'tokens';
+
+// Import Typography
+@import 'typography';

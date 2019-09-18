@@ -11,7 +11,7 @@ tags:
 - UI
 - Sitemap
 - Wireframes
-position: 9
+position: 10
 sitemap:
   exclude: false
   priority: 0.9
@@ -43,6 +43,5 @@ kpi:
 challenge: IGY required an experience focused around booking a slip reservation, marina
   information and destination information. Unlike other traditional booking services,
   IGY required a low latency, small bandwidth, and highly agile booking service.
-design-approach: 
+design-approach:
 ---
-

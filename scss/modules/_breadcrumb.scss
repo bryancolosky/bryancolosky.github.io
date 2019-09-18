@@ -1,0 +1,34 @@
+// Breadcrumb
+div.breadcrumb,
+.breadcrumb {
+  width: 100%;
+  margin: {
+    top: space(base);
+    bottom: space(base);
+  };
+
+  ol.list {
+    @extend .list;
+
+    li {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
+  }
+}

@@ -1,0 +1,16 @@
+{% if include.type == 'xlink' %}
+<image class="figure__image {{ include.class }}" xlink:href="{{ site.baseurl }}/dist/images/projects/{{ item.title | slugify }}/{{ item.title | slugify }}-{{ include.img }}-default.png" x="0" y="0" height="500px" width="750px" />
+{% else %}
+<img class="figure__img"
+
+src="
+{% if include.id %}
+https://www.gravatar.com/userimage/91447980/{{ include.id }}?size={{ include.size }}
+{% else %}
+{{ include.img }}
+{% endif %}"
+
+height="auto"
+width="{{ include.size }}"
+/>
+{% endif %}

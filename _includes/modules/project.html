@@ -1,0 +1,66 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
+
+<!-- COMPONENTS -->
+{% capture main %}
+
+  {% capture overview %}
+  {% assign item = page %}
+  {% include modules/masthead.html view='split' %}
+  {% endcapture %}
+
+  {% capture details %}
+  {% assign item = page %}
+  {% include patterns/project-panel--challenge.html %}
+  {% endcapture %}
+  {% capture stats %}
+  {% assign item = page %}
+  {% include components/stats-slab.html %}
+  {% endcapture %}
+
+  {% capture diagrams %}
+  {% assign item = page %}
+  {% for diagram in item.diagrams %}
+  {% assign name = diagram.name | slugify | prepend: "diagram--" %}
+  {% assign text = diagram.caption %}
+  {% include elements/figure.html src=name caption=text %}
+  {% endfor %}
+  {% endcapture %}
+
+  {% capture wireframes %}
+  {% assign item = page %}
+  {% for wire in item.wireframes %}
+  {% assign name = wire.name | slugify | prepend: "wireframe--" %}
+  {% assign text = wire.caption %}
+  {% include elements/figure.html src=name caption=text %}
+  {% endfor %}
+  {% endcapture %}
+
+  {% capture prototypes %}
+  {% assign item = page %}
+  {% for protoype in item.prototypes %}
+  {% assign name = protoype.name | slugify | prepend: "prototype--" %}
+  {% assign text = protoype.caption %}
+  {% include elements/figure.html src=name caption=text %}
+  {% endfor %}
+  {% endcapture %}
+
+  {% capture screens %}
+  {% assign item = page %}
+  {% for screen in item.ui %}
+  {% assign name = screen.name | slugify | prepend: "ui--" %}
+  {% assign text = screen.caption %}
+  {% include elements/figure.html src=name caption=text %}
+  {% endfor %}
+  {% endcapture %}
+
+  {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes mvp=prototypes design=screens %}
+
+{% endcapture %}
+
+<!-- RETURN TEMPLATE -->
+{% include modules/content.html block=main %}
+
+<!-- MARKDOWN CONTENT -->
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include modules/markdown.html markdown=text %}

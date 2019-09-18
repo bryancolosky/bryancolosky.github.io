@@ -20,7 +20,7 @@ layout: page
 template: project
 header: false
 theme: washed
-color: green
+color: navy
 role: Information Architect, Lead UX Designer
 device:
   type: iPhone

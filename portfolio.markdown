@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 permalink: "/portfolio/"
-position: 2
+position: 1
 sitemap:
   exclude: false
   priority: 1.0
@@ -13,4 +13,3 @@ overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
 primary-link: projects
 primary-link-text: See all projects
 ---
-

@@ -22,11 +22,19 @@ languages:
   fluency: Native speaker
 
 work:
+- company: CareDox
+  position: Senior UI Designer / Design Systems Lead
+  website: http://caredox.com
+  startDate: 2019-02-14
+  endDate: Current
+  summary: Responsible for daily consulting and planning on multiple digital properties. Facilitating collaboration among various teams & clients to ensure projects meet UX & technical expectations. Defining project specifications across multiple phases.
+  highlights: [Design System, Wireframes, UX Design, UI Design, Visual Design]
+  published: true
 - company: Blue Fountain Media
-  position: Senior Information Architect
+  position: Senior Information Architect / UX Lead
   website: http://bluefountainmedia.com
   startDate: 2015-11-15
-  endDate: Current
+  endDate: 2018-12-22
   summary: Responsible for daily consulting and planning on multiple digital properties. Facilitating collaboration among various teams & clients to ensure projects meet UX & technical expectations. Defining project specifications across multiple phases.
   highlights: [Sitemaps, Wireframes, UX Design, UI Design, Specification Documentation]
   published: true

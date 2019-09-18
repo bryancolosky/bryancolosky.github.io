@@ -8,7 +8,7 @@ tags:
 - Information Architecture
 - Navigation
 - UI
-position: 5
+position: 8
 sitemap:
   exclude: false
   priority: 0.9
@@ -40,6 +40,5 @@ challenge: Peterbilt’s vehicles attract many fans and drivers, but the existin
   failed to communicate that. We proposed to build a new website that highlights the
   brand’s unique heritage, spoke to the concerns of fleet buyers and owner-operators,
   and makes it easy to find a dealer.
-design-approach: 
+design-approach:
 ---
-

@@ -15,9 +15,10 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
+    "@storybook/html": "^5.1.11",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
@@ -51,6 +52,7 @@
     "webpack-stream": "^5.2.1"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "storybook": "start-storybook"
   }
 }

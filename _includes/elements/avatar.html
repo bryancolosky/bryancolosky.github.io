@@ -1,10 +1,13 @@
-<img class="avatar"
-
-{% if site.gravatar_id != null %}
-src="https://www.gravatar.com/avatar/{{ site.gravatar_id }}?s={{ include.size }}"
-{% endif %}
-
-data-failover="/assets/notfound.jpg"
-height="{{ include.size }}"
-width="{{ include.size }}"
-/>
+<span class="avatar avatar--theme-warm__hot-pink">
+  <svg class="avatar__svg" width="{{ include.size }}" height="{{ include.size }}" viewBox="0 0 500 500">
+    <g class="avatar__deco">
+      <use xlink:href="{{ site.baseurl }}/app.svg#shape12" />
+    </g>
+    <clipPath id="clipShape{{ forloop.index }}">
+      <use xlink:href="{{ site.baseurl }}/app.svg#shape9" />
+    </clipPath>
+    <g clip-path="url(#clipShape{{ forloop.index }})">
+      <image class="avatar__img" xlink:href="https://www.gravatar.com/avatar/{{ site.gravatar_id }}?s=480" x="10" y="10" height="480" width="480" />
+    </g>
+  </svg>
+</span>
