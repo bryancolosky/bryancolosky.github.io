@@ -1,0 +1,31 @@
+// Definition List
+dl.definition-list,
+.definition-list {
+
+  dt.definition-list__title,
+    .definition-list__title {
+      @include overline-text-style();
+    }
+
+  dd.definition-list__desc,
+    .definition-list__desc {
+      margin-bottom: space(base);
+    }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(laptop) {
+  }
+  @include mq(laptop-l) {
+  }
+  @include mq(desktop) {
+  }
+  @include mq(desktop-hd) {
+  }
+}

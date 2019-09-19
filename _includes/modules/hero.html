@@ -1,15 +1,15 @@
-<header class="masthead {% if include.view %}masthead__{{ include.view }}-view{% endif %}">
+<header class="hero {% if include.view %}masthead__{{ include.view }}-view{% endif %}">
 
-  <div class="masthead__meta">
+  <div class="hero__meta">
 
 
-    <header class="masthead__header">
-      <div class="masthead__number">
+    <header class="hero__header">
+      <div class="hero__number">
         {% if item.type %}
-        <span class="masthead__category"><small>{{ item.type }}</small></span>
+        <span class="hero__category"><small>{{ item.type }}</small></span>
         {% endif %}
         {% if item.position %}
-        <span class="masthead__id">0{{ item.position }}</span>
+        <span class="hero__id">0{{ item.position }}</span>
         {% endif %}
       </div>
       {% capture header %}
@@ -34,14 +34,14 @@
 
     {% if item.desc %}
     {% capture text %}{{ item.desc }}{% endcapture %}
-    <p class="masthead__desc">
+    <p class="hero__desc">
     {{ text }}
     </p>
     {% endif %}
 
     {% if page.overview %}
     {% capture text %}{{ page.overview }}&nbsp;{{ site.data.resume.availability }}.{% endcapture %}
-    <p class="masthead__lead">
+    <p class="hero__lead">
     {{ text }}
     </p>
     {% endif %}

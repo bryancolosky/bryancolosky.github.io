@@ -6,16 +6,17 @@
 
   {% capture overview %}
   {% assign item = page %}
-  {% include modules/masthead.html view='split' %}
+  {% include modules/hero.html view='split' %}
   {% endcapture %}
 
   {% capture details %}
   {% assign item = page %}
-  {% include patterns/project-panel--challenge.html %}
+  {% include modules/panel.html %}
   {% endcapture %}
+
   {% capture stats %}
   {% assign item = page %}
-  {% include components/stats-slab.html %}
+  {% include modules/stats-slab.html %}
   {% endcapture %}
 
   {% capture diagrams %}

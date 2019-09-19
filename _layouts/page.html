@@ -8,5 +8,5 @@ layout: default.webpack
 
 {% unless page.template %}
   {% capture text %}{{ content | markdownify }}{% endcapture %}
-  {% include modules/content.html markdown=text %}
+  {% include modules/markdown.html markdown=text %}
 {% endunless %}

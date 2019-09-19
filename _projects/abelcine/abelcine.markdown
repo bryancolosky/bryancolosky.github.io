@@ -7,9 +7,8 @@ position: 1
 sitemap:
   exclude: false
   priority: 0.9
-layout: page
+layout: post
 template: project
-header: false
 categories:
 - Web
 tags:

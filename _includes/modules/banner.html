@@ -1,0 +1,12 @@
+<div class="banner">
+  {% if include.lead %}
+  <p class="banner__lead">{{ include.lead }}</p>
+  {% endif %}
+
+  {% if include.action %}
+  <a href="{{ site.baseurl }}/about/resume/" class="banner__url link link-primary">
+    {{ include.action }}<i class="fal fa-fw fa-long-arrow-right"></i>
+  </a>
+  {% endif %}
+
+</div>

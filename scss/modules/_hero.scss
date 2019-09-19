@@ -1,16 +1,10 @@
-header.masthead,
-.masthead {
-  padding: {
+header.hero,
+.hero {
+  margin: {
     top: space(super-loose);
     right: space(none);
     bottom: space(super-loose);
     left: space(none);
-  }
-  margin: {
-    top: space(super-loose);
-    right: space(base);
-    bottom: space(super-loose);
-    left: space(base);
   }
   border-bottom: 1px solid var(--color-light-gray);
 
@@ -21,50 +15,30 @@ header.masthead,
   @include mq(mobile-l) {
   }
   @include mq(tablet) {
-    margin: {
-      right: space(bit-loose);
-      left: space(bit-loose);
-    }
   }
   @include mq(laptop) {
-    margin: {
-      right: space(loose);
-      left: space(loose);
-    }
   }
   @include mq(laptop-l) {
-    margin: {
-      right: space(loose);
-      left: space(loose);
-    }
   }
   @include mq(desktop) {
-    margin: {
-      right: space(extra-loose);
-      left: space(extra-loose);
-    }
   }
   @include mq(desktop-hd) {
-    margin: {
-      right: space(super-loose);
-      left: space(super-loose);
-    }
   }
-  .masthead__meta {
+  .hero__meta {
 
   }
 
-  .masthead__lead {
+  .hero__lead {
     @include lead-text-style;
     max-width: $max-width / 2;
   }
 
-  .masthead__anchor {
+  .hero__anchor {
     @extend .masthead__lead;
   }
 }
 
-.masthead__split-view {
+.hero__split-view {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -98,26 +72,26 @@ header.masthead,
     }
 }
 
-.masthead__header,
-.masthead__footer {
+.hero__header,
+.hero__footer {
   width: 100%;
   margin: space(none);
 }
 
-.masthead__number {
+.hero__number {
   width: 100%;
   text-transform: uppercase;
 }
 
-.masthead__category {
+.hero__category {
   vertical-align: text-bottom;
 }
 
-.masthead__id {
+.hero__id {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }
 
-.masthead__title {
+.hero__title {
   margin: space(none);
 }

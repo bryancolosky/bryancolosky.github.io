@@ -1,0 +1,8 @@
+<!-- RETURN LAYOUT -->
+{{ content }}
+
+<!-- TEMPLATE -->
+
+<!-- MARKDOWN CONTENT -->
+{% capture text %}{{ page.content | markdownify }}{% endcapture %}
+{% include modules/markdown.html markdown=text %}

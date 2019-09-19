@@ -1,0 +1,63 @@
+<div class="stats-slab">
+  <h2 class="stats-slab__title">Project Overview</h2>
+
+  <div class="flex flex-wrap flex-row ma0 w-100">
+
+    <dl class="definition-list">
+      <dt class="definition-list__title">Year</dt>
+      <dd class="definition-list__desc">{{ page.date | date: "%Y" }}</dd>
+    </dl>
+
+    {% for kpi in item.kpi %}
+    <dl class="definition-list">
+
+    {% for stat in kpi %}
+    {% assign term = stat[0] %}
+    {% assign definition = stat[1] %}
+
+      <dt class="definition-list__title">{{ term | capitalize }}</dt>
+
+      <dd class="definition-list__desc">
+      {% if definition.length != 0 %}
+
+      {% for item in definition %}
+      {% assign string = item %}
+      {% case string %}
+
+        {% when 'ios' %}
+        <i class="fab fa-fw fa-apple"></i>
+
+        {% when 'android' %}
+        <i class="fab fa-fw fa-android"></i>
+
+        {% when 'web' %}
+        <i class="far fa-fw fa-globe"></i>
+        <i class="far fa-fw fa-browser"></i>
+
+        {% when 'mobile' %}
+        <i class="far fa-fw fa-mobile"></i>
+
+        {% when 'tablet' %}
+        <i class="far fa-fw fa-tablet"></i>
+
+        {% when 'laptop' %}
+        <i class="far fa-fw fa-laptop"></i>
+
+        {% when 'desktop' %}
+        <i class="far fa-fw fa-desktop"></i>
+
+        {% else %}
+        {{ definition | capitalize }}
+
+      {% endcase %}
+      {% endfor %}
+
+      {% endif %}
+      </dd>
+
+    {% endfor %}
+    </dl>
+    {% endfor %}
+
+  </div>
+</div>

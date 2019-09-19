@@ -8,7 +8,7 @@
     {% for item in feed %}
       {% if item.published == true %}
       <li class="collection-item">
-      {% include modules/article-card.html class='collection-item__object' %}
+      {% include modules/card.html class='collection-item__object' %}
       </li>
       {% endif %}
     {% endfor %}
