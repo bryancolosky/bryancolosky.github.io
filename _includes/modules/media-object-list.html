@@ -1,0 +1,22 @@
+<ul class="list media-objec__list">
+  <li class="media-object">
+    <h4 class="media-object__title">
+      <a class="link link-external" href="{{ item.website }}" target="_blank">{{ item.company }} <i class="fal fa-xs fa-external-link"></i></a>
+    </h4>
+    <span class="media-object__subtitle lead-text-style">
+      {{ item.position }}
+    </span>
+    <br>
+    <small><time>{{ item.startDate | date: "%Y" }}</time> – <time>{{ item.endDate | date: "%Y" }}</time></small>
+    <p>{{ item.summary }}</p>
+    <span class="label">Responsibilities</span>
+    <ul class="list tag-list">
+      {% for each in item.highlights %}
+      <li class="list-item">
+        {% assign text = each %}
+        {% include modules/tag.html tag=text %}
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

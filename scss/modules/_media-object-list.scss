@@ -1,0 +1,45 @@
+//  Media Object List
+ul.media-object-list,
+.media-object-list {
+  list-style: none;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li.media-object-list-item,
+  .media-object-list-item  {
+    margin-bottom: space(bit-loose);
+  }
+
+  li.media-object-list-item:last-of-type,
+  .media-object-list-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  li.media-object-list-item:nth-of-type(even) > .media-object-list-item__object,
+  .media-object-list-item:nth-of-type(even) > .media-object-list-item__object {
+
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+    }
+    @include mq(laptop) {
+      flex-direction: row-reverse;
+    }
+    @include mq(laptop-l) {
+      flex-direction: row-reverse;
+    }
+    @include mq(desktop) {
+      flex-direction: row-reverse;
+    }
+    @include mq(desktop-hd) {
+      flex-direction: row-reverse;
+    }
+  }
+}

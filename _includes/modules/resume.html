@@ -9,7 +9,7 @@
     {% include modules/header.html type="Header" scale="2" text="Experience"%}
     {% for item in work %}
     {% if item.published == true %}
-    {% include patterns/media-object-list.html data=item %}
+    {% include modules/media-object-list.html data=item %}
     {% endif %}
     {% endfor %}
   {% endcapture %}
@@ -22,10 +22,13 @@
   {% capture attributes %}
     {% assign skills = site.data.resume.skills %}
     {% for item in skills %}
-    <span class=""><small>{{ item.name }}</small></span>
-    <ul class="list">
+    <span class="label">{{ item.name }}</span>
+    <ul class="list tag-list">
       {% for each in item.keywords %}
-      <li class="tag"><small>{{ each }}</small></li>
+      <li class="list-item">
+        {% assign text = each %}
+        {% include modules/tag.html tag=text %}
+      </li>
       {% endfor %}
     </ul>
     {% endfor %}

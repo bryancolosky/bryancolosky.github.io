@@ -2,7 +2,48 @@ figure.figure,
 .figure {
   position: relative;
   width: 100%;
-  margin: space(none);
+  margin-right: 0;
+  margin-left: 0;
+  margin: {
+    top: space(base);
+    bottom: space(base);
+  }
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    margin: {
+      top: space(bit-loose);
+      bottom: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    margin: {
+      top: space(loose);
+      bottom: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    margin: {
+      top: space(loose);
+      bottom: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    margin: {
+      top: space(extra-loose);
+      bottom: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    margin: {
+      top: space(super-loose);
+      bottom: space(super-loose);
+    }
+  }
 }
 
 .figure__svg {
@@ -30,13 +71,29 @@ figure.figure,
 .figure__caption {
   position: absolute;
   width: 100%;
-  bottom: space(super-loose);
+  bottom: space(base);
   color: var(--color-silver);
-  margin: {
-    top: space(tight);
-    right: space(base);
-    bottom: space(tight);
-    left: space(base);
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    bottom: space(base) * 2;
+  }
+  @include mq(laptop) {
+    bottom: space(base) * 4;
+  }
+  @include mq(laptop-l) {
+    bottom: space(base) * 4;
+  }
+  @include mq(desktop) {
+    bottom: space(base) * 8;
+  }
+  @include mq(desktop-hd) {
+    bottom: space(base) * 8;
   }
 }
 

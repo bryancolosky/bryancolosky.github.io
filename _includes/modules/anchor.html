@@ -3,6 +3,7 @@
     {% if include.target == "top" %}
     <small>Back to Top</small>
     {% endif %}
-    {{ include.label | capitalize }}{% if include.icon %}<i class="fa-fw fal fa-{{ include.icon }}"></i>{% endif %}
+    {{ include.label | capitalize }}{% if include.icon %}
+    <i class="fa-fw fal fa-{{ include.icon }}"></i>{% endif %}
   </a>
 </div>

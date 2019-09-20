@@ -8,10 +8,11 @@ sitemap:
 layout: page
 template: resume
 header: true
-overview: I am occasionally available for project work and contract jobs
+overview: As an experienced information architect, UX designer and creative director, I have worked with large Fortune 500 enterprises, small startups, and nonprofits. I am occasionally available for project work and contract jobs.
 primary-anchor: professional-experience
 primary-anchor-text: See my experience
-downloads:
+download:
 - file-type: pdf
+  label: Download Resume
   path: downloads/pdf/bryancolosky-resume.pdf
 ---

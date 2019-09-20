@@ -1,6 +1,6 @@
 ---
 title: CareDox
-date: 2018-04-20 11:29:28 Z
+date: 2019-08-26 11:29:28 Z
 permalink: "/projects/caredox/"
 published: true
 categories:

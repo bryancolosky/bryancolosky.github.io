@@ -1,0 +1,14 @@
+// Tag List
+span.tag,
+.tag {
+  @include caption-text-style();
+  border: 1px solid var(--color-light-silver);
+  border-radius: space(super-loose);
+  color: var(--color-mid-gray);
+  padding: {
+    top: space(extra-tight);
+    right: space(base);
+    bottom: space(extra-tight);
+    left: space(base);
+  }
+}

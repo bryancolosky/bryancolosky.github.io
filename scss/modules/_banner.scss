@@ -31,5 +31,6 @@ div.banner,
   @include lead-text-style();
 }
 
-.banner__url{
+.banner__url {
+  @extend .banner__lead;
 }

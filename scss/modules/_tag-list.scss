@@ -1,5 +1,13 @@
 // Tag List
 ul.tag-list,
 .tag-list {
+  margin: {
+    top: space(tight);
+    bottom: space(bit-loose);
+  }
 
+  > li {
+    margin-right: space(extra-tight);
+    margin-bottom: space(tight);
+  }
 }

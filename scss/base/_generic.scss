@@ -10,8 +10,6 @@ body {
   --body-background: var(--color-near-white);
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  min-height: 100vh;
   height: auto;
   color: var(--body-color);
   background: var(--body-background);
@@ -87,4 +85,7 @@ code {
 
 pre {
   margin: space(extra-loose) 0;
+}
+img {
+  width: 100%;
 }

@@ -1,5 +1,47 @@
 // Panel
 aside.aside,
 .aside {
-  padding: space(super-loose) space(loose);
+  padding: {
+    top: space(super-loose);
+    right: space(base);
+    bottom: space(super-loose);
+    left: space(base);
+  }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    padding: {
+      right: space(bit-loose);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    padding: {
+      right: space(loose);
+      left: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    padding: {
+      right: space(extra-loose);
+      left: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    padding: {
+      right: space(super-loose);
+      left: space(super-loose);
+    }
+  }
 }

@@ -15,6 +15,7 @@
   @include mq(mobile-l) {
   }
   @include mq(tablet) {
+    flex-direction: row;
   }
   @include mq(laptop) {
     flex-direction: row;
@@ -28,31 +29,33 @@
   @include mq(desktop-hd) {
     flex-direction: row;
   }
-}
 
-.card__figure {
-  width: 100%;
+  .card__figure {
+    width: 100%;
 
-  @include mq(mobile-s) {
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+      margin-right: space(base);
+    }
+    @include mq(laptop) {
+      margin-right: space(base);
+   }
+    @include mq(laptop-l) {
+      margin-right: space(base);
+    }
+    @include mq(desktop) {
+      margin-right: space(base);
+    }
+    @include mq(desktop-hd) {
+      margin-right: space(base);
+    }
   }
-  @include mq(mobile-m) {
-  }
-  @include mq(mobile-l) {
-  }
-  @include mq(tablet) {
-  }
-  @include mq(laptop) {
-    margin-right: space(base);
- }
-  @include mq(laptop-l) {
-    margin-right: space(base);
-  }
-  @include mq(desktop) {
-    margin-right: space(base);
-  }
-  @include mq(desktop-hd) {
-    margin-right: space(base);
-  }
+
 }
 
 .card__meta {
@@ -67,15 +70,16 @@
 }
 
 .card__number {
-  width: 100%;
-  text-transform: uppercase;
+
 }
 
 .card__category {
+  @include overline-text-style;
   vertical-align: text-bottom;
 }
 
 .card__id {
+  @include caption-text-style;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }

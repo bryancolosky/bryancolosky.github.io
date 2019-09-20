@@ -27,7 +27,7 @@ work:
   website: http://caredox.com
   startDate: 2019-02-14
   endDate: Current
-  summary: Responsible for daily consulting and planning on multiple digital properties. Facilitating collaboration among various teams & clients to ensure projects meet UX & technical expectations. Defining project specifications across multiple phases.
+  summary: UX / UI design & redesign of upcoming iOS app, legacy web properties, and progressive web app. Designing & maintaing organizational design system, library files, and repositories with appropriate READMEs, instructions, and annotations. Facilitating collaboration among the engineering & design teams in order to build a ReactJS library of UI components, and creating corresponding design files.
   highlights: [Design System, Wireframes, UX Design, UI Design, Visual Design]
   published: true
 - company: Blue Fountain Media
@@ -53,6 +53,7 @@ work:
   endDate: 2014-01-01
   summary: Original founder. Consultating and implementing a variety of affordable & professional web services for small businesses, start-ups, and artists.
   highlights: [Consulting & Freelance, Audience Segmentation, User Personas, UX Design, Graphic Design, Branding & Identity]
+  published: true
 - company: Steeno Design Studio
   position: Project Manager & Draftsman
   website: http://www.steenodesign.com
@@ -60,7 +61,7 @@ work:
   endDate: 2013-05-01
   summary: Producing construction drawings, detail drawings, site analysis, and renderings for commercial & residential projects. Coordinating & maintaining communication among various city & town municipalities, contractors, & engineers.
   highlights: [Drafting & Drawing, Structure Analysis & Calculations, Obtaining Construction & Occupancy Permits, Print Design]
-  published: false
+  published: true
 - company: California Polytechnic State University
   position: Website Designer & Developer
   website: http://www.calpoly.edu/

@@ -34,7 +34,7 @@ header.hero,
   }
 
   .hero__anchor {
-    @extend .masthead__lead;
+    @extend .hero__lead;
   }
 }
 
@@ -79,15 +79,15 @@ header.hero,
 }
 
 .hero__number {
-  width: 100%;
-  text-transform: uppercase;
 }
 
 .hero__category {
+  @include overline-text-style;
   vertical-align: text-bottom;
 }
 
 .hero__id {
+  @include caption-text-style;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }

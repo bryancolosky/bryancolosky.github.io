@@ -1,1 +1,79 @@
 // Button
+button.button,
+.button {
+  padding: {
+    top: space(tight);
+    right: space(bit-loose);
+    bottom: space(tight);
+    left: space(bit-loose);
+  }
+  background-color: var(--color-blue);
+  border: none;
+  border-width: 0;
+  border-radius: space(super-loose);
+  color: var(--color-near-white);
+  transition: all 0.1s ease-in-out;
+  box-shadow: var(--color-light-gray) space(extra-tight) space(extra-tight) space(tight);
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    padding: {
+      top: space(base);
+      right: space(bit-loose);
+      bottom: space(base);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    padding: {
+      top: space(base);
+      right: space(bit-loose);
+      bottom: space(base);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(laptop-l) {
+    padding: {
+      top: space(base);
+      right: space(bit-loose);
+      bottom: space(base);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(desktop) {
+    padding: {
+      top: space(base);
+      right: space(bit-loose);
+      bottom: space(base);
+      left: space(bit-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    padding: {
+      top: space(base);
+      right: space(bit-loose);
+      bottom: space(base);
+      left: space(bit-loose);
+    }
+  }
+
+  svg {
+    transform: scale(1.0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background-color: var(--color-dark-blue);
+    transition: all 0.1s ease-in-out;
+
+    svg {
+      transform: scale(1.2);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

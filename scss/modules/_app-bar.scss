@@ -19,26 +19,26 @@
   }
   @include mq(tablet) {
     padding: {
-      right: space(bit-loose);
-      left: space(bit-loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(laptop) {
     padding: {
-      right: space(loose);
-      left: space(loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(laptop-l) {
     padding: {
-      right: space(loose);
-      left: space(loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(desktop) {
     padding: {
-      right: space(extra-loose);
-      left: space(extra-loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(desktop-hd) {

@@ -22,26 +22,26 @@ header.masthead,
   }
   @include mq(tablet) {
     margin: {
-      right: space(bit-loose);
-      left: space(bit-loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(laptop) {
     margin: {
-      right: space(loose);
-      left: space(loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(laptop-l) {
     margin: {
-      right: space(loose);
-      left: space(loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(desktop) {
     margin: {
-      right: space(extra-loose);
-      left: space(extra-loose);
+      right: space(super-loose);
+      left: space(super-loose);
     }
   }
   @include mq(desktop-hd) {
@@ -59,8 +59,124 @@ header.masthead,
     max-width: $max-width / 2;
   }
 
-  .masthead__anchor {
+  div.masthead__controls,
+  .masthead__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    margin: {
+      top: space(super-loose);
+      bottom: space(super-loose);
+    }
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+      margin: {
+        top: space(super-loose);
+        bottom: space(super-loose);
+      }
+    }
+    @include mq(laptop) {
+      margin: {
+        top: space(super-loose);
+        bottom: space(super-loose);
+      }
+    }
+    @include mq(laptop-l) {
+      margin: {
+        top: space(super-loose);
+        bottom: space(super-loose);
+      }
+    }
+    @include mq(desktop) {
+      margin: {
+        top: space(super-loose);
+        bottom: space(super-loose);
+      }
+    }
+    @include mq(desktop-hd) {
+      margin: {
+        top: space(super-loose);
+        bottom: space(super-loose);
+      }
+    }
+  }
+
+  button.masthead__button,
+  .masthead__button {
+    @include font-size($lead-font-size);
+
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+      margin-right: space(base);
+    }
+    @include mq(laptop) {
+      margin-right: space(bit-loose);
+    }
+    @include mq(laptop-l) {
+      margin-right: space(bit-loose);
+    }
+    @include mq(desktop) {
+      margin-right: space(extra-loose);
+    }
+    @include mq(desktop-hd) {
+      margin-right: space(super-loose);
+    }
+  }
+
+  a.masthead__url,
+  .masthead__url {
     @extend .masthead__lead;
+    margin: {
+      top: space(loose);
+      bottom: space(loose);
+    }
+    @include mq(mobile-s) {
+    }
+    @include mq(mobile-m) {
+    }
+    @include mq(mobile-l) {
+    }
+    @include mq(tablet) {
+      margin: {
+        top: space(none);
+        bottom: space(none);
+      }
+    }
+    @include mq(laptop) {
+      margin: {
+        top: space(none);
+        bottom: space(none);
+      }
+    }
+    @include mq(laptop-l) {
+      margin: {
+        top: space(none);
+        bottom: space(none);
+      }
+    }
+    @include mq(desktop) {
+      margin: {
+        top: space(none);
+        bottom: space(none);
+      }
+    }
+    @include mq(desktop-hd) {
+      margin: {
+        top: space(none);
+        bottom: space(none);
+      }
+    }
   }
 }
 

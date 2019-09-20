@@ -1,11 +1,11 @@
 <article class="card{% if include.class %} {{ include.class }}{% endif %}">
   {% assign hue = item.color %}
-  {% include modules/figure.html class='article-card__figure' deco=1 clip='circle' color=hue %}
+  {% include modules/figure.html class='card__figure' deco=1 clip='circle' color=hue %}
   <div class="card__meta">
     <header class="card__header">
       <div class="card__number">
         <span class="card__category"><small>{{ item.type }}</small></span>
-        <span class="card__id">0{{ item.position }}</span>
+        <span class="card__id">{{ item.title | truncate: 1, "" }}{{ item.date | date: "%y" }}</span>
       </div>
       <h1 class="card__title">
         <a class="link" href="{{ item.url }}">{{ item.title }}</a>

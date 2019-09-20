@@ -1,8 +1,6 @@
 <header class="hero {% if include.view %}masthead__{{ include.view }}-view{% endif %}">
 
   <div class="hero__meta">
-
-
     <header class="hero__header">
       <div class="hero__number">
         {% if item.type %}
@@ -26,7 +24,7 @@
     <ul class="inline-list tag-list">
       {% for each in item.tags %}
       <li class="tag">
-        <small>{{ each }}</small>
+        <span>{{ each }}</span>
       </li>
       {% endfor %}
     </ul>
@@ -40,7 +38,7 @@
     {% endif %}
 
     {% if page.overview %}
-    {% capture text %}{{ page.overview }}&nbsp;{{ site.data.resume.availability }}.{% endcapture %}
+    {% capture text %}{{ page.overview }}{% endcapture %}
     <p class="hero__lead">
     {{ text }}
     </p>

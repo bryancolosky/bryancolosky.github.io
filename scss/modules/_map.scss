@@ -1,0 +1,78 @@
+// Map
+div.map,
+.map {
+  display: none;
+  height: 0;
+  width: 100%;
+  position: relative;
+  border-radius: space(base);
+  overflow: hidden;
+  margin: {
+    top: space(base);
+    bottom: space(base);
+  }
+
+  @include mq(mobile-s) {
+  }
+  @include mq(mobile-m) {
+  }
+  @include mq(mobile-l) {
+  }
+  @include mq(tablet) {
+    display: block;
+    height: space(base) * 8;
+    margin: {
+      top: space(bit-loose);
+      bottom: space(bit-loose);
+    }
+  }
+  @include mq(laptop) {
+    display: block;
+    height: space(base) * 12;
+    margin: {
+      top: space(loose);
+      bottom: space(loose);
+    }
+  }
+  @include mq(laptop-l) {
+    display: block;
+    height: space(base) * 12;
+    margin: {
+      top: space(loose);
+      bottom: space(loose);
+    }
+  }
+  @include mq(desktop) {
+    display: block;
+    height: space(base) * 16;
+    margin: {
+      top: space(extra-loose);
+      bottom: space(extra-loose);
+    }
+  }
+  @include mq(desktop-hd) {
+    display: block;
+    height: space(base) * 16;
+    margin: {
+      top: space(super-loose);
+      bottom: space(super-loose);
+    }
+  }
+
+  div.map-canvas,
+  .map-canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  a {
+    font-size: 25%;
+    &:after {
+      display: none;
+    }
+  }
+}

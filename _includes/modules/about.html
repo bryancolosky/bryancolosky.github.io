@@ -9,11 +9,7 @@
     {% include modules/figure.html class='figure__portrait' caption='Costa Rica – 2015' src=img deco=12 color='white' %}
   {% endcapture %}
 
-  {% capture location %}
-    {% include modules/map.html %}
-  {% endcapture %}
-
-  {% include modules/panel.html id="profile" figure=portrait map=location %}
+  {% include modules/panel.html id="profile" figure=portrait %}
 
 {% endcapture %}
 

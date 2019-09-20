@@ -1,0 +1,72 @@
+// Media Object
+article.media-object,
+.media-object {
+
+  figure.media-object__figure,
+  .media-object__figure {
+    width: 100%;
+  }
+
+  div.media-object__body,
+  .media-object__body {
+
+    span.media-object__meta,
+    span {
+      width: 100%;
+      height: 100%;
+
+      span.media-object__number,
+      .media-object__number {
+        width: 100%;
+        text-transform: uppercase;
+      }
+
+      span.media-object__category,
+      .media-object__category {
+        vertical-align: text-bottom;
+      }
+
+      span.media-object__id,
+      .media-object__id {
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+      }
+    }
+
+    header.media-object__header,
+    .media-object__header {
+
+      h1.media-object__title,
+      .media-object__title {
+        margin: space(none);
+      }
+
+      h2.media-object__subtitle,
+      .media-object__subtitle {
+        margin: space(none);
+      }
+    }
+
+    p.media-object__lead,
+    .media-object__lead {
+      @include lead-text-style;
+    }
+
+    p.media-object__desc,
+    .media-object__desc {
+      @include body1-text-style;
+    }
+
+    footer.media-object__footer,
+    .media-object__footer {
+      width: 100%;
+      margin: space(base) 0;
+    }
+
+    a.media-object__url,
+    .media-object__url {
+      @include lead-text-style;
+    }
+  }
+
+}
