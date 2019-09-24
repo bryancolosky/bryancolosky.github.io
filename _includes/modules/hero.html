@@ -44,10 +44,10 @@
     </p>
     {% endif %}
 
-    {% if page.primary-anchor %}
+    {% if page.anchor %}
     {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
     {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
-    {% include modules/anchor.html class='masthead__anchor' target=anchor label=text icon='long-arrow-right' %}
+    {% include modules/anchor.html class='hero__anchor' target=anchor label=text icon='long-arrow-right' %}
     {% endif %}
   </div>
 

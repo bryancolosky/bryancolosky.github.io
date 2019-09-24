@@ -21,8 +21,8 @@ components:
     anchor:
       target: projects
       text: See all projects
-    toc: true
-  - main: collection
+    toc: false
+  - main:
     grid: null
 
 summary: true

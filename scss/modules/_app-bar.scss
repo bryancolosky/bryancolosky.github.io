@@ -9,7 +9,7 @@
   left: 0;
   z-index: $z-max;
   background-color: var(--color-near-white);
-  padding: space(extra-tight) space(base);
+  padding: space(extra-tight) space(bit-loose);
 
   @include mq(mobile-s) {
   }

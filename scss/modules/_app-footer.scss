@@ -1,6 +1,6 @@
 .app-footer {
   background-color: var(--color-white);
-  padding: space(super-loose) space(base);
+  padding: space(super-loose) space(bit-loose);
 
   @include mq(mobile-s) {
   }

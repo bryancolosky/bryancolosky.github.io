@@ -6,7 +6,7 @@ section.cover,
   align-items: center;
   min-height: 275px;
   margin: space(none) space(none);
-  padding: space(super-loose) space(base);
+  padding: space(super-loose) space(bit-loose);
 
   @include mq(mobile-s) {
   }

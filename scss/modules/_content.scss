@@ -6,9 +6,9 @@
   flex-wrap: wrap;
   margin: {
     top: space(super-loose);
-    right: space(base);
+    right: space(bit-loose);
     bottom: space(super-loose);
-    left: space(base);
+    left: space(bit-loose);
   }
 
   @include mq(mobile-s) {
