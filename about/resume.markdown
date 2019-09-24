@@ -1,6 +1,6 @@
 ---
 title: Resume
-permalink: "/about/resume/"
+permalink: "/resume/"
 position: 2
 sitemap:
   exclude: false
