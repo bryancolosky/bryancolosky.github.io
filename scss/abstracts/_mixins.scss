@@ -147,14 +147,13 @@
   text-rendering: optimizeLegibility;
 }
 
-@mixin button-text-style($weight: bold) {
+@mixin button-text-style($weight: normal) {
   @include font-size($font-size-button);
   line-height: line-height(button);
   font-weight: font-weight($weight);
   font-family: var(--font-family);
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 @mixin overline-text-style($weight: normal) {

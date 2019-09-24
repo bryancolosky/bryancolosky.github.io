@@ -27,6 +27,7 @@ ul.collection,
     @include mq(mobile-l) {
     }
     @include mq(tablet) {
+      flex-direction: row-reverse;
     }
     @include mq(laptop) {
       flex-direction: row-reverse;

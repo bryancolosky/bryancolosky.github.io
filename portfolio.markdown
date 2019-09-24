@@ -1,15 +1,29 @@
 ---
 title: Portfolio
+overview:
 permalink: "/portfolio/"
 position: 1
 sitemap:
   exclude: false
   priority: 1.0
-header: false
 layout: page
 template: portfolio
-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
-primary-link: projects
-primary-link-text: See all projects
+components:
+  - masthead:
+      intro:
+    download:
+      file: bryancolosky.pdf
+      name: Bryan Colosky's Portfolio | PDF Version
+      label: Portfolio
+    url:
+      href:
+      text:
+    anchor:
+      target: projects
+      text: See all projects
+    toc: true
+  - main: collection
+    grid: null
+
+summary: true
 ---
