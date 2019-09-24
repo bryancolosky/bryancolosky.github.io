@@ -9,7 +9,7 @@ sitemap:
   priority: 0.9
 layout: page
 template: project
-published: true
+published: false
 categories:
 - Web
 - iOS
