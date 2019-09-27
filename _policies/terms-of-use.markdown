@@ -1,16 +1,32 @@
 ---
 title: Terms of Use
 date: 1970-01-01 00:00:00 Z
+desc:
 permalink: "/terms-of-use/"
 position: 7
 sitemap:
   exclude: true
   priority: 0
-description: 
-intro: 
-overview: 
 layout: docs
-template: 
+template:
+components:
+  - masthead:
+      intro:
+    download:
+      file:
+      name:
+      label:
+    url:
+      href:
+      text:
+    anchor:
+      target:
+      text:
+    toc: false
+  - main:
+      grid: null
+markdown: true
+summary: true
 ---
 
 ## Acceptable use

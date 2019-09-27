@@ -1,17 +1,32 @@
 ---
 title: License
 date: 1970-01-01 00:00:00 Z
+desc:
 permalink: "/license/"
 position: 5
 sitemap:
   exclude: true
   priority: 0
-header: 
-description: Page overview & description.
-intro: 
-overview: 
 layout: docs
-template: 
+template:
+components:
+  - masthead:
+      intro:
+    download:
+      file:
+      name:
+      label:
+    url:
+      href:
+      text:
+    anchor:
+      target:
+      text:
+    toc: false
+  - main:
+      grid: null
+markdown: true
+summary: true
 ---
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -1,16 +1,32 @@
 ---
 title: Privacy Policy
 date: 1970-01-01 00:00:00 Z
+desc:
 permalink: "/privacy/"
 position: 6
 sitemap:
   exclude: true
   priority: 0
-description: Page overview & description.
-intro: 
-overview: 
 layout: docs
-template: 
+template:
+components:
+  - masthead:
+      intro:
+    download:
+      file:
+      name:
+      label:
+    url:
+      href:
+      text:
+    anchor:
+      target:
+      text:
+    toc: false
+  - main:
+      grid: null
+markdown: true
+summary: true
 ---
 
 Bryan Colosky ("I", "me", or "my") operates https://www.bryancolosky.com (the "Site"). This page informs you of my policies regarding the collection, use and disclosure of Personal Information I receive from users of the Site.

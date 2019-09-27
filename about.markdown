@@ -1,5 +1,7 @@
 ---
 title: About
+date: 1970-01-01 00:00:00 Z
+desc: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
 permalink: "/about/"
 position: 1
 sitemap:
@@ -7,12 +9,24 @@ sitemap:
   priority: 1.0
 layout: page
 template: about
-intro: Hi 👋  — here's a little about myself.
-image: about
-overview: I’m a multidisciplinary designer living in Brooklyn, New York — I divide
-  my time between working with code, design systems, architecture and photography.
-primary-anchor: profile
-primary-anchor-text: Learn more
+components:
+  - masthead:
+      intro: Hi 👋 — here's a little about myself.
+    download:
+      file: bryancolosky-resume.pdf
+      name: Bryan Colosky's Resume | PDF Version
+      label:
+    url:
+      href:
+      text:
+    anchor:
+      target: profile
+      text: Learn more
+    toc: false
+  - main:
+      grid: null
+markdown: true
+summary: true
 ---
 ## About Me
 As an experienced information architect, UX designer and creative director, I have worked with large Fortune 500 enterprises, small startups, and nonprofits. I have created award-winning digital, social, and memorable experiences for some of the world’s most recognizable brands including Peterbilt, Leviton, HAVI, CSA Group, and Baldor Foods.

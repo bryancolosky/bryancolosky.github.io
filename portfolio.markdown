@@ -1,6 +1,7 @@
 ---
 title: Portfolio
-overview:
+date: 1970-01-01 00:00:00 Z
+desc:
 permalink: "/portfolio/"
 position: 1
 sitemap:
@@ -23,7 +24,7 @@ components:
       text: See all projects
     toc: false
   - main:
-    grid: null
-
+      grid: null
+markdown: true
 summary: true
 ---
