@@ -5,8 +5,8 @@
 
     <header class="masthead__header">
       {% capture header %}
-        {% if page.intro %}
-          {{ page.intro }}
+        {% if page.components.masthead.intro %}
+          {{ page.components.masthead.intro }}
         {% else %}
           {{ page.title }}
         {% endif %}
@@ -15,7 +15,7 @@
     </header>
 
 
-    {% if page.overview %}
+    {% if page.desc %}
     {% capture text %}{{ page.overview }}{% endcapture %}
     <p class="masthead__lead">
     {{ text }}
