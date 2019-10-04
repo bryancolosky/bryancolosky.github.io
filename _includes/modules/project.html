@@ -11,7 +11,7 @@
 
   {% capture details %}
   {% assign item = page %}
-  {% include modules/panel.html %}
+  {% include modules/project-challenge.html %}
   {% endcapture %}
 
   {% capture stats %}
@@ -24,7 +24,15 @@
   {% for diagram in item.diagrams %}
   {% assign name = diagram.name | slugify | prepend: "diagram--" %}
   {% assign text = diagram.caption %}
-  {% include elements/figure.html src=name caption=text %}
+  {% assign orientation = diagram.orientation %}
+  {% if orientation == 'portrait' %}
+    {% assign defs = '0 0 500 700' %}
+  {% elsif orientation == 'landscape' %}
+    {% assign defs = '0 0 700 500' %}
+  {% else %}
+    {% assign defs = '0 0 500 500' %}
+  {% endif %}
+  {% include modules/figure.html class='project__diagram' caption=text src=name %}
   {% endfor %}
   {% endcapture %}
 
@@ -33,7 +41,14 @@
   {% for wire in item.wireframes %}
   {% assign name = wire.name | slugify | prepend: "wireframe--" %}
   {% assign text = wire.caption %}
-  {% include elements/figure.html src=name caption=text %}
+  {% if orientation == 'portrait' %}
+    {% assign defs = '0 0 500 700' %}
+  {% elsif orientation == 'landscape' %}
+    {% assign defs = '0 0 700 500' %}
+  {% else %}
+    {% assign defs = '0 0 500 500' %}
+  {% endif %}
+  {% include modules/figure.html class='project__wireframe' src=name caption=text %}
   {% endfor %}
   {% endcapture %}
 
@@ -55,7 +70,7 @@
   {% endfor %}
   {% endcapture %}
 
-  {% include patterns/project-detail.html header=overview content=details kpi=stats research=study ux=diagrams wires=wireframes mvp=prototypes design=screens %}
+  {% include modules/project-detail.html hero=overview content=details kpi=stats research=study ux=diagrams wires=wireframes mvp=prototypes design=screens %}
 
 {% endcapture %}
 

@@ -5,8 +5,8 @@
 
     <header class="masthead__header">
       {% capture header %}
-        {% if page.components.masthead.intro %}
-          {{ page.components.masthead.intro }}
+        {% if include.content.title %}
+          {{ include.content.title }}
         {% else %}
           {{ page.title }}
         {% endif %}
@@ -14,30 +14,88 @@
       {% include modules/header.html type="Header" scale="1" text=header class="masthead__title" %}
     </header>
 
-
-    {% if page.desc %}
-    {% capture text %}{{ page.overview }}{% endcapture %}
     <p class="masthead__lead">
-    {{ text }}
+      {% if include.content.desc %}
+        {{ include.content.desc }}
+      {% else %}
+        {{ page.desc }}
+      {% endif %}
     </p>
-    {% endif %}
 
     <div class="masthead__controls">
-    {% if page.primary-anchor %}
-      {% if page.download %}
-        {% include modules/button.html class='masthead__button' style='solid' type=button label='Download' icon='arrow-to-bottom' %}
-      {% endif %}
-      {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
-      {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
-      {% include modules/link.html class='masthead__url' target=anchor type='secondary' label=text icon='long-arrow-right' %}
-    {% endif %}
+    {% assign control = include.content.controls %}
+
+      {% for control in include.content.controls %}
+        {% if control.download %}
+        {% assign download = control.download %}
+
+          {% if download.file %}
+          {% assign file = download.file %}
+          {% endif %}
+
+          {% if download.label %}
+          {% assign label = download.label %}
+          {% endif %}
+
+          {% if download.label %}
+          {% assign name = download.name %}
+          {% endif %}
+
+          {% if file !=null and name !=null and label !=null %}
+          {% include modules/button.html class='masthead__button' style='solid' type=button label=label icon='arrow-to-bottom' %}
+          {% endif %}
+        {% endif %}
+
+        {% if control.url %}
+        {% assign url = control.url %}
+          {% if url.href %}
+          {% assign href = url.href %}
+          {% endif %}
+
+          {% if url.text %}
+          {% assign text = url.text %}
+          {% endif %}
+
+          {% if href !=null and text !=null %}
+          {% include modules/link.html class='masthead__url' target=anchor type='secondary' label=text icon='long-arrow-right' %}
+          {% endif %}
+        {% endif %}
+
+        {% if control.anchor %}
+        {% assign anchor = control.anchor %}
+
+          {% if anchor.target %}
+          {% assign target = anchor.target %}
+          {% endif %}
+
+          {% if anchor.text %}
+          {% assign text = anchor.text %}
+          {% endif %}
+
+          {% if target !=null and text !=null %}
+          {% include modules/anchor.html class='masthead__anchor' id=target type='secondary' label=text icon='long-arrow-right' %}
+          {% endif %}
+        {% endif %}
+
+        {% if control.email %}
+        {% assign email = control.email %}
+
+          {% if email.mailto %}
+          {% assign mailto = email.mailto %}
+          {% endif %}
+
+          {% if email.address %}
+          {% assign address = email.address %}
+          {% endif %}
+
+          {% if email !=null and address !=null %}
+          {% include modules/mailto.html class='masthead__mailto' mail=mailto type='external' label=address icon='envelope' %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
     </div>
 
   </div>
-
-  {% if item.color %}
-    {% assign hue = item.color %}
-    {% include modules/figure.html class='masthead__figure' deco=1 clip='circle' color=hue %}
-  {% endif %}
 
 </header>

@@ -1,7 +1,6 @@
 ---
 title: About
 date: 1970-01-01 00:00:00 Z
-desc: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
 permalink: "/about/"
 position: 1
 sitemap:
@@ -9,20 +8,23 @@ sitemap:
   priority: 1.0
 layout: page
 template: about
+header: true
 components:
   - masthead:
-      intro: Hi 👋 — here's a little about myself.
-    download:
-      file: bryancolosky-resume.pdf
-      name: Bryan Colosky's Resume | PDF Version
-      label:
-    url:
-      href:
-      text:
-    anchor:
-      target: profile
-      text: Learn more
-    toc: false
+      title: Hi 👋 — here's a little about myself.
+      desc: I’m a multidisciplinary designer living in Brooklyn, New York — I divide my time between working with code, design systems, architecture and photography.
+      controls:
+        - download:
+            file:
+            name:
+            label:
+        - url:
+            href:
+            text:
+        - anchor:
+            target: profile
+            text: Learn more
+      toc: false
   - main:
       grid: null
 markdown: true

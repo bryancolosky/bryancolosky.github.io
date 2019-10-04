@@ -2,9 +2,12 @@
 layout: default
 ---
 
-{% if page.header != false %}
-  {% include modules/masthead.html %}
-{% endif %}
+{% for component in page.components %}
+  {% if component.masthead != null %}
+    {% assign data = component.masthead %}
+    {% include modules/masthead.html content=data %}
+  {% endif %}
+{% endfor %}
 
 {% unless page.template %}
   {% capture text %}{{ content | markdownify }}{% endcapture %}

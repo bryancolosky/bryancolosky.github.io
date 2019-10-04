@@ -10,21 +10,8 @@ sitemap:
 layout: page
 template: portfolio
 components:
-  - masthead:
-      intro:
-    download:
-      file: bryancolosky.pdf
-      name: Bryan Colosky's Portfolio | PDF Version
-      label: Portfolio
-    url:
-      href:
-      text:
-    anchor:
-      target: projects
-      text: See all projects
-    toc: false
-  - main:
-      grid: null
+- main:
+    grid: null
 markdown: true
 summary: true
 ---

@@ -11,7 +11,8 @@ layout: page
 template: resume
 components:
   - masthead:
-      intro:
+      title:
+      desc: I am occasionally available for project work and contract jobs.
     download:
       file: bryancolosky-resume.pdf
       name: Bryan Colosky's Resume | PDF Version

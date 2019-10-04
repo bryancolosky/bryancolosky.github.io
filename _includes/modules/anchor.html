@@ -1,6 +1,6 @@
-<div class="anchor-scroller {{ include.class }} js--scroll">
-  <a href="#{{ include.target }}" data-scroll="{{ include.target }}" class="link{% if include.target == 'top' %} link-external{% endif %}">
-    {% if include.target == "top" %}
+<div class="{{ include.class }} js--scroll">
+  <a href="#{{ include.id }}" data-scroll="{{ include.id }}" class="link{% if include.id == 'top' %} link-external{% endif %}">
+    {% if include.id == "top" %}
     <small>Back to Top</small>
     {% endif %}
     {{ include.label | capitalize }}{% if include.icon %}

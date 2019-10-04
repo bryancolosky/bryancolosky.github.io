@@ -135,7 +135,9 @@ header.masthead,
   }
 
   a.masthead__url,
-  .masthead__url {
+  .masthead__url,
+  a.masthead__anchor,
+  .masthead__anchor {
     @extend .masthead__lead;
     margin: {
       top: space(loose);

@@ -1,0 +1,14 @@
+<section class="project-detail
+{% if include.display != null %}
+{{ include.display }}
+{% endif %}">
+  {{ include.hero }}
+  {{ include.kpi }}
+  {{ include.content }}
+  {{ include.ux }}
+  {{ include.wires }}
+  {{ include.mvp }}
+  {{ include.design }}
+  {{ include.research }}
+  {% include modules/picture.html img="art" %}
+</section>

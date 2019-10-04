@@ -68,6 +68,23 @@ figure.figure,
   transform: translate(0, -50%);
 }
 
+.figure__pic {
+  width: 100%;
+}
+
+.figure__pic--caption {
+  color: var(--color-silver);
+  border-bottom: 1px solid var(--color-light-gray);
+  padding: {
+    top: space(none);
+    bottom: space(super-loose);
+  }
+  margin: {
+    top: space(base);
+    bottom: space(super-loose);
+  }
+}
+
 .figure__caption {
   position: absolute;
   width: 100%;
@@ -81,19 +98,19 @@ figure.figure,
   @include mq(mobile-l) {
   }
   @include mq(tablet) {
-    bottom: space(base) * 2;
+    bottom: space(bit-loose);
   }
   @include mq(laptop) {
-    bottom: space(base) * 4;
+    bottom: space(loose);
   }
   @include mq(laptop-l) {
-    bottom: space(base) * 4;
+    bottom: space(loose);
   }
   @include mq(desktop) {
-    bottom: space(base) * 8;
+    bottom: space(extra-loose);
   }
   @include mq(desktop-hd) {
-    bottom: space(base) * 8;
+    bottom: space(loose);
   }
 }
 

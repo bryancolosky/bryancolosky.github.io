@@ -3,16 +3,12 @@
 
 <!-- COMPONENTS -->
 {% capture profile %}
-
   {% capture portrait %}
     {% assign img = site.gravatar_userimage %}
-    {% include modules/figure.html class='figure__portrait' caption='Costa Rica – 2015' src=img deco=12 color='white' %}
+    {% include modules/figure.html class='figure__portrait' caption='Costa Rica – 2015' src=img deco=12 color='white' viewBox='0 0 500 500' %}
   {% endcapture %}
-
   {% include modules/panel.html id="profile" figure=portrait %}
-
 {% endcapture %}
-
 {% capture aside %}
   {% include modules/aside.html header='Connect' %}
 {% endcapture %}

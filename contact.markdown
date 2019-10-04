@@ -11,18 +11,23 @@ layout: page
 template: contact
 components:
   - masthead:
-      intro: I like messages — feel free to get in touch.
-    download:
-      file:
-      name:
-      label:
-    url:
-      href:
-      text:
-    anchor:
-      target:
-      text:
-    toc: false
+      title: Contact
+      desc: I like messages — feel free to get in touch.
+      controls:
+        - download:
+            file:
+            name:
+            label:
+        - url:
+            href:
+            text:
+        - anchor:
+            target:
+            text:
+        - email:
+            mailto: bryan.colosky@gmail.com
+            address: bryan.colosky@gmail.com
+      toc: false
   - main:
       grid: null
 markdown: true

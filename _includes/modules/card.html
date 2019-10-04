@@ -1,6 +1,6 @@
 <article class="card{% if include.class %} {{ include.class }}{% endif %}">
   {% assign hue = item.color %}
-  {% include modules/figure.html class='card__figure' deco=1 clip='circle' color=hue %}
+  {% include modules/figure.html class='card__figure' deco=1 clip='circle' color=hue viewBox='0 0 500 500' %}
   <div class="card__meta">
     <header class="card__header">
       <div class="card__number">
@@ -15,7 +15,7 @@
       {{ item.overview | truncatewords: 999999, " ..." }}
     </p>
     <footer class="card__footer">
-      <a class="link link-secondary card__url"
+      <a class="link card__url"
         href="{{ item.url }}">View {{ item.title }} Details<i class="fal fa-fw fa-long-arrow-right"></i>
       </a>
     </footer>

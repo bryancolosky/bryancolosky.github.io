@@ -30,13 +30,6 @@
     </ul>
     {% endif %}
 
-    {% if item.desc %}
-    {% capture text %}{{ item.desc }}{% endcapture %}
-    <p class="hero__desc">
-    {{ text }}
-    </p>
-    {% endif %}
-
     {% if page.overview %}
     {% capture text %}{{ page.overview }}{% endcapture %}
     <p class="hero__lead">
@@ -44,16 +37,13 @@
     </p>
     {% endif %}
 
-    {% if page.anchor %}
-    {% capture anchor %}{{ page.primary-anchor }}{% endcapture %}
-    {% capture text %}{{ page.primary-anchor-text }}{% endcapture %}
-    {% include modules/anchor.html class='hero__anchor' target=anchor label=text icon='long-arrow-right' %}
-    {% endif %}
+    {% include modules/anchor.html class='hero__anchor' id='projectOverview' label='Project overview' icon='long-arrow-right' %}
+
   </div>
 
   {% if item.color %}
     {% assign hue = item.color %}
-    {% include modules/figure.html class='masthead__figure' deco=1 clip='circle' color=hue %}
+    {% include modules/figure.html class='masthead__figure' deco=1 clip='circle' color=hue viewBox='0 0 500 500' %}
   {% endif %}
 
 </header>

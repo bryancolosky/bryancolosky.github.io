@@ -1,0 +1,9 @@
+<h1>
+  <a class="link link-{{ include.type }} {{ include.class }}"
+href="mailto:{{ include.address }}?subject=portfolio">
+{{ include.label }}
+  {% if include.icon %}
+  &nbsp;<i class="fa fal fa-{{ include.icon }}"></i>
+  {% endif %}
+</a>
+</h1>

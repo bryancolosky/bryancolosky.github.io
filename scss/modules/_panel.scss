@@ -7,3 +7,17 @@ div.panel,
   grid-column: span 1;
   width: 100%;
 }
+
+article.panel-body,
+.panel-body {
+  padding: {
+    top: space(super-loose);
+    bottom: space(super-loose);
+  }
+}
+
+p.panel-lead,
+.panel-lead {
+  @include lead-text-style;
+  max-width: $max-width / 2;
+}
