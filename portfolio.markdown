@@ -8,7 +8,7 @@ sitemap:
   exclude: false
   priority: 1.0
 layout: page
-template: portfolio
+template: projects
 components:
 - main:
     grid: null
